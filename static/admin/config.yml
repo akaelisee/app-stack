@@ -3,11 +3,11 @@ backend:
   repo: akaelisee/app-stack
 
 media_folder: static/assets
-public_folder: assets
+public_folder: /assets
 
 collections:
   - name: product
-    labe: Produit
+    label: Produit
     folder: products
     create: true
     fields:
