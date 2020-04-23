@@ -9,15 +9,15 @@ const index = () => {
                     <label htmlFor="email">
                         Email
                     </label>
-                    <input type="email" class="form-control" name="email"/>
+                    <input type="email"  name="email"/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="email">
+                    <label htmlFor="firstName">
                         Nom
                     </label>
-                    <input type="text" class="form-control" name="firstname"/>
+                    <input type="text" name="firstName"/>
                 </div>
-                <input type="hidden" name="form-contact" value="contact"/>
+                <input type="hidden" name="form-name" value="contact"/>
                 <input type="submit" value="envoyer"/>
             </form>
         </div>
