@@ -4,7 +4,7 @@ const index = () => {
     return (
         <div>
             <h1> Bienvenue</h1>
-            <form action="/success" name="contact" method="post" data_netlify="true">
+            <form action="/success" name="contact" method="POST" data-netlify="true">
                 <div className="form-group">
                     <label htmlFor="email">
                         Email
