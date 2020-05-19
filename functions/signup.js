@@ -4,7 +4,7 @@ module.exports.handler = (event, context, callback) => {
     const mailchimpApi = "7352456b713e735667462364ff7513d9-us8";
     const memberListId = "a8ff5ceece";
 
-    const formDAta = JSON.parse(event.body);
+    const formData = JSON.parse(event.body);
 
     const data = {
         email_address: formData.email,
