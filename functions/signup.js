@@ -27,9 +27,9 @@ module.exports.handler = (event, context, callback) => {
     })
     .catch ((err) => {
         callback(null, {
-            statusCode: err.message,
+            statusCode: err.status,
             body: JSON.stringify({
-                error: err
+                error: err.response.data
             })
         })
     })
