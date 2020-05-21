@@ -12,21 +12,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `products`,
-        path: `${__dirname}/collections/products`,
+        path: `${__dirname}/products`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `page`,
-        path: `${__dirname}/collections/pages`,
+        path: `${__dirname}/pages`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/collections/articles`,
+        path: `${__dirname}/articles`,
       }
     },
     {

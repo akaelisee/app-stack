@@ -30,7 +30,7 @@ collections:
   
   - name: page
     label: Pages
-    folder: pages
+    folder: pages-page
     create: true
     fields:
       - { name: title, required: true, label: Titre}
