@@ -11,8 +11,8 @@ const Index = () => {
         .redirectToCheckout({
             lineItems: [{price: 'price_HJAk2NWs2bRhLG', quantity: 1}],
             mode: 'subscription',
-            successUrl: 'https://your-website.com/success',
-            cancelUrl: 'https://your-website.com/canceled',
+            successUrl: 'http://localhost:8000/checkout/success',
+            cancelUrl: 'http://localhost:8000/checkout/cancel',
           })
           .then(function(result) {
             if (result.error) {
@@ -22,7 +22,7 @@ const Index = () => {
                 displayError.textContent = result.error.message;
               }
           });
-
+ 
     }
     return (
         <div>
