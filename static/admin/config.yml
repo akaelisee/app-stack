@@ -28,17 +28,17 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
   
-  - name: page
-    label: Pages
-    folder: pages-page
-    create: true
-    fields:
-      - { name: title, required: true, label: Titre}
-      - { name: price, required: true, label: Prix}
-      - { name: description, required: true, label: Description, widget: markdown}
-      - { name: image, required: true, label: Image, widget: image}
-      - { name: path, required: false, label: Path}
-      - { name: type, required: false, label: Type,  widget: "list", allow_add: false, default: ["about page", custom page]}
+  # - name: page
+  #   label: Pages
+  #   folder: pages-page
+  #   create: true
+  #   fields:
+  #     - { name: title, required: true, label: Titre}
+  #     - { name: price, required: true, label: Prix}
+  #     - { name: description, required: true, label: Description, widget: markdown}
+  #     - { name: image, required: true, label: Image, widget: image}
+  #     - { name: path, required: false, label: Path}
+  #     - { name: type, required: false, label: Type,  widget: "list", allow_add: false, default: ["about page", custom page]}
 
 
         
