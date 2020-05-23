@@ -1,0 +1,67 @@
+@import '../helpers/variables';
+@import '../theme/font';
+
+header{
+    background-color: $colorDarkBlue;
+    padding: 20px 0;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .logo{
+            font-size: 30px;
+            font-family: $fontLobster;
+            font-weight: 400;
+            a{
+                color: $colorWhite;
+                text-decoration: none;
+
+                &:hover{
+                    color: $colorEmeraud;
+                }
+            }
+        }
+        .nav-item{
+            ul{
+                list-style: none;
+                
+                li{
+                    display: inline;
+                    padding: 0px 25px;
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        color: $colorWhite;
+                        font-family: $fontMontserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        padding-top: 15px;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-achat{
+            ul{
+                list-style: none;
+                li{
+                    display: inline;
+                    padding: 0px 10px;
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        color: $colorWhite;
+                        font-family: $fontMontserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        padding-top: 14px;
+
+                    }
+                }
+            }
+        }
+    }
+  
+}

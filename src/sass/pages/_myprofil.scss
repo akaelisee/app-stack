@@ -1,0 +1,174 @@
+@import './helpers/variables';
+@import './theme/font';
+
+.main-profil{
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 125px;
+    background-color: $colorWhite;
+    border-bottom: 2px solid $colorWhiteNav;
+    padding: 15px 40px 10px 40px;
+
+    .img-avatar{
+        float: left;
+        border-radius: 50%;
+        margin-right: 25px;
+        margin-top: -15px;
+    }
+    .name-profil{
+        font-size: 16px;
+        font-family: $fontMontserrat;
+        font-weight: 600;
+        margin-top: 15px;
+        letter-spacing: 1.70px;
+    }
+    .info-profil{
+        font-size: 15px;
+        font-family: $fontMontserrat;
+        font-weight: 500;
+        margin-top: 20px;
+        letter-spacing: 1.70px;
+        float: left;
+        .compagny{
+            font-weight: 600;
+            color: $colorBlue;
+        }
+    }
+    .link-profil{
+        position: absolute;
+        right: 3%;
+        top: 33%;
+        .drop-profil{
+            color: $colorBlack;
+            font-size: 16px;
+            font-family: $fontMontserrat;
+            font-weight: 600;
+            border: 1px solid $colorRed;
+            background-color: $colorWhite;
+            padding: 10px 20px;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            transition: 0.4s;
+            i{
+                margin-left: 5px;
+            }
+            &:hover{
+                opacity: 0.8;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+.edit-profil{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 10px;
+    .info-perso{
+        border: 1px solid $colorWhite;
+        background-color: $colorWhite;
+        align-self: start;
+        position: relative;
+        box-shadow: 0px 0px 2px $colorWhiteNav;
+        border-radius: 1px;
+
+        .edit-header{
+            position: relative;
+            .edit-title{
+                border-left: 5px solid $colorEmeraud;
+                font-size: 14px;
+                font-family: $fontMontserrat;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 15px 0;
+                padding-left: 20px;
+            }
+            .btn-edit{
+                position: absolute;
+                top: -6px;
+                right: 10px;
+                color: $colorEmeraud;
+                text-decoration: none;
+                border: 2px solid $colorEmeraud;
+                border-radius: 5px;
+                padding: 7px 8px;
+                font-size: 13px;
+                font-family: $fontMontserrat;
+                font-weight: 600;
+                transition: 0.4s;
+
+                i{
+                    padding-left: 2px;
+                }
+    
+                &:hover{
+                    opacity: 0.8;
+                    transition: 0.4s;
+                }
+            }
+        }
+        
+        .edit-info{
+            margin-left: 25px;
+
+            .name-profil{
+                font-size: 15px;
+                font-family: $fontMontserrat;
+                font-weight: 600;
+                padding: 15px 0;
+            }
+            
+            .ngcontent{
+                margin-top: 10px;
+                .label-detail{
+                    font-size: 15px;
+                    font-family: $fontMontserrat;
+                    font-weight: 600;
+                    float: left;
+                }      
+                p{
+                    margin-left: 150px;
+                    font-weight: 400;
+
+                    span{
+                        background-color: $colorEmeraud;
+                        padding: 1px 5px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .phone{
+                margin: 20px 0;
+            }
+        }
+    }
+    .info-compagny{
+        border: 1px solid $colorWhite;
+        background-color: $colorWhite;
+        align-self: start;
+        box-shadow: 0px 0px 2px $colorWhiteNav;
+        border-radius: 1px;
+
+        .ngcontent{
+
+            a{
+                text-decoration: none;
+                color: $colorBlue;
+            }
+            .detail{
+                width: 10%;
+                color: $colorBlack;
+                padding: 5px 6px;
+                border-radius: 5px;
+                background-color: $colorEmeraud;
+            }
+        }
+    }
+}

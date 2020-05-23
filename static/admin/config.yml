@@ -6,45 +6,173 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-
-  - name: product
-    label: Produit
-    folder: products
+  #Chaussure 
+  - name: Chaussure
+    label: Chaussures 
+    folder: Collections/Chaussures
     create: true
     fields:
       - { name: title, required: true, label: Titre}
       - { name: price, required: true, label: Prix}
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
-      - { name: price, required: false, label: Price}
       - { name: path, required: false, label: Path}
-
-  - name: blog
-    label: Article
-    folder: articles
-    create: true
-    fields:
-      - { name: title, required: true, label: Titre}
-      - { name: price, required: true, label: Prix}
-      - { name: description, required: true, label: Description, widget: markdown}
-      - { name: image, required: true, label: Image, widget: image}
-
-      - label: librairy
-        name: album-librairy
+      - { name: size, required: true, label: Taille}
+      - { name: marque, required: true, label: Marque}
+      - label: taille
+        name: size
         widget: list
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
-          - {label: Avatar, name: avatar, widget: image, required: true}
+          
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
 
-      - label: "City"
-        name: "airport-code"
-        widget: "select"
-        options:
-          - { label: "Chicago", value: "ORD" }
-          - { label: "Paris", value: "CDG" }
-          - { label: "Tokyo", value: "HND" }
+  # Vêtement
+  - name: vetement
+    label: Vêtements 
+    folder: Collections/vetement
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - { name: size, required: true, label: Taille}
+      - { name: marque, required: true, label: Marque}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+          
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
   
+# Phone Tab
+  - name: phonTab
+    label: Téléphone et Tablette 
+    folder: Collections/PhoneTab
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - { name: marque, required: true, label: Marque}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+  
+  
+  # Informatique and High tech
+  - name: InfoTech
+    label: Informatique et High tech 
+    folder: Collections/InfoTeck
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+  # tv
+  - name: Tv
+    label: Télevision
+    folder: Collections/Tv
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+  
+  # Bijou and sacs
+  - name: Bijsac
+    label: Bijoux et Sacs
+    folder: Collections/Bijsac
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+ 
+ 
+  # - name: blog
+  #   label: Article
+  #   folder: articles
+  #   create: true
+  #   fields:
+  #     - { name: title, required: true, label: Titre}
+  #     - { name: price, required: true, label: Prix}
+  #     - { name: description, required: true, label: Description, widget: markdown}
+  #     - { name: image, required: true, label: Image, widget: image}
+
+  #     - label: "City"
+  #       name: "airport-code"
+  #       widget: "object"
+  #       fields:
+  #           - label: "Address"
+  #             name: "address"
+  #             widget: "object"
+  #             collapsed: true
+  #             fields: 
+  #               - {label: "Street Address", name: "street", widget: "string"}
+  #               - {label: "City", name: "city", widget: "string"}
+  #               - {label: "Postal Code", name: "post-code", widget: "string"}
  
 
 

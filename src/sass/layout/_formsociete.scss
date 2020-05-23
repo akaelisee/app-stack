@@ -1,0 +1,130 @@
+@import '../helpers/variables';
+@import '../theme/font';
+
+.body-form{
+  padding-top: 30px;
+  
+    .form-group{
+        width: 87%;
+        height: 8vh;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+
+        input{
+          width: 100%;
+          height: 100%;
+          padding-top: 20px;
+          color: $colorBlack;
+          border: none;
+          outline: none;
+          font-size: 14px;
+          font-family: $fontPoppins;
+          background-color: #F6F7FB;
+
+
+          &:focus + .label-name .content-name, 
+          &:valid + .label-name .content-name{
+            transform: translateY(-180%);
+            font-size: 13px;
+            color: $colorBlue;
+          }
+      
+          &:focus + .label-name::after, 
+          &:valid + .label-name::after{
+            transform: translateY(0%);
+          }        
+        }
+
+        label{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          border-bottom: 2px solid $colorBlack;
+          color: $colorBlack;
+
+          &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 3px solid $colorBlue;
+            transform: translateX(-100%);
+            transition: all 0.3s ease;
+          }
+          .content-name{
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            color: $colorBlack;
+            font-family: $fontMontserrat;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+          }
+        }
+    }
+}
+
+.btn{   
+  padding: 15% 5% 10%;
+  width: 100%;
+  .btnprev{
+    padding: 15px 28px 15px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $fontMontserrat;
+    background-color: $colorEmeraud;
+    position: relative;
+    border: 2px solid $colorEmeraud;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+      &:hover{
+        color: $colorWhite;
+        transition: all 0.4s ease;
+        background-color: $colorEmeraudPur;
+      }
+
+      &::before{
+        content: "\f04a";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 800;
+        font-size: 15px;
+        padding: 18px 1em 18px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(90%);
+        transition: all 0.4s ease;
+      }
+
+      &:hover::before{
+        color: $colorWhite;
+        transform: translateX(25%);
+        transition: all 0.4s ease;
+      }
+  }
+
+  .btnsubmit{
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $fontMontserrat;
+    background-color: #F6F7FB;
+    position: relative;
+    border: 2px solid $colorBlack;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    &:hover{
+        opacity: 0.8;
+    }   
+  }
+}

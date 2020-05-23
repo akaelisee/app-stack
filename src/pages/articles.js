@@ -21,9 +21,10 @@ const articles = ({data}) => {
                                 </div>
                                 <div className="article__description">
                                     { 
-                                    node.frontmatter.album_librairy.map((avaxt, jndex) => (
+                                    (node.frontmatter.album_librairy || []).map((avaxt, jndex) => (
                                         <div className="autre" key={jndex}>
-                                            <p> {avaxt.avatar} </p>
+                                            <img src= {avaxt.avatar} alt=""/>
+                                            <p> {avaxt.name} </p>
                                         </div>
                                     ))
                                     }

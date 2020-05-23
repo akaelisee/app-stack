@@ -1,0 +1,471 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200523.075111.11768.0.001.json",
+    "dumpEventTime": "2020-05-23T07:51:12Z",
+    "dumpEventTimeStamp": "1590213072128",
+    "processId": 11768,
+    "cwd": "C:\\xampp\\htdocs\\fullstack\\app-stack",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Aka elisee\\AppData\\Roaming\\npm/node_modules/gatsby-cli/lib/index.js",
+      "develop"
+    ],
+    "nodejsVersion": "v12.13.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.1/node-v12.13.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.1/node-v12.13.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz",
+        "speed": 2904,
+        "user": 3838265,
+        "nice": 0,
+        "sys": 2169156,
+        "idle": 15510703,
+        "irq": 387718
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz",
+        "speed": 2904,
+        "user": 3787984,
+        "nice": 0,
+        "sys": 1434968,
+        "idle": 16294906,
+        "irq": 115000
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz",
+        "speed": 2904,
+        "user": 4109921,
+        "nice": 0,
+        "sys": 1450375,
+        "idle": 15957562,
+        "irq": 33593
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz",
+        "speed": 2904,
+        "user": 4025671,
+        "nice": 0,
+        "sys": 1329500,
+        "idle": 16162671,
+        "irq": 31281
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:10",
+        "address": "fe80::d84c:cdd2:db5a:3de3",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 16
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:10",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VirtualBox Host-Only Network #2",
+        "internal": false,
+        "mac": "0a:00:27:00:00:06",
+        "address": "fe80::314b:6047:c507:ac87",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "VirtualBox Host-Only Network #2",
+        "internal": false,
+        "mac": "0a:00:27:00:00:06",
+        "address": "192.168.178.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "5c:ea:1d:a8:6b:11",
+        "address": "fe80::ecc4:ac27:915e:c572",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "5c:ea:1d:a8:6b:11",
+        "address": "192.168.1.6",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-7S2HULQ"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7696c1729",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff7696c5b4c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff7696c4b08",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff7697b369b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff769fb82de",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff769fa0321",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff769e6dbec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff769e78f90",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff769e75ac4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff769e6b353",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff769e69b24",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff769e8adf5",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff769bf6e19",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00007ff76a3e404d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x00007ff76a3e5151",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+572305"
+    },
+    {
+      "pc": "0x00000247df9545a8",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2154147840,
+    "totalCommittedMemory": 2154147840,
+    "usedMemory": 2140868648,
+    "availableMemory": 49581016,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2094976,
+        "used": 147864,
+        "available": 1947112
+      },
+      "old_space": {
+        "memorySize": 2083368960,
+        "committedMemory": 2083368960,
+        "capacity": 2078430768,
+        "used": 2076788872,
+        "available": 1641896
+      },
+      "code_space": {
+        "memorySize": 3309568,
+        "committedMemory": 3309568,
+        "capacity": 2848608,
+        "used": 2848608,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 5509120,
+        "committedMemory": 5509120,
+        "capacity": 3790880,
+        "used": 3790880,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 56549376,
+        "committedMemory": 56549376,
+        "capacity": 56392608,
+        "used": 56392608,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 954368,
+        "committedMemory": 954368,
+        "capacity": 867520,
+        "used": 867520,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094976,
+        "used": 0,
+        "available": 2094976
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 350.171,
+    "kernelCpuSeconds": 119.609,
+    "cpuConsumptionPercent": 9.58539,
+    "maxRss": 3177320448,
+    "pageFaults": {
+      "IORequired": 2561153,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 17091,
+      "writes": 499
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Aka elisee\\AppData\\Roaming",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-7S2HULQ",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132164656625760444",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "GATSBY_BUILD_STAGE": "develop",
+    "gatsby_executing_command": "develop",
+    "GATSBY_LOGGER": "ink",
+    "gatsby_log_level": "normal",
+    "GIT_ASKPASS": "c:\\Users\\Aka elisee\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOME": "C:\\Users\\Aka elisee",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Aka elisee",
+    "LANG": "fr_FR.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Aka elisee\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-7S2HULQ",
+    "MSYSTEM": "MINGW64",
+    "NODE_ENV": "development",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OS": "Windows_NT",
+    "OneDrive": "C:\\Users\\Aka elisee\\OneDrive",
+    "PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Aka elisee\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python27;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\composer;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs;C:\\Users\\Aka elisee\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Aka elisee\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\Aka elisee\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Aka elisee\\AppData\\Roaming\\npm;C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Node.js",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e09",
+    "PROGRAMFILES": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:/xampp/htdocs/fullstack/app-stack",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "SESSIONNAME": "Console",
+    "SHLVL": "2",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\AKAELI~1\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.45.1",
+    "TMP": "C:\\Users\\AKAELI~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-7S2HULQ",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-7S2HULQ",
+    "USERNAME": "Aka elisee",
+    "USERPROFILE": "C:\\Users\\Aka elisee",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "VIPSHOME": "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Aka elisee\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Aka elisee\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-960cfef0d1-sock",
+    "WINDIR": "C:\\Windows",
+    "_": "C:/Program Files/nodejs/node",
+    "asl.log": "Destination=file"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\sharp.node",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libglib-2.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libvips-42.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libvips-cpp.dll",
+    "C:\\Windows\\System32\\ole32.dll",
+    "C:\\Windows\\System32\\SHELL32.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libintl-8.dll",
+    "C:\\Windows\\System32\\shcore.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libcairo-2.dll",
+    "C:\\Windows\\System32\\windows.storage.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libexif-12.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libexpat-1.dll",
+    "C:\\Windows\\System32\\shlwapi.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libfontconfig-1.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgif-7.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgio-2.0-0.dll",
+    "C:\\Windows\\System32\\cryptsp.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgmodule-2.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgobject-2.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libjpeg-62.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\liblcms2-2.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\liborc-0.4-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libpango-1.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libpangoft2-1.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libpng16-16.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libwebp-7.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libwebpdemux-2.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libwebpmux-3.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libz1.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libiconv-2.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libfreetype-6.dll",
+    "C:\\Windows\\SYSTEM32\\MSIMG32.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libpixman-1-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libffi-7.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libfribidi-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libharfbuzz.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgsf-1-114.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libtiff-5.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\librsvg-2-2.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgcc_s_seh-1.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libgdk_pixbuf-2.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libxml2-2.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libpangocairo-1.0-0.dll",
+    "\\\\?\\C:\\xampp\\htdocs\\fullstack\\app-stack\\node_modules\\sharp\\build\\Release\\libpangowin32-1.0-0.dll",
+    "C:\\Windows\\SYSTEM32\\ntmarta.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}

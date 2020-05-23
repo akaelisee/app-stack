@@ -1,0 +1,336 @@
+@import '../helpers/variables';
+@import '../theme/font';
+
+
+html, body, .app{
+    width: 100%;
+    position: relative;
+    background-color: $colorGreyBody;
+
+}
+
+.customer{
+    padding: 25px 0;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    h1{
+        margin: 0;
+    }
+
+    a{
+        position: absolute;
+        top: 25px;
+        right: 0px;
+        padding: 8px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $fontMontserrat;
+        background-color: $colorBlue;
+        color: $colorWhite;
+        border-radius: 5px;
+        transition: 0.4s;
+        text-decoration: none;
+
+        i{
+            padding-right: 5px;
+        }
+    }
+}
+
+.list-customer{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    table{
+        width: 100%;
+        margin: 32px auto;
+        border-collapse: collapse;
+        border-radius: 12px 12px 0 0;
+        text-align: center;
+        overflow: hidden;
+        font-size: 16px;
+        box-shadow: 0 5px 10px $colorWhiteNav;
+        // font-weight: 200;
+        font-weight: $fontPoppins;
+        tr{
+            &:hover{
+                background-color: #aac9bc;
+            }
+            &:nth-child(odd){
+                background-color: #f2f2f2;
+            }
+        }
+        th{
+            background-color: $colorEmeraud;
+            padding: 15px 12px;
+            font-size: 20px;
+            font-weight: 600;
+            font-weight: $fontMontserrat;
+        }
+        td{
+            padding: 15px 12px;
+    
+            a{
+                text-decoration: none;
+                color: $colorBlack;
+                padding: 6px;
+                font-size: 16px;
+                font-weight: 600;
+                font-weight: $fontMontserrat;
+                &:hover{
+                    border-radius: 50%;
+                    background-color: $colorWhiteNav;
+                }
+            }
+            .drop{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+//Add customer
+
+.main-addcusto{
+    padding-top: 50px;
+
+    .card{
+        width: 80%;
+        margin: 0 auto;
+        background-color: $colorWhite;
+        // box-shadow: 0 5px 10px $colorWhiteNav;
+        border-radius: 5px;
+        border: 1px solid $colorWhiteNav;
+        .title{
+            font-size: 20px;
+            padding: 15px 25px;
+            color: $colorBorder;
+            border-bottom: 1px solid $colorWhiteNav;
+        }
+        .body-inscris{
+            width: 50%;
+            margin: 0 auto;
+            .form-group{
+                margin: 30px;
+                position: relative;
+
+                input{
+                    width: 100%;
+                    padding: 14px 14px 10px 14px;
+                    border: 1px solid $colorBlack;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    transition: 0.2s;
+                    font-family: $fontPoppins;
+    
+                    &:focus{
+                        outline: none;
+                        border: 1px solid $colorEmeraud;
+                        transition: 0.2s;
+    
+                    }
+                    &:focus + label{
+                        top: -10px;
+                        padding: 0 3px;
+                        font-size: 14px;
+                        color: $colorEmeraud;
+                        transition: 0.2s;
+                    }
+    
+                    &:valid + label{
+                        top: -10px;
+                        left: 25px;
+                        font-size: 14px;
+                        color: $colorGreyEdit;
+                        transition: 0.4s;
+                    }
+                }
+
+                label{
+                    position: absolute;
+                    left: 13px;
+                    top: 10px;
+                    padding: 0 3px;
+                    color: #8d8d8d;
+                    background-color: $colorWhite;
+                    font-size: 15px;
+                    font-family: $fontPoppins;
+                    font-weight: 600;
+                    transition: 0.2s;
+                    cursor: auto;
+                }
+            }
+
+            .btn-link{
+                margin: 25px 0;
+                input, .btn-annul{
+                    padding: 10px 15px;
+                    font-size: 18px;
+                    color: $colorWhite;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    outline: none;
+                    transition: 0.4s;
+
+                    &:hover{
+                        transition: 0.4s;
+                        opacity: 0.9;
+                    }
+                }       
+                .btn-submit{
+                    background-color: $colorEmeraud;
+                    margin-left: 30px;
+                }
+                .btn-annul{
+                    background-color: $colorRed;
+                    margin-left: 5px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+.close-list{
+    position: relative;
+    top: 10px;
+    .title{
+        // padding-top: 20px;
+        // margin-top: 500px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-family: $fontMontserrat;
+        border-left: 5px solid $colorEmeraud;
+    }
+    .closee{
+        font-size: 32px;
+        position: absolute;
+        top: -9px;
+        right: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: $fontMontserrat;
+    }
+}
+
+.list-donnee{
+
+    .edit-info{
+        // margin-left: 25px;
+        width: 92%;
+        margin: 0 auto;
+
+        .name-profil{
+            font-size: 20px;
+            color: $colorWhite;
+            text-align: center;
+            font-family: $fontMontserrat;
+            font-weight: 600;
+            background-color: $colorBlue;
+            margin: 50px 0 20px 0;
+            text-transform: uppercase;
+        }
+        
+        .ngcontent{
+            margin-top: 20px;
+            margin-left: 55px;
+            .label-detail{
+                font-size: 15px;
+                font-family: $fontMontserrat;
+                font-weight: 600;
+                float: left;
+                width: 60%;
+            }      
+            p{
+                // margin-left: 50%;
+                font-weight: 400;
+                span{
+                    background-color: $colorEmeraud;
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .phone{
+            // margin: 20px 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.main{
+
+    .list{
+        position: fixed;
+        top: 0;
+        left: 17%;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba(0,0,0, 0.5);
+
+        /* Box */
+        .list-content{
+        background-color: #fefefe;
+        margin: 0 auto; 
+        border: 1px solid #888;
+        width: 40%;
+        // height: 55vh; 
+        box-shadow: 0px 1px 5px $colorBlack;
+        border-radius: 5px;
+        position: relative;
+        top: 20%;
+        margin: auto;
+        }
+        
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 20px;
+            top: -10px;
+            color: #000;
+            font-size: 35px;
+            font-family: $fontMontserrat;
+            font-weight: bold;
+            transition: 0.4s;
+
+            &:hover{
+                transition: 0.4s;
+            }
+
+        }
+        
+        .close:hover,
+        .close:focus {
+        cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate-list {
+        -webkit-animation: animatezoo 0.6s;
+        animation: animatezoo 0.6s
+        }
+
+        @-webkit-keyframes animatezoo {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+        }
+        
+        @keyframes animatezoo {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        }
+    }
+}

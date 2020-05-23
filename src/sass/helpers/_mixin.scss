@@ -1,0 +1,15 @@
+
+@mixin background($repeat, $position, $size) {
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+}
+
+@mixin display-flex() {
+    display: -webkit-flex;
+    display: flex;
+}
