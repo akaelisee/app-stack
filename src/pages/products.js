@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 const products = ({data}) => {
-    console.log(data.allMarkdownRemark)
+    // console.log(data.allMarkdownRemark)
     return (
         <div className="products__grid">
-            {
+            {/* {
                 data.allMarkdownRemark.edges.map(({node} , index) => (
                     <div className="product__item"  key= {index}>
                         <img src= {node.frontmatter.image} alt= {node.frontmatter.title}/>
@@ -19,26 +19,26 @@ const products = ({data}) => {
                         </div>
                     </div>
                 ))
-            }
+            } */}
         </div>
     )
 }
 
-export const query = graphql`
-query MyQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            description
-            image
-            price
-            title
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+// query MyQuery {
+//     allMarkdownRemark {
+//       edges {
+//         node {
+//           frontmatter {
+//             description
+//             image
+//             price
+//             title
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 export default products
 

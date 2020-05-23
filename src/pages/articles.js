@@ -4,7 +4,7 @@ const articles = ({data}) => {
     // console.log(data.allMarkdownRemark.edges[2].node.frontmatter.album_librairy)
     return (
         <div className="article__grid">
-                {
+                {/* {
                     data.allMarkdownRemark.edges.map(({node} , index) => {
                         console.log(node);
                         return (
@@ -32,32 +32,32 @@ const articles = ({data}) => {
                             </div>
                         )
                     })
-                }
+                } */}
         </div>
     )
 }
 
-export const query = graphql`
-query  {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/articles/"}}) {
-      edges {
-        node {
-          frontmatter {
-            airport_code
-            album_librairy {
-              avatar
-              name
-            }
-            title
-            description
-            image
-            path
-            price
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+// query  {
+//     allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/articles/"}}) {
+//       edges {
+//         node {
+//           frontmatter {
+//             airport_code
+//             album_librairy {
+//               avatar
+//               name
+//             }
+//             title
+//             description
+//             image
+//             path
+//             price
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 export default articles
 

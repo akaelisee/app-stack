@@ -7,9 +7,9 @@ public_folder: /assets
 
 collections:
   #Chaussure 
-  - name: Chaussure
+  - name: shoe
     label: Chaussures 
-    folder: Collections/Chaussures
+    folder: shoes
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -36,7 +36,7 @@ collections:
   # Vêtement
   - name: vetement
     label: Vêtements 
-    folder: Collections/vetement
+    folder: clothes
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -63,7 +63,7 @@ collections:
 # Phone Tab
   - name: phontab
     label: Téléphone et Tablette 
-    folder: Collections/phonetab
+    folder: phontab
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -82,9 +82,9 @@ collections:
   
   
   # Informatique and High tech
-  - name: Infotech
+  - name: infotechs
     label: Informatique et High tech 
-    folder: Collections/Infoteck
+    folder: infotechs
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -103,7 +103,7 @@ collections:
   # tv
   - name: tv
     label: Télevision
-    folder: Collections/tv
+    folder: tv
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -128,7 +128,7 @@ collections:
   # Bijou and sacs
   - name: bijsac
     label: Bijoux et Sacs
-    folder: Collections/bijsac
+    folder: bijsac
     create: true
     fields:
       - { name: title, required: true, label: Titre}

@@ -12,43 +12,43 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `Chaussure`,
-        path: `${__dirname}/Chaussures`,
+        name: `shoe`,
+        path: `${__dirname}/collections/shoes`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `vetement`,
-        path: `${__dirname}/vetement`,
+        path: `${__dirname}/collections/clothes`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `phontab`,
-        path: `${__dirname}/phontab`,
+        path: `${__dirname}/collections/phontab`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `Infotech`,
-        path: `${__dirname}/Infotech`,
+        path: `${__dirname}/collections/infotechs`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `tv`,
-        path: `${__dirname}/tv`,
+        path: `${__dirname}/collections/tv`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `bijsac`,
-        path: `${__dirname}/bijsac`,
+        path: `${__dirname}/collections/bijsac`,
       }
     },
     `gatsby-transformer-sharp`,
