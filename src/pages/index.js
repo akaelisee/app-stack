@@ -6,9 +6,9 @@ import {Carousel} from "react-bootstrap";
 import Header from "../layout/header";
 import Footer from "../layout/footer";
 // import '../sass/style.scss';
-import imageI from "../../static/assets/47372301.jpg";
-import imageJ from "../../static/assets/cat-illustrations-004.jpg";
-import imageK from "../../static/assets/huaweip30pro.jpg";
+// import imageI from "../../static/assets/47372301.jpg";
+// import imageJ from "../../static/assets/cat-illustrations-004.jpg";
+// import imageK from "../../static/assets/huaweip30pro.jpg";
 
 const IndexPage = () => (
   <>
@@ -18,7 +18,7 @@ const IndexPage = () => (
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={imageI}
+              src={""}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -29,7 +29,7 @@ const IndexPage = () => (
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={imageJ}
+              src={"imageJ"}
               alt="Third slide"
             />
 
@@ -41,7 +41,7 @@ const IndexPage = () => (
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={imageK}
+              src={"imageK"}
               alt="Third slide"
             />
 

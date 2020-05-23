@@ -146,28 +146,34 @@ collections:
           - {label: Name, name: name, widget: string, required: true}
  
  
-  # - name: blog
-  #   label: Article
-  #   folder: articles
-  #   create: true
-  #   fields:
-  #     - { name: title, required: true, label: Titre}
-  #     - { name: price, required: true, label: Prix}
-  #     - { name: description, required: true, label: Description, widget: markdown}
-  #     - { name: image, required: true, label: Image, widget: image}
+  - name: blog
+    label: Article
+    folder: articles
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
 
-  #     - label: "City"
-  #       name: "airport-code"
-  #       widget: "object"
-  #       fields:
-  #           - label: "Address"
-  #             name: "address"
-  #             widget: "object"
-  #             collapsed: true
-  #             fields: 
-  #               - {label: "Street Address", name: "street", widget: "string"}
-  #               - {label: "City", name: "city", widget: "string"}
-  #               - {label: "Postal Code", name: "post-code", widget: "string"}
+      - label: "City"
+        name: "airport-code"
+        widget: "object"
+        fields:
+            - label: "Address"
+              name: "address"
+              widget: "object"
+              collapsed: true
+              fields: 
+                - { name: price, required: true, label: Prix}
+                - { name: description, required: true, label: Description, widget: markdown}
+                - { name: image, required: true, label: Image, widget: image}
+
+            - label: "abell"
+              name: "abel"
+              widget: "object"
+              collapsed: true
+              fields: 
+                - { name: price, required: true, label: Prix}
+                - { name: description, required: true, label: Description, widget: markdown}
+                - { name: image, required: true, label: Image, widget: image}
  
 
 
