@@ -61,9 +61,9 @@ collections:
           - {label: Name, name: name, widget: string, required: true}
   
 # Phone Tab
-  - name: phonTab
+  - name: phontab
     label: Téléphone et Tablette 
-    folder: Collections/PhoneTab
+    folder: Collections/phonetab
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -82,9 +82,9 @@ collections:
   
   
   # Informatique and High tech
-  - name: InfoTech
+  - name: Infotech
     label: Informatique et High tech 
-    folder: Collections/InfoTeck
+    folder: Collections/Infoteck
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -101,9 +101,9 @@ collections:
           - {label: Name, name: name, widget: string, required: true}
 
   # tv
-  - name: Tv
+  - name: tv
     label: Télevision
-    folder: Collections/Tv
+    folder: Collections/tv
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -126,9 +126,9 @@ collections:
           - {label: Name, name: name, widget: string, required: true}
   
   # Bijou and sacs
-  - name: Bijsac
+  - name: bijsac
     label: Bijoux et Sacs
-    folder: Collections/Bijsac
+    folder: Collections/bijsac
     create: true
     fields:
       - { name: title, required: true, label: Titre}
