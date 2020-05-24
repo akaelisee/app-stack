@@ -13,49 +13,42 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `shoe`,
-        path: `${__dirname}/shoes`,
+        path: `${__dirname}/Chaussures`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `vetement`,
-        path: `${__dirname}/clothes`,
+        name: `clothes`,
+        path: `${__dirname}/Vetements`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `phontab`,
-        path: `${__dirname}/phontab`,
+        path: `${__dirname}/Téléphone et Tablette`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `Infotech`,
-        path: `${__dirname}/infotechs`,
+        path: `${__dirname}/Informatique et High tech`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `tv`,
-        path: `${__dirname}/tv`,
+        path: `${__dirname}/Télevision`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `bijsac`,
-        path: `${__dirname}/bijsac`,
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/articles`,
+        path: `${__dirname}/Bijoux et Sacs`,
       }
     },
     `gatsby-transformer-sharp`,

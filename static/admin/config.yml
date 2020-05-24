@@ -9,7 +9,8 @@ collections:
   #Chaussure 
   - name: shoe
     label: Chaussures 
-    folder: shoes
+    folder: Chaussures
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -32,9 +33,10 @@ collections:
           - {label: Name, name: name, widget: string, required: true}
 
   # Vêtement
-  - name: vetement
+  - name: clothe
     label: Vêtements 
-    folder: clothes
+    folder: Vetements
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -59,7 +61,8 @@ collections:
 # Phone Tab
   - name: phontab
     label: Téléphone et Tablette 
-    folder: phontab
+    folder: Téléphone et Tablette
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -79,7 +82,8 @@ collections:
   # Informatique and High tech
   - name: infotechs
     label: Informatique et High tech 
-    folder: infotechs
+    folder: Informatique et High tech 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -98,7 +102,8 @@ collections:
   # tv
   - name: tv
     label: Télevision
-    folder: tv
+    folder: Télevision
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -123,7 +128,8 @@ collections:
   # Bijou and sacs
   - name: bijsac
     label: Bijoux et Sacs
-    folder: bijsac
+    folder: Bijoux et Sacs
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -146,36 +152,16 @@ collections:
           - {label: Name, name: name, widget: string, required: true}
  
  
-  - name: blog
-    label: Article
-    folder: articles
-    create: true
-    fields:
-      - { name: title, required: true, label: Titre}
-
-      - label: "City"
-        name: "airport-code"
-        widget: "object"
-        fields:
-            - label: "Address"
-              name: "address"
-              widget: "object"
-              collapsed: true
-              fields: 
-                - { name: price, required: true, label: Prix}
-                - { name: description, required: true, label: Description, widget: markdown}
-                - { name: image, required: true, label: Image, widget: image}
-
-            - label: "abell"
-              name: "abel"
-              widget: "object"
-              collapsed: true
-              fields: 
-                - { name: price, required: true, label: Prix}
-                - { name: description, required: true, label: Description, widget: markdown}
-                - { name: image, required: true, label: Image, widget: image}
- 
 
 
         
-    
+#     query MyQuery {
+#   allDirectory {
+#     edges {
+#       node {
+#         absolutePath
+#         name
+#       }
+#     }
+#   }
+# }
