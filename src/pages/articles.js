@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+// import { graphql } from 'gatsby'
 const articles = ({data}) => {
     // console.log(data.allMarkdownRemark.edges[2].node.frontmatter.album_librairy)
     return (

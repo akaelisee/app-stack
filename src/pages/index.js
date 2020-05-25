@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import {Carousel} from "react-bootstrap";
 import { graphql } from 'gatsby';
 
@@ -11,7 +11,7 @@ import Footer from "../layout/footer";
 // import imageK from "../../static/assets/huaweip30pro.jpg";
 
 const IndexPage = ({data}) => {
-console.log(data)
+// console.log(data)
   return (
     <div className="homepage">
       <Header />

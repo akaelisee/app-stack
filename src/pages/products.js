@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 const products = ({data}) => {
     // console.log(data.allMarkdownRemark)
     return (

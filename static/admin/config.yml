@@ -10,6 +10,7 @@ collections:
   - name: shoe
     label: Chaussures 
     folder: Chaussures
+    categories: ["Chaussures", "clothes"]
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
