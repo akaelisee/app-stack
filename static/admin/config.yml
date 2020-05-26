@@ -19,6 +19,7 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
+      - { name: categorie, required: true, label: categorie, widget: "hidden", default: "shoe"}
       - label: taille
         name: size
         widget: list
