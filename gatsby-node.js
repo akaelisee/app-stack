@@ -1,18 +1,18 @@
 exports.createPages = async ({ graphql, actions }) => {
     
     const products = await graphql(`
-    query {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                path
+      query {
+          allMarkdownRemark {
+            edges {
+              node {
+                frontmatter {
+                  path
+                }
               }
             }
           }
         }
-      }
-    `) 
+      `) 
 
     products.data.allMarkdownRemark.edges.forEach(edge => {
         const path = edge.node.frontmatter.path;
@@ -24,19 +24,19 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
     // Categories
-    const categories = await graphql(`
-        query {
-            allMarkdownRemark {
-            edges {
-                node {
-                frontmatter {
-                    title
-                    price
-                    image
-                }
-                }
-            }
-            }
-        }
-    `)
+    // const categories = await graphql(`
+    //     query {
+    //         allMarkdownRemark {
+    //         edges {
+    //             node {
+    //             frontmatter {
+    //                 title
+    //                 price
+    //                 image
+    //             }
+    //             }
+    //         }
+    //         }
+    //     }
+    // `)
 }

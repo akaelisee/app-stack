@@ -1,35 +1,36 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React, {useState} from 'react';
+import { Link, graphql } from 'gatsby';
+import {Tab, Tabs, Form, Button} from 'react-bootstrap';
+import ComProduitTemplate from '../components/ComProduitTemplate';
+import Header from '../layout/header';
+import Footer from '../layout/Footer';
 
-export  default ({data}) => {
-    // console.log(data)
+ const ProduitTemplate = ({data}) => {
+
+  const [key, setKey] = useState('home');
+  
     return (
-        <div>
-            <p>{data.markdownRemark.frontmatter.title}</p>
-            <p>{data.markdownRemark.frontmatter.description}</p>
-            <p>{data.markdownRemark.frontmatter.price}</p>
-            <img src={data.markdownRemark.frontmatter.image} alt={data.markdownRemark.frontmatter.title} />
-            <p>
-                <ul>
-                    {
-                        (data.markdownRemark.frontmatter.size || []).map((detail, index) => (
-                                <li key ={index}>
-                                    {detail.name}
-                                </li>
-                                ))
-                    }
-                </ul>
-            </p>
-            <p>
-                {
-                        (data.markdownRemark.frontmatter.color || []).map((detail, index) => (
-                                <li key ={index}>
-                                    {detail.name}
-                                </li>
-                                ))
-                    }
-            </p>
-            
+        <div className="template">
+
+            <Header /> 
+            <div className="group-template"> 
+              <div className="template-detail">
+                  <div className="propos">
+                    <Tabs id="controlled-tab-example" activeKey={key} onSelect={(k) => setKey(k)}>
+                      <Tab eventKey="home" title="Détail produit">
+                          <ComProduitTemplate children ={data}/>     
+                      </Tab>
+                      <Tab eventKey="profile" title="Recommendation">
+                        {/* <Sonnet /> */}
+
+                      </Tab>
+                    </Tabs>
+                  </div>
+              </div>
+
+              
+            </div>
+            <Footer /> 
         </div>
     )
 }
@@ -52,3 +53,5 @@ export const query = graphql`
         }
       }
 `
+
+export default ProduitTemplate

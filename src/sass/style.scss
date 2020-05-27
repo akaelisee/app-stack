@@ -6,13 +6,10 @@
 @import './layout/header';
 // @import './pages/login';
 // @import './pages/inscription';
-// @import './layout/formsociete';
+@import '../pages/panier/panier.scss';
 @import './pages/catalogue';
 @import './pages/homepage';
-// @import './pages/myprofil';
-// @import './pages/project';
-// @import './pages/sprints';
-// @import './pages/task';
+@import '../template/template';
 @import './layout/footer';
 
 

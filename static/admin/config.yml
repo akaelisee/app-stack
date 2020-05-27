@@ -10,7 +10,6 @@ collections:
   - name: shoe
     label: Chaussures 
     folder: Chaussures
-    categories: ["Chaussures", "clothes"]
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
@@ -19,7 +18,6 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
-      - { name: categorie, required: true, label: categorie, widget: "hidden", default: "shoe"}
       - label: taille
         name: size
         widget: list
@@ -153,17 +151,3 @@ collections:
         fields:
           - {label: Name, name: name, widget: string, required: true}
  
- 
-
-
-        
-#     query MyQuery {
-#   allDirectory {
-#     edges {
-#       node {
-#         absolutePath
-#         name
-#       }
-#     }
-#   }
-# }

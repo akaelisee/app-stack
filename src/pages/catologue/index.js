@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
 // import { graphql } from 'gatsby'
 
 import Catalogue from '../../components/catalogue';
 import Produits from '../../components/produits';
 import Header from '../../layout/header';
 import Footer from '../../layout/Footer';
+import {Modal, Button} from 'react-bootstrap'
 
 
 const Index = ({data}) => {
+
+ 
 
   // togglePopup() {
   //   this.setState({
@@ -28,6 +31,10 @@ const Index = ({data}) => {
 
 
     return (
+      <>
+
+        {/*  */}
+
         <div className="catalogue">
 
             <Header />
@@ -43,34 +50,30 @@ const Index = ({data}) => {
 
             <Footer />    
         </div>
+      </>
     )
 }
 
 export const query = graphql`
-  query  {
-    allDirectory {
-      edges {
-        node {
-          name
+query {
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          title
+          description
+          image
+          path
+          price
         }
+        fields {
+          sourceName
+        }
+        fileAbsolutePath
       }
     }
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            price
-            path
-            image
-          }
-        }
-      }
-      pageInfo {
-        itemCount
-      }
-    }
+    totalCount
   }
+}
 `
 export default Index

@@ -16,13 +16,14 @@ const Header = () => (
                     <ul>
                         <li><Link to ="/">Accueil</Link></li>
                         <li><Link to ="/catologue">Nos produits</Link></li>
-                        <li><Link to ="">Contact</Link></li>
+                        <li><Link to ="/blog">Blog</Link></li>
+                        <li><Link to ="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="nav-achat">
                     <ul>
                         <li><Link to ="">Connexion</Link></li>
-                        <li><Link to =""><i className="fas fa-shopping-cart"></i></Link></li>
+                        <li><Link to ="/panier"><i className="fas fa-shopping-cart"></i></Link></li>
                     </ul>
                 </div>
             </nav>
