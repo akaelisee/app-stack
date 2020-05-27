@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import { Link, graphql } from 'gatsby';
-import {Tab, Tabs, Form, Button} from 'react-bootstrap';
+import { graphql } from 'gatsby';
+import {Tab, Tabs} from 'react-bootstrap';
 import ComProduitTemplate from '../components/ComProduitTemplate';
 import Header from '../layout/header';
 import Footer from '../layout/Footer';
@@ -11,7 +11,6 @@ import Footer from '../layout/Footer';
   
     return (
         <div className="template">
-
             <Header /> 
             <div className="group-template"> 
               <div className="template-detail">
@@ -27,8 +26,6 @@ import Footer from '../layout/Footer';
                     </Tabs>
                   </div>
               </div>
-
-              
             </div>
             <Footer /> 
         </div>
