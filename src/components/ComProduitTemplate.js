@@ -11,20 +11,20 @@ const ComProduitTemplate = (props) => {
   let detailColor = props.children.markdownRemark.frontmatter.color;
 
   // Select size
-  let detailListSize = detailSize = []
-    && detailSize.map((item, i) => {
-      return (
-      <option key={i}>{item.name}</option>
-      )
-    });
+  // let detailListSize = detailSize = []
+  //   && detailSize.map((item, i) => {
+  //     return (
+  //     <option key={i}>{item.name}</option>
+  //     )
+  //   });
 
   // Select color
-    let detailListColor = detailColor = []
-    && detailColor.map((item, i) => {
-      return (
-      <option key={i}>{item.name}</option>
-      )
-    });
+    // let detailListColor = detailColor = []
+    // && detailColor.map((item, i) => {
+    //   return (
+    //   <option key={i}>{item.name}</option>
+    //   )
+    // });
 
 
     return (
@@ -47,7 +47,7 @@ const ComProduitTemplate = (props) => {
                                   <Form.Label>Couleur :</Form.Label>
                                   <Form.Control as="select" custom>
                                     <option selected></option>
-                                    {detailListSize}
+                                    {/* {detailListSize} */}
                                   </Form.Control>
                                 </Form.Group>
                               </Form>
@@ -63,7 +63,7 @@ const ComProduitTemplate = (props) => {
                                   <Form.Label>Couleur :</Form.Label>
                                   <Form.Control as="select" custom>
                                     <option selected></option>
-                                    {detailListColor}
+                                    {/* {detailListColor} */}
                                   </Form.Control>
                                 </Form.Group>
                               </Form>
