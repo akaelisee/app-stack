@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className = "footer-down">
+        <footer className = "footer-downl">
             <div className="logo-footer">
                 <a href="/"> E. SHOP </a>
             </div>

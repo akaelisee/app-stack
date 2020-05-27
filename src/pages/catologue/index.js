@@ -1,39 +1,17 @@
 import React from 'react';
-// import { graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Catalogue from '../../components/catalogue';
 import Produits from '../../components/produits';
 import Header from '../../layout/header';
-import Footer from '../../layout/Footer';
-import {Modal, Button} from 'react-bootstrap'
+import Footer from '../../layout/footer';
+// import {Modal, Button} from 'react-bootstrap'
 
 
 const Index = ({data}) => {
 
- 
-
-  // togglePopup() {
-  //   this.setState({
-  //     showPopup : true
-  //   })
-  // }
-
-  // // state login false
-  // closePopup() {
-  //   this.setState({
-  //     showPopup : false
-  //   })
-  // }
-
-  // <Link to="" onClick = {this.togglePopup} className="login-link"> Login </Link>
-  // <span onClick={this.props.popUp} className="close" title="Close Modal">&times;</span>
-  
-
-
     return (
       <>
-
-        {/*  */}
 
         <div className="catalogue">
 

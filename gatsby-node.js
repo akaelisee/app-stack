@@ -15,11 +15,11 @@ exports.createPages = async ({ graphql, actions }) => {
       `) 
 
     products.data.allMarkdownRemark.edges.forEach(edge => {
-        const path = edge.node.frontmatter.path;
+        const paths = edge.node.frontmatter.path;
         actions.createPage({
-            path: path,
+            path: paths,
             component: require.resolve(`./src/template/productTemplate.js`),
-            context: {path:path}
+            context: {path:paths}
         })
     })
 

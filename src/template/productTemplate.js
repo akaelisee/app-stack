@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import {Tab, Tabs} from 'react-bootstrap';
 import ComProduitTemplate from '../components/ComProduitTemplate';
 import Header from '../layout/header';
-import Footer from '../layout/Footer';
+import Footer from '../layout/footer';
 
  const ProduitTemplate = ({data}) => {
 

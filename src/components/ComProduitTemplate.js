@@ -1,6 +1,6 @@
 import React from 'react';
-import {Tab, Tabs, Form, Button} from 'react-bootstrap';
-import { Link, graphql } from 'gatsby';
+import {Form} from 'react-bootstrap';
+import { Link } from 'gatsby';
 
 
 const ComProduitTemplate = (props) => {
@@ -10,22 +10,65 @@ const ComProduitTemplate = (props) => {
   let detailSize = props.children.markdownRemark.frontmatter.size;
   let detailColor = props.children.markdownRemark.frontmatter.color;
 
-  // Select size
-  // let detailListSize = detailSize = []
-  //   && detailSize.map((item, i) => {
-  //     return (
-  //     <option key={i}>{item.name}</option>
-  //     )
-  //   });
+  // Funcion map size
+  const funcSize = () => {
+    return (
+          detailSize.map((item, i) => (
+            <option key={i}>{item.name}</option>
+          ))
+        )
+  }
 
-  // Select color
-    // let detailListColor = detailColor = []
-    // && detailColor.map((item, i) => {
-    //   return (
-    //   <option key={i}>{item.name}</option>
-    //   )
-    // });
+  //Fonction Detail size
+  let detailListSize = () =>{
 
+    if (detailSize){
+      return(
+        <Form>
+          <Form.Group controlId="exampleForm.SelectCustom">
+            <Form.Label>Taille :</Form.Label>
+            <Form.Control as="select" custom>
+              <option selected></option>
+              {funcSize()}
+            </Form.Control>
+          </Form.Group>
+      </Form>
+      )
+    }else{
+      return(<div></div>)
+    }
+  }
+
+
+  
+  // Funcion map color
+  const funcColor = () => {
+    return (
+          detailColor.map((item, i) => (
+            <option key={i}>{item.name}</option>
+          ))
+        )
+  }
+   
+  //Fonction Detail Color
+  let detailListColor = () =>{
+
+    if (detailColor){
+      return(
+        <Form>
+          <Form.Group controlId="exampleForm.SelectCustom">
+            <Form.Label>Color :</Form.Label>
+            <Form.Control as="select" custom>
+              <option selected></option>
+              {funcColor()}
+            </Form.Control>
+          </Form.Group>
+      </Form>
+      )
+    }else{
+      return(<div></div>)
+    }
+  }
 
     return (
         <>
@@ -39,37 +82,9 @@ const ComProduitTemplate = (props) => {
                         <span>{detail.price} € </span>
 
                         <div className="select-detail">
-                          {
-                             detail.size
-                             ? (
-                              <Form>
-                                <Form.Group controlId="exampleForm.SelectCustom">
-                                  <Form.Label>Couleur :</Form.Label>
-                                  <Form.Control as="select" custom>
-                                    <option selected></option>
-                                    {/* {detailListSize} */}
-                                  </Form.Control>
-                                </Form.Group>
-                              </Form>
-                               )
-                             : ''
-
-                          }
-                          {
-                            detail.color
-                            ? (
-                              <Form>
-                                <Form.Group controlId="exampleForm.SelectCustom">
-                                  <Form.Label>Couleur :</Form.Label>
-                                  <Form.Control as="select" custom>
-                                    <option selected></option>
-                                    {/* {detailListColor} */}
-                                  </Form.Control>
-                                </Form.Group>
-                              </Form>
-                              )
-                            : ''
-                          }
+                          {detailListSize()}
+                          {detailListColor()}
+                          
                         </div>
                         <div className="button-panier">
                           <Link to="/"> Ajouter au panier </Link>
