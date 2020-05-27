@@ -150,4 +150,87 @@ collections:
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
- 
+
+   # Blog
+  # - name: blog
+  #   label: blog
+  #   folder: templateKay/blog
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   create: true
+  #   fields:
+  #     # - { name: title, required: true, label: Titre}
+  #     # - { name: date, required: true, label: Date, widget: date, format: 'MMM Do YY', default: ''}
+  #     # - { name: description, required: true, label: Description, widget: markdown}
+  #     # - { name: image, required: true, label: Image, widget: image}
+  #     - { name: path, required: false, label: Path}
+
+  - name: blog
+    label: Blog
+    folder: src/templateKey/blog/entries
+    create: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: blogTitle
+    editor:
+      preview: false
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "src/pages/blog/index.js"}
+      -
+        label: Titre
+        name: title
+        widget: string
+      -
+        label: 'Image'
+        name: coverImage
+        widget: image
+        allow_multiple: false
+      -
+        label: Path
+        name: path
+        required: false
+      -
+        label: Description
+        name: description
+        widget: markdown
+      -
+        label: Tags
+        name: tags
+        widget: select
+        multiple: true
+        options:
+          - Vue.js
+          - SCSS/CSS
+          - ES6
+          - React.js
+          - Contentful
+          - Angular.js
+          - Stylus/CSS
+          - Node.js
+          - MySQL
+          - jQuery
+          - Webpack
+          - Contentful UI Ext
+          - Paper.js          
+          - AWS
+          - Gulp
+          - Vanilla JS
+          - PHP
+      -
+        label: "Created"
+        name: "created"
+        widget: "datetime"
+  -
+    label: Pages
+    name: pages
+    files:
+      - 
+        label: 'Chaussures'
+        name: Chaussures
+        file: src/Chaussures/taude.md
+        fields:
+          -
+             name: title,  
+             label: Titre
+          -
+             name: path, 
+             label: Path   
