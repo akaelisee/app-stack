@@ -22,21 +22,4 @@ exports.createPages = async ({ graphql, actions }) => {
             context: {path:paths}
         })
     })
-
-    // Categories
-    // const categories = await graphql(`
-    //     query {
-    //         allMarkdownRemark {
-    //         edges {
-    //             node {
-    //             frontmatter {
-    //                 title
-    //                 price
-    //                 image
-    //             }
-    //             }
-    //         }
-    //         }
-    //     }
-    // `)
 }

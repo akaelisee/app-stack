@@ -59,6 +59,12 @@ module.exports = {
         path: `${__dirname}/src/templateKey/blog`,
       }
     },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://inspiring-visvesvaraya-f559ca.netlify.app/`, // required!
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

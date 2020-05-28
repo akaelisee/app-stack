@@ -5,8 +5,9 @@
 // @import './theme/button';
 @import './layout/header';
 // @import './pages/login';
-// @import './pages/inscription';
+@import '../pages/blog/blog.scss';
 @import '../pages/panier/panier.scss';
+@import '../pages/contact/contact.scss';
 @import './pages/catalogue';
 @import './pages/homepage';
 @import '../template/template';

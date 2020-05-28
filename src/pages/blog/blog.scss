@@ -1,0 +1,52 @@
+@import '../../sass/theme/font';
+@import '../../sass/helpers/variables';
+
+.blog{
+    .group-blog{
+        padding: 120px 0;
+        .blog-detail{
+            width: 69em;
+            margin: 0 auto;
+            .detail-article{
+                margin-bottom: 25px;
+            }
+            .newsletter{
+                text-align: center;
+                margin-bottom: 25px;
+                p{
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                .form{
+                    padding: 14px 0;
+                }
+                .recent{
+                    p{
+                        margin-top: 16px;
+                    }
+                }
+                span{
+                    margin: 25px 0;
+                    background: #000;
+                    font-size: 18px;
+                }
+                .btn-link{
+                    margin: 15px 0;
+                    text-decoration: none;
+
+                    a{
+                        font-size: 20px;
+                        background-color: $colorEmeraud;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        color: $colorWhite;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
