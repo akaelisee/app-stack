@@ -60,10 +60,11 @@
             .button-panier{ 
                 margin: 45px 0 25px 0;
                 text-align: center;
-                a{
+                button{
                     text-decoration: none;
                     background-color: $colorGreyAchat;
-                    padding: 14px 29%;
+                    padding: 14px 0;
+                    width: 100%;
                     // margin: 0 auto;
                     color: $colorWhite;
                     border-radius: 5px;

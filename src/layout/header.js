@@ -1,47 +1,24 @@
 import React from "react";
 import { Link } from "gatsby";
+import {useState} from "react";
 import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget";
 import "react-netlify-identity-widget/styles.css";
+import {BuyButton} from 'gatsby-plugin-snipcart'
 
-// Init netlifyIdentity
-// function initNetlifyIdentity() {
-//     console.log("initNet callet");
-//     const script = document.createElement("script");
-//     script.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
-//     script.async = true;
-//     document.body.appendChild(script);
-// }
 
-//Open Modal netlifyIdentity
-// function openNetlifyModal() {
-//     const netlifyIdentity = window.netlifyIdentity;
-
-//     if (netlifyIdentity) {
-//         netlifyIdentity.open();
-//     } else {
-//         console.log('error')
-//     }
-// }
-
-// class NetlifyIdentity extends Component {
-//     componentDidMount() {
-
-//     }
-//     render() {
-//         return (
-//              <div></div>
-//         );
-//     }
-// }
 const Header = () => {
 
     // initNetlifyIdentity()
 
     const identity = useIdentityContext();
-    const [dialog, setDialog] = React.useState(false);
-    const name = (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name) || "NoName";
-    console.log(JSON.stringify(identity))
-    const isLoggedIn = identity && identity.isLoggedIn
+    const [dialog, setDialog] = useState(false);
+    const name = ` (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name)
+            || (identity.user.user_metadata.full_name) || "NoName";`
+           
+
+            
+    console.log(JSON.stringify(identity));
+    const isLoggedIn = identity && identity.isLoggedIn;
     return(
         <>
             <header>
@@ -61,11 +38,15 @@ const Header = () => {
                     <div className="nav-achat">
                         <ul>
                             <li>
-                                <Link onClick={() => setDialog(true)}> 
-                                    {isLoggedIn ? `Hello ${name}, Log out here!` : "Connexion"}
-                                </Link>
+                                <a onClick={() => setDialog(true)}> 
+                                    {isLoggedIn ? `Bonjour ${name} !` : "Connexion"}
+                                </a>
                             </li>
-                            <li><Link to ="/panier"><i className="fas fa-shopping-cart"></i></Link></li>
+                            <li>
+                                <a className="snipcart-checkout">   
+                                    <i className="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

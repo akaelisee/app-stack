@@ -35,11 +35,13 @@ import Footer from '../layout/footer';
 export const query = graphql`
     query ($path: String!) {
         markdownRemark(frontmatter: {path: {eq: $path}}) {
+          id
           frontmatter {
             title
             image
             description
             price
+            path
             size {
               name
             }

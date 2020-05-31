@@ -5,10 +5,6 @@ import { graphql } from 'gatsby';
 
 import Header from "../layout/header";
 import Footer from "../layout/footer";
-// import '../sass/style.scss';
-// import imageI from "../../static/assets/47372301.jpg";
-// import imageJ from "../../static/assets/cat-illustrations-004.jpg";
-// import imageK from "../../static/assets/huaweip30pro.jpg";
 
 const IndexPage = ({data}) => {
 // console.log(data)

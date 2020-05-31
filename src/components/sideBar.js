@@ -12,7 +12,7 @@ const SideBar = () => {
                     <Card.Body>
                         <p>NEWSLETTER</p>
                             <Card.Text>
-                                <Form className="form">
+                                <Form className="forme">
                                     <Form.Control size="lg" type="email" placeholder="email@example.com" />
                                 </Form>
                             </Card.Text>
@@ -55,7 +55,7 @@ const SideBar = () => {
 
 export const query = graphql`
  query  {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/entries/"}}, sort: {fields: frontmatter___created, order: DESC}, limit: 3) {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/entries/"}}, sort: {fields: frontmatter___created, order: DESC}, limit: 2) {
     edges {
       node {
         id

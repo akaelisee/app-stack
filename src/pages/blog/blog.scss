@@ -9,6 +9,13 @@
             margin: 0 auto;
             .detail-article{
                 margin-bottom: 25px;
+                .maparticle{
+                    margin-bottom: 30px;
+                    .date-article{
+                        margin: 15px 0 0 0;  
+                        // background: #000;
+                    }
+                }
             }
             .newsletter{
                 text-align: center;
@@ -17,7 +24,7 @@
                     font-size: 25px;
                     font-weight: 500;
                 }
-                .form{
+                .forme{
                     padding: 14px 0;
                 }
                 .recent{

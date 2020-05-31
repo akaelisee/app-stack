@@ -65,6 +65,13 @@ module.exports = {
         url: `https://inspiring-visvesvaraya-f559ca.netlify.app/`, // required!
       }
     },
+    {
+      resolve: `gatsby-plugin-snipcart`,
+      options: {
+        apiKey: 'NDc2MzVmZGUtZDI2Zi00NzZlLWExYmUtZDU1MTNmYTY5NmEzNjM3MjYxNTU5MzIxNTgxMTIw',
+        autopop: true,
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

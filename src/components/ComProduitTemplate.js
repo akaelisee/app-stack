@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 const ComProduitTemplate = (props) => {
 
     //Variable
-  let detail = props.children.markdownRemark.frontmatter;
+  let detail = props.children.markdownRemark;
   let detailSize = props.children.markdownRemark.frontmatter.size;
   let detailColor = props.children.markdownRemark.frontmatter.color;
 
@@ -73,24 +73,35 @@ const ComProduitTemplate = (props) => {
     return (
         <>
             <div className="group-detail">
-                      <div className="img-detail">
-                        <img src={detail.image} alt={detail.title} />
-                      </div>
-                      <div className="text-detail">
-                        <p>{detail.title}</p>
-                        <p>{detail.description}</p>
-                        <span>{detail.price} € </span>
+                <div className="img-detail">
+                  <img src={detail.frontmatter.image} alt={detail.frontmatter.title} />
+                </div>
+                <div className="text-detail">
+                  <p>{detail.frontmatter.title}</p>
+                  <p>{detail.frontmatter.description}</p>
+                  <span>{detail.frontmatter.price} € </span>
 
-                        <div className="select-detail">
-                          {detailListSize()}
-                          {detailListColor()}
-                          
-                        </div>
-                        <div className="button-panier">
-                          <Link to="/"> Ajouter au panier </Link>
-                        </div>
-                      </div>
+                  <div className="select-detail">
+                    {detailListSize()}
+                    {detailListColor()} 
                   </div>
+                  <div className="button-panier">
+                    <button
+                        className='snipcart-add-item'
+                        data-item-id={detail.id}
+                        data-item-price={detail.frontmatter.price}
+                        data-item-name={detail.frontmatter.title}
+                        data-item-description={detail.frontmatter.description}
+                        data-item-image={detail.frontmatter.image}
+                        data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app" + detail.frontmatter.path}
+                        data-item-custom1-name="Size"
+                        data-item-custom1-options="6|6.5|7|7.5|8|8.5|9"
+                        data-item-custom2-name="Color"
+                        data-item-custom2-options="Red|Blue|Gray" 
+                    > Ajouter au panier </button>  
+                  </div>
+                </div>
+            </div>
         </>
     )
 }

@@ -10,12 +10,13 @@ header{
     z-index: 1;
     nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         .logo{
             font-size: 30px;
             font-family: $fontLobster;
             font-weight: 400;
+            margin-left: 50px;
             a{
                 color: $colorWhite;
                 text-decoration: none;
@@ -48,11 +49,12 @@ header{
             }
         }
         .nav-achat{
+            margin-right: 45px;
             ul{
                 list-style: none;
                 li{
                     display: inline;
-                    padding: 0px 10px;
+                    padding: 0px 15px;
                     a{
                         text-decoration: none;
                         display: inline-block;
@@ -61,7 +63,13 @@ header{
                         font-weight: 400;
                         font-size: 16px;
                         padding-top: 14px;
+                        cursor: pointer;
+                        color: $colorWhite;
 
+                        &:hover{
+                            color: $colorWhite;
+                            opacity: 0.7;
+                        }
                     }
                 }
             }

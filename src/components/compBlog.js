@@ -11,7 +11,7 @@ const CompBlog = (props) => {
                     <div className="detail-article">
                         {
                             blog.map(({node}, index) => (
-                                <Card style= {{ width: "40rem"}} key={index}>
+                                <Card style= {{ width: "40rem"}} key={index} className="maparticle">
                                     <Card.Img variant="top" src={node.frontmatter.image} />
                                     <Card.Body>
                                         <Card.Title> {node.frontmatter.title} </Card.Title>
@@ -19,7 +19,7 @@ const CompBlog = (props) => {
                                                 {node.frontmatter.description}
                                             </Card.Text>
                                         <Button variant="primary">Go somewhere</Button>
-                                        <span>{node.frontmatter.created}</span>
+                                        <p className="date-article">{node.frontmatter.created}</p>
                                     </Card.Body>
                                 </Card>
                             ))
