@@ -25,7 +25,7 @@ const ComProduitTemplate = (props) => {
     if (detailSize){
       return(
         <Form>
-          <Form.Group controlId="exampleForm.SelectCustom">
+          <Form.Group controlId="exampleForm">
             <Form.Label>Taille :</Form.Label>
             <Form.Control as="select" custom>
               <option selected></option>
@@ -88,7 +88,8 @@ const ComProduitTemplate = (props) => {
                   <div className="button-panier">
                     <button
                         className='snipcart-add-item'
-                        data-item-id={detail.id}
+                        data-item-id={"12345ze"}
+                        // data-item-id={detail.id}
                         data-item-price={detail.frontmatter.price}
                         data-item-name={detail.frontmatter.title}
                         data-item-description={detail.frontmatter.description}
@@ -96,6 +97,9 @@ const ComProduitTemplate = (props) => {
                         data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
                     > Ajouter au panier </button>  
                   </div>
+                  {
+                    console.log(detail.id)
+                  }
                 </div>
             </div>
         </>
