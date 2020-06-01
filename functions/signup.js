@@ -36,7 +36,7 @@ module.exports.handler = (event, context, callback) => {
                 'Access-Control-Allow-Origin': '*'
             },
             body: JSON.stringify({
-                error: 'rtjirktgo'
+                error: err
             })
         }))
     })

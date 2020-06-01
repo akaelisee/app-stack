@@ -26,13 +26,15 @@ const Index = () => {
             }
           };
 
-        axios.post(`https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup`, {datas}, axiosConfig)
+        axios.post(`https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup`, datas, axiosConfig)
         .then(res => {
-            console.log(res);
-            console.log(res.data);
+            // console.log(res);
+            // console.log(res.data);
+            console.log("RESPONSE ==== : ", res);
         })
         .catch(err => {
-            console.log(err);
+            // console.log(err);
+            console.log("ERROR: ====", err);
         })
         // fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
         //     method: 'POST',
