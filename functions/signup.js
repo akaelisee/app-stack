@@ -19,7 +19,7 @@ module.exports.handler = (event, context, callback) => {
         }
     })
     .then((res) => {
-        callback(null, JSON.stringify({
+        callback(null, ({
             statusCode: 200,
             headers: {
                 'Access-Control-Allow-Origin': '*'
@@ -31,7 +31,7 @@ module.exports.handler = (event, context, callback) => {
         }))
     })
     .catch ((err) => {
-        callback(JSON.stringify({
+        callback(null, ({
             statusCode: err.status,
             headers: {
                 'Access-Control-Allow-Origin': '*'
