@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import handlers from '../../../functions/signup';
+import { navigate } from 'gatsby';
 const axios = require('axios');
+
 
 const Index = () => {
     const [inputForm, setInputForm] = useState({
@@ -15,44 +17,30 @@ const Index = () => {
 
     const submitForm = (e) => {
         e.preventDefault();
-       
+              
         const datas = { email: inputForm.email };
 
-        axios.post({
+        fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                "Access-Control-Allow-Origin": "*",
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             },
-            data: JSON.stringify({
-                email: inputForm.email
-            })
+            body: JSON.stringify( datas )
         })
-        .then(res => {
-            // console.log(res);
-            // console.log(res.data);
-            console.log(res);
-            // console.log(datas);
+        .then(response => {
+            if (response.data.msg === "successfully") {
+                    return navigate('../success');      
+            }else{
+                return alert("Bien passé mais pfff");
+            }
         })
         .catch(err => {
-            // console.log(err);
-            console.log(err);
-        })
-        // fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify( datas )
-        // })
-        // .then(response => {
-        //     console.log( response );
-        // })
-        // .catch(err => {
-        //     console.log( err );
-        // });
+            alert(err);
+        });
+
     }
+
     return (
         <div>
             <form onSubmit = {submitForm}>

@@ -4,7 +4,6 @@ import Footer from '../../layout/footer';
 import {Form, Col, Button} from 'react-bootstrap'
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-// import Link from '@material-ui/core/Link';
 import {Link} from 'gatsby'
 
 
@@ -44,17 +43,12 @@ const Index = () => {
                             </Form.Row>
 
                             <Form.Group controlId="formGridEmail">
-                                <Form.Label>Address</Form.Label>
-                                <Form.Control type="email" name="email" placeholder="1234 Main St" />
-                            </Form.Group>
-
-                            <Form.Group controlId="formGridAddress2">
-                                <Form.Label>Address 2</Form.Label>
-                                <Form.Control placeholder="Apartment, studio, or floor" />
+                                <Form.Label>Adresse mail</Form.Label>
+                                <Form.Control type="email" name="email" placeholder="Exemple@mail.co" />
                             </Form.Group>
 
                             <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Example textarea</Form.Label>
+                                <Form.Label>Commentaire</Form.Label>
                                 <Form.Control as="textarea" rows="3" />
                             </Form.Group>
 
