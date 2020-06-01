@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import handlers from '../../../functions/signup';
+const axios = require('axios');
+
 const Index = () => {
     const [inputForm, setInputForm] = useState({
         email: ""
@@ -16,20 +18,36 @@ const Index = () => {
        
         const datas = { email: inputForm.email };
 
-        fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
-            method: 'POST',
+        let axiosConfig = {
             headers: {
+                'Content-Type': 'application/json',
+                "Access-Control-Allow-Origin": "*",
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify( datas )
-        })
-        .then(response => {
-            console.log( response );
+            }
+          };
+
+        axios.post(`https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup`, {datas}, axiosConfig)
+        .then(res => {
+            console.log(res);
+            console.log(res.data);
         })
         .catch(err => {
-            console.log( err );
-        });
+            console.log(err);
+        })
+        // fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify( datas )
+        // })
+        // .then(response => {
+        //     console.log( response );
+        // })
+        // .catch(err => {
+        //     console.log( err );
+        // });
     }
     return (
         <div>
