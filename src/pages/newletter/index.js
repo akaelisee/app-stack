@@ -28,12 +28,9 @@ const Index = () => {
             },
             body: JSON.stringify( datas )
         })
-        .then(response => {
-            if (response.data.msg === "successfully") {
-                    return navigate('../success');      
-            }else{
-                return alert("Bien passé mais pfff");
-            }
+        .then(res => {
+            console.log(res);
+            return navigate('../success');
         })
         .catch(err => {
             alert(err);
