@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import handlers from '../../../functions/signup';
 const Index = () => {
     const [inputForm, setInputForm] = useState({
         email: ""
@@ -13,7 +13,17 @@ const Index = () => {
 
     const submitForm = (e) => {
         e.preventDefault();
-        console.log(inputForm);
+        handlers.handler({
+            email_address : inputForm.email,
+        },
+        (data) => {
+            if(data.error) {
+                alert('erreur');
+            }
+            else{
+                alert("ok");
+            }
+        })
     }
     return (
         <div>

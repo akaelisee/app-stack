@@ -1,10 +1,10 @@
 const axios = require('axios');
 
-module.exports.handler = (event, context, callback) => {
+module.exports.handler = (body, callback) => {
     const mailchimpApi = "7352456b713e735667462364ff7513d9-us8";
     const memberListId = "a8ff5ceece";
 
-    const formData = JSON.parse(event.body);
+    const formData = body;
 
     const data = {
         email_address: formData.email,
@@ -14,32 +14,26 @@ module.exports.handler = (event, context, callback) => {
     axios.post(`https://us8.api.mailchimp.com/3.0/lists/${memberListId}/members/`, data, {
         headers: {
             'Content-Type' : 'application-json',
-            'Authorization': `$apikey ${mailchimpApi}`
+            'Authorization': `apikey ${mailchimpApi}`,
+            'Access-Control-Allow-Origin' : '*'
         }
     })
     .then((res) => {
-        callback(null, {
+        callback({
+            error: res.data.status !== "subscribed",
             statusCode: 200,
-            body: JSON.stringify({
+            body: {
                 status: "Successfully"
-            })
+            }
         })
     })
     .catch ((err) => {
-        callback(null, {
+        callback({
+            error: true,
             statusCode: err.status,
             body: JSON.stringify({
-                error: err.response.data
+                error: err.message
             })
         })
     })
 }
-
-// const mailchimpApi = process.env.GATSBY_API_KEY;
-
-// exports.handler = (event, context, callback) => {
-//     fetch(`Contact avec API `, {
-//         method:"POST"
-//     })  https://us8.api.mailchimp.com/3.0/lists/a8ff5ceece/members/
-
-// }

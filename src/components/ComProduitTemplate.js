@@ -88,8 +88,7 @@ const ComProduitTemplate = (props) => {
                   <div className="button-panier">
                     <button
                         className='snipcart-add-item'
-                        data-item-id={"12345ze"}
-                        // data-item-id={detail.id}
+                        data-item-id={detail.id}
                         data-item-price={detail.frontmatter.price}
                         data-item-name={detail.frontmatter.title}
                         data-item-description={detail.frontmatter.description}
