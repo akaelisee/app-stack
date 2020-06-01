@@ -30,7 +30,7 @@ const Index = () => {
         })
         .then(res => {
             console.log(res);
-            return navigate('../success');
+            // return navigate('../success');
         })
         .catch(err => {
             alert(err);
