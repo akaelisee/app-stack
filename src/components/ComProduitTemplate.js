@@ -93,7 +93,7 @@ const ComProduitTemplate = (props) => {
                         data-item-name={detail.frontmatter.title}
                         data-item-description={detail.frontmatter.description}
                         data-item-image={detail.frontmatter.image}
-                        data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/"} 
+                        data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
                     > Ajouter au panier </button>  
                   </div>
                 </div>
