@@ -13,17 +13,23 @@ const Index = () => {
 
     const submitForm = (e) => {
         e.preventDefault();
-        handlers.handler({
-            email_address : inputForm.email,
-        },
-        (data) => {
-            if(data.error) {
-                alert('erreur');
-            }
-            else{
-                alert("ok");
-            }
+       
+        const datas = { email: inputForm.email };
+
+        fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify( datas )
         })
+        .then(response => {
+            console.log( response );
+        })
+        .catch(err => {
+            console.log( err );
+        });
     }
     return (
         <div>

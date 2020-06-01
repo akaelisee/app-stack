@@ -19,21 +19,26 @@ module.exports.handler = (event, context, callback) => {
         }
     })
     .then((res) => {
-        callback({
-            error: res.data.status !== "subscribed",
+        callback(null, JSON.stringify({
             statusCode: 200,
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            },
             body: {
-                status: "Successfully"
+                status: "Successfully",
+                error: res.data.status !== "subscribed",
             }
-        })
+        }))
     })
     .catch ((err) => {
-        callback({
-            error: true,
+        callback(JSON.stringify({
             statusCode: err.status,
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            },
             body: JSON.stringify({
-                error: err.response.message
+                error: err.response.status
             })
-        })
+        }))
     })
 }
