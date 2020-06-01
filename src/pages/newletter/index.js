@@ -18,23 +18,25 @@ const Index = () => {
        
         const datas = { email: inputForm.email };
 
-        let axiosConfig = {
+        axios.post({
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 "Access-Control-Allow-Origin": "*",
-                'Accept': 'application/json',
-            }
-          };
-
-        axios.post(`https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup`, datas, axiosConfig)
+            },
+            data: JSON.stringify({
+                email: inputForm.email
+            })
+        })
         .then(res => {
             // console.log(res);
             // console.log(res.data);
-            console.log("RESPONSE ==== : ", res);
+            console.log(res);
+            // console.log(datas);
         })
         .catch(err => {
             // console.log(err);
-            console.log("ERROR: ====", err);
+            console.log(err);
         })
         // fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
         //     method: 'POST',
