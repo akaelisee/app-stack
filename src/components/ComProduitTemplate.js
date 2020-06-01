@@ -93,15 +93,8 @@ const ComProduitTemplate = (props) => {
                         data-item-name={detail.frontmatter.title}
                         data-item-description={detail.frontmatter.description}
                         data-item-image={detail.frontmatter.image}
-                        data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path}
-                        // data-item-custom1-name="Size"
-                        // data-item-custom1-options="6|6.5|7|7.5|8|8.5|9"
-                        // data-item-custom2-name="Color"
-                        // data-item-custom2-options="Red|Blue|Gray" 
+                        data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/"} 
                     > Ajouter au panier </button>  
-                    {
-                      console.log("https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path)
-                    }
                   </div>
                 </div>
             </div>
