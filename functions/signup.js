@@ -1,10 +1,10 @@
 const axios = require('axios');
 
-module.exports.handler = (body, callback) => {
+module.exports.handler = (event, context, callback) => {
     const mailchimpApi = "7352456b713e735667462364ff7513d9-us8";
     const memberListId = "a8ff5ceece";
 
-    const formData = body;
+    const formData = JSON.parse(event.body);
 
     const data = {
         email_address: formData.email,
@@ -32,7 +32,7 @@ module.exports.handler = (body, callback) => {
             error: true,
             statusCode: err.status,
             body: JSON.stringify({
-                error: err.message
+                error: err.response.message
             })
         })
     })
