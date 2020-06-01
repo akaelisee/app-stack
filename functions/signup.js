@@ -24,10 +24,9 @@ module.exports.handler = (event, context, callback) => {
             headers: {
                 'Access-Control-Allow-Origin': '*'
             },
-            body: {
-                status: "Successfully",
-                error: res.data.status !== "subscribed",
-            }
+            body: JSON.stringify({
+                status: "Successfully"
+            })
         }))
     })
     .catch ((err) => {
@@ -37,7 +36,7 @@ module.exports.handler = (event, context, callback) => {
                 'Access-Control-Allow-Origin': '*'
             },
             body: JSON.stringify({
-                error: err.response.status
+                error: 'rtjirktgo'
             })
         }))
     })
