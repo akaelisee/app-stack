@@ -1,0 +1,60 @@
+@import '../../sass/theme/font';
+@import '../../sass/helpers/variables';
+
+.panier-group{
+    padding: 115px 0;
+    display: flex;
+    justify-content: space-between;
+    // width: 70%;
+    width: 58em;
+    margin: 0 auto;
+    // background: #000;
+    position: relative;
+    .panier-article{
+        margin-right: 15px;
+        .content-panier{
+            text-align: center;
+            padding: 150px 0px 200px 0px;
+
+            .panier-vide{
+                i{
+                    border: 1px solid $colorBlack;
+                    padding: 18px 18px;
+                    border-radius: 50%;
+                }
+                p{
+                    margin: 15px 0 25px;
+                }
+                a{
+                    background-color: #2FB7EC;
+                    color: $colorWhite;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #0098D3;
+                    }
+                }
+            }
+        }
+    }
+    .panier-paye{
+        margin-left: 15px;
+        .btn-cart{
+            text-align: center;
+            margin: 25px 0;
+            a{
+                background-color: $colorGreyAchat;
+                color: $colorWhite;
+                    padding: 10px 40px;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: $colorGreyAchatPur;
+                    }
+            }
+        }
+    }
+}

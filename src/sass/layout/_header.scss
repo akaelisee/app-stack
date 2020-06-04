@@ -1,0 +1,100 @@
+@import '../helpers/variables';
+@import '../theme/font';
+
+header{
+    background-color: $colorDarkBlue;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-size: 30px;
+            font-family: $fontLobster;
+            font-weight: 400;
+            margin-left: 50px;
+            a{
+                color: $colorWhite;
+                text-decoration: none;
+
+                &:hover{
+                    color: $colorEmeraud;
+                }
+            }
+        }
+        .nav-item{
+            ul{
+                list-style: none;
+                
+                li{
+                    display: inline;
+                    padding: 0px 25px;
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        color: $colorWhite;
+                        font-family: $fontMontserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        padding-top: 15px;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-achat{
+            margin-right: 45px;
+            ul{
+                float: left;
+                li{
+                    float: left;
+                    list-style: none;
+                    position: relative;
+                    a{
+                        display: block;
+                        padding: 10px 20px 0 0;
+                        color: $colorWhite;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-size: 18px;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+
+                    ul{
+                        display: none;
+                        position: absolute;
+                        left: -15px;
+                        padding: 28px 0;
+                        li{
+                            margin: 0 1px;
+                            a{
+                                padding: 12px 15px;
+                                margin: 1px 0;
+                                background: $colorDarkBlue;
+                                width: 160px;
+                                text-decoration: none;
+                                &:hover{
+                                    color: $colorBlack;
+                                    background-color: #ddd;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover ul{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+  
+}

@@ -6,12 +6,193 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: product
-    label: Produit
-    folder: products
+  #Chaussure 
+  - name: shoe
+    label: Chaussures 
+    folder: Chaussures
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { name: title, required: true, label: Titre}
       - { name: price, required: true, label: Prix}
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+          
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+  # Vêtement
+  - name: clothe
+    label: Vêtements 
+    folder: Vetements
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+          
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+  
+# Phone Tab
+  - name: phontab
+    label: Téléphone et Tablette 
+    folder: Téléphone et Tablette
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+  
+  
+  # Informatique and High tech
+  - name: infotechs
+    label: Informatique et High tech 
+    folder: Informatique et High tech 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+  # tv
+  - name: tv
+    label: Télevision
+    folder: Télevision
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+  
+  # Bijou and sacs
+  - name: bijsac
+    label: Bijoux et Sacs
+    folder: Bijoux et Sacs
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: description, required: true, label: Description, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+      - label: couleur
+        name: color
+        widget: list
+        required: true
+        fields:
+          - {label: Name, name: name, widget: string, required: true}
+
+   # Blog
+  # - name: blog
+  #   label: blog
+  #   folder: templateKay/blog
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   create: true
+  #   fields:
+  #     # - { name: title, required: true, label: Titre}
+  #     # - { name: date, required: true, label: Date, widget: date, format: 'MMM Do YY', default: ''}
+  #     # - { name: description, required: true, label: Description, widget: markdown}
+  #     # - { name: image, required: true, label: Image, widget: image}
+  #     - { name: path, required: false, label: Path}
+
+  - name: blog
+    label: Blog
+    folder: src/templateKey/blog/entries
+    create: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: blogTitle
+    editor:
+      preview: false
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "src/templateKey/blog/index.js"}
+      -
+        label: Titre
+        name: title
+        widget: string
+      -
+        label: 'Image'
+        name: image
+        widget: image
+        allow_multiple: false
+      -
+        label: Path
+        name: path
+        required: false
+      -
+        label: Description
+        name: description
+        widget: markdown
+      -
+        label: "Created"
+        name: "created"
+        widget: "datetime"

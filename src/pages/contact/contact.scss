@@ -1,0 +1,31 @@
+@import '../../sass/theme/font';
+@import '../../sass/helpers/variables';
+
+.contact{
+    .group-contact{
+        padding: 120px 0;
+    }
+    .breadcrumbs{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .title-contact{
+        margin: 25px auto;
+        width: 80%;
+        text-align: center;
+        background-color: #F1F1F1;
+        padding: 60px 0;
+        h3{
+            font-size: 45px;
+        }
+    }
+    .contact-item{
+        width: 70%;
+        margin: 30px auto;
+        border: 1px solid $colorWhiteNav;
+        border-radius: 5px;
+        .form-contact{
+            margin: 35px;
+        }
+    }
+}

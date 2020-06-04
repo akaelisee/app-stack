@@ -1,0 +1,22 @@
+@import './helpers/reset';
+@import './base/base';
+@import './helpers/variables';
+@import './theme/font';
+@import './layout/header';
+@import '../pages/blog/blog.scss';
+@import '../pages/panier/panier.scss';
+@import '../pages/contact/contact.scss';
+@import '../pages/account/account.scss';
+@import './pages/catalogue';
+@import './pages/homepage';
+@import '../template/template';
+@import './layout/footer';
+
+
+.form{
+    .RNIW_formGroup{
+        label{
+            width: 100%;
+        }
+    }
+}

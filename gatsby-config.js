@@ -8,12 +8,70 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-remark-source-name`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        name: `shoe`,
+        path: `${__dirname}/Chaussures`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `clothes`,
+        path: `${__dirname}/Vetements`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `phontab`,
+        path: `${__dirname}/Téléphone et Tablette`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `Infotech`,
+        path: `${__dirname}/Informatique et High tech`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tv`,
+        path: `${__dirname}/Télevision`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bijsac`,
+        path: `${__dirname}/Bijoux et Sacs`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/templateKey/blog`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://inspiring-visvesvaraya-f559ca.netlify.app/`, // required!
+      }
+    },
+    {
+      resolve: `gatsby-plugin-snipcart`,
+      options: {
+        apiKey: 'NDc2MzVmZGUtZDI2Zi00NzZlLWExYmUtZDU1MTNmYTY5NmEzNjM3MjYxNTU5MzIxNTgxMTIw',
+        autopop: true,
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

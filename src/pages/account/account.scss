@@ -1,0 +1,42 @@
+@import '../../sass/theme/font';
+@import '../../sass/helpers/variables';
+
+.group-account{
+    padding: 120px 0;
+    .account-item{
+        width: 60%;
+        margin: 0 auto;
+        .content-account{
+            width: 80%;
+            // background: #000;
+            margin: 25px auto;
+            .paramettre{
+                width: 50%;
+                margin: 45px auto;
+                text-align: center;
+                button{
+                    border: none;
+                    padding: 12px 15px;
+                    background-color: #BDE7F8;
+                    border-radius: 5px;
+                    font-size: 19px;
+                    font-weight: 600;
+                }
+                p:nth-child(1){
+                    // border: 1px solid $colorBlack;
+                    padding: 17px 11px;
+                    color: #2FB7EC;
+                    width: 88px;
+                    margin: 10px auto;
+                    background-color: #BDE7F8;
+                    border-radius: 50%;
+                    font-size: 33px;
+                    font-weight: 600;
+                }
+                span{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
