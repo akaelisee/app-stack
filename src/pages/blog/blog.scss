@@ -5,55 +5,192 @@
     .group-blog{
         padding: 120px 0;
         .blog-detail{
-            width: 69em;
+            width: 72em;
             margin: 0 auto;
-            .detail-article{
-                margin-bottom: 25px;
-                .maparticle{
-                    margin-bottom: 30px;
-                    .date-article{
-                        margin: 15px 0 0 0;  
-                        // background: #000;
-                    }
+            .title-blog{
+                width: 60%;
+                margin: 5px auto 60px auto;
+                text-align: center;
+                h1{
+                    margin: 0;
                 }
             }
-            .newsletter{
-                text-align: center;
-                margin-bottom: 25px;
-                p{
-                    font-size: 25px;
-                    font-weight: 500;
-                }
-                .forme{
-                    padding: 14px 0;
-                }
-                .recent{
-                    p{
-                        margin-top: 16px;
-                    }
-                }
-                span{
-                    margin: 25px 0;
-                    background: #000;
-                    font-size: 18px;
-                }
-                .btn-link{
-                    margin: 15px 0;
-                    text-decoration: none;
-
-                    a{
-                        font-size: 20px;
-                        background-color: $colorEmeraud;
-                        padding: 10px 20px;
-                        border-radius: 5px;
+            .detail-article{
+                position: relative;
+                display: grid;
+                grid-template-columns: 46% 46%;
+                row-gap: 40px;
+                column-gap: 30px;
+                .article-item{
+                    .suite{
                         text-decoration: none;
-                        color: $colorWhite;
-                        &:hover{
-                            opacity: 0.8;
+                        color: $colorEmeraud;
+                        span{
+                            font-size: 17px;
+                            font-weight: 600;
                         }
+                    }
+                    .img-item{
+                        img{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                    .title-item{
+                        margin: 20px 0 10px 0;
+                        a{
+                            text-decoration: none;
+                            color: $colorBlack;
+                            transition: all 0.4s;
+
+                            span{
+                                margin: 0;
+                                font-size: 18px;
+                                font-family: $fontMontserrat;
+                                font-weight: 700;
+                            }
+
+                            &:hover{
+                                transition: all 0.4s ease-in-out;
+                                color: $colorEmeraud;
+                            }
+                        }
+                    }
+                    .date-item{
+                        margin-bottom: 15px;
+                        span{
+                            font-size: 12px;
+                            font-family: $fontPoppins;
+                        }
+                    }
+                    .desc-item{
+                        display: -webkit-box;
+                        line-height: 25px;
+                        max-height: 80px;
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        font-family: $fontMontserrat;
+                        // font-size: 16px;
                     }
                 }
             }
         }
     }
 }
+
+
+// a{
+//     text-decoration: none;
+//     color: $colorBlack;
+// }
+// margin-bottom: 25px;
+// margin-left: 25px;
+// img{
+//     height: 300px;
+// }
+// .desc-task{
+//     display: -webkit-box;
+//     line-height: 25px;
+//     max-height: 80px;
+//     white-space: normal;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     line-clamp: 3;
+//     -webkit-box-orient: vertical;
+// }
+// .maparticle{
+//     margin-bottom: 30px;
+//     .date-article{
+//         margin: 15px 0 0 0; 
+//     }
+// }
+
+//Newletter
+
+.newsletter{
+    text-align: center;
+    margin-bottom: 25px;
+    p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .forme{
+        padding: 0px 0;
+    }
+    .recent{
+        p{
+            margin-top: 16px;
+        }
+    }
+    span{
+        margin: 25px 0;
+        background: #000;
+        font-size: 18px;
+    }
+    .btn-link{
+        margin: 20px 0 0 0;
+        text-decoration: none;
+
+        button{
+            font-size: 20px;
+            background-color: $colorEmeraud;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+            color: $colorWhite;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+// Success
+.success{
+    // background: #f00;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+
+    .btn{
+        margin: 10px 0;
+        .btn-home{
+            font-size: 18px;
+            background-color: $colorBlueBlackRefaire;
+            padding: 6px 10px;
+            margin: 0 15px;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+            color: $colorWhite;
+            &:hover{
+                opacity: 0.8;
+            }   
+        }
+        .btn-blog{
+            font-size: 18px;
+            background-color: $colorBlueBlackRefaire;
+            padding: 6px 10px;
+            // margin: 0 15px;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+            color: $colorWhite;
+            &:hover{
+                opacity: 0.8;
+            }   
+        }
+    }
+}
+
+
+
+
+

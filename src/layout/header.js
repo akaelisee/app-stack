@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import {useState} from "react";
 import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget";
 import "react-netlify-identity-widget/styles.css";
-import {BuyButton} from 'gatsby-plugin-snipcart'
 
 
 const Header = () => {
@@ -12,14 +11,45 @@ const Header = () => {
 
     const identity = useIdentityContext();
     const [dialog, setDialog] = useState(false);
-    const name = `(identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name) || identity.user.user_metadata.full_name    
-             || "NoName";`
-           
+    
+    const funcIdentity = () =>{
 
-            
-    console.log(JSON.stringify(identity));
-    // console.log(identity.user.user_metadata.full_name);
-    const isLoggedIn = identity && identity.isLoggedIn;
+        if(identity.user) {
+
+            return identity && identity.user ?(
+                <ul>
+                    <li>
+                        <a onClick={() => setDialog(true)}>Bonjour, {identity.user.user_metadata.full_name} !</a>
+                        <ul>
+                            <li><Link to="/account">Mon Compte</Link></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a className="snipcart-checkout">   
+                            <i className="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            ): null
+        }else{
+            return (
+                <ul>
+                    <li>
+                        <a onClick={() => setDialog(true)}>Connexion</a>
+                        <ul>
+                            <li><a onClick={() => setDialog(true)}>Inscrivez-vous</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a className="snipcart-checkout">   
+                            <i className="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            )
+        }
+    }
+
     return(
         <>
             <header>
@@ -36,19 +66,9 @@ const Header = () => {
                             <li><Link to ="/contact">Contact</Link></li>
                         </ul>
                     </div>
+                    {/* <Identify /> */}
                     <div className="nav-achat">
-                        <ul>
-                            <li>
-                                <a onClick={() => setDialog(true)}> 
-                                    {isLoggedIn ? `Bonjour ${name} !` : "Connexion"}
-                                </a>
-                            </li>
-                            <li>
-                                <a className="snipcart-checkout">   
-                                    <i className="fas fa-shopping-cart"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        {funcIdentity()}   
                     </div>
                 </nav>
             </header>

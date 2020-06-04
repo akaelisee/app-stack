@@ -1,6 +1,7 @@
 import React from 'react';
-import {Form} from 'react-bootstrap';
-import { Link } from 'gatsby';
+import {Form, Popover, OverlayTrigger} from 'react-bootstrap';
+import { useIdentityContext } from "react-netlify-identity-widget";;
+
 
 
 const ComProduitTemplate = (props) => {
@@ -70,6 +71,45 @@ const ComProduitTemplate = (props) => {
     }
   }
 
+
+  // identity
+  const identity = useIdentityContext();
+
+  // Modal
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Title as="h3">Connexion</Popover.Title>
+      <Popover.Content>
+        Veuillez créer <strong>un compte</strong> avant la suite du processus &#128515;.
+      </Popover.Content>
+    </Popover>
+  );
+
+  const Button = () => {
+    if(identity.user){
+      return(
+        <button
+          className='snipcart-add-item'
+          data-item-id={detail.id}
+          data-item-price={detail.frontmatter.price}
+          data-item-name={detail.frontmatter.title}
+          data-item-description={detail.frontmatter.description}
+          data-item-image={detail.frontmatter.image}
+          data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
+      > Ajouter au panier </button> 
+      )
+    }
+    else{
+      return(
+        <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+            <button> Ajouter au panier </button>
+        </OverlayTrigger>
+      )
+    }
+  };
+
+
+
     return (
         <>
             <div className="group-detail">
@@ -86,15 +126,7 @@ const ComProduitTemplate = (props) => {
                     {detailListColor()} 
                   </div>
                   <div className="button-panier">
-                    <button
-                        className='snipcart-add-item'
-                        data-item-id={detail.id}
-                        data-item-price={detail.frontmatter.price}
-                        data-item-name={detail.frontmatter.title}
-                        data-item-description={detail.frontmatter.description}
-                        data-item-image={detail.frontmatter.image}
-                        data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
-                    > Ajouter au panier </button>  
+                    <Button />
                   </div>
                   {
                     console.log(detail.id)

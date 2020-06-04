@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../layout/header';
 import Footer from '../../layout/footer';
-import {Form, Col, Button} from 'react-bootstrap'
+import {Form, Button} from 'react-bootstrap'
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import {Link} from 'gatsby'
@@ -30,17 +30,10 @@ const Index = () => {
                 <div className="contact-item">
                     <div className="form-contact">
                         <Form action="/success" name="contact" method="POST" data-netlify="true">
-                            <Form.Row>
-                                <Form.Group as={Col} controlId="formGridEmail">
-                                    <Form.Label>Prénom</Form.Label>
-                                    <Form.Control type="text" name="firstName" placeholder="Prénom" />
-                                </Form.Group>
-
-                                <Form.Group as={Col}>
-                                    <Form.Label>Nom</Form.Label>
-                                    <Form.Control type="text" name="lastName" placeholder="Nom" />
-                                </Form.Group>
-                            </Form.Row>
+                            <Form.Group  controlId="formGridEmail">
+                                <Form.Label>Nom Complét</Form.Label>
+                                <Form.Control type="text" name="firstName" placeholder="Prénom" />
+                            </Form.Group>
 
                             <Form.Group controlId="formGridEmail">
                                 <Form.Label>Adresse mail</Form.Label>
@@ -49,7 +42,7 @@ const Index = () => {
 
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Commentaire</Form.Label>
-                                <Form.Control as="textarea" rows="3" />
+                                <Form.Control as="textarea" rows="3" name="description"/>
                             </Form.Group>
 
                             <input type="hidden" name="form-name" value="contact"/>

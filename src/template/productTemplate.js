@@ -4,7 +4,6 @@ import {Tab, Tabs} from 'react-bootstrap';
 import ComProduitTemplate from '../components/ComProduitTemplate';
 import Header from '../layout/header';
 import Footer from '../layout/footer';
-
  const ProduitTemplate = ({data}) => {
 
   const [key, setKey] = useState('home');

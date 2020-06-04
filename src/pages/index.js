@@ -1,18 +1,15 @@
 import React from "react"
-// import { Link } from "gatsby"
 import {Carousel} from "react-bootstrap";
 import { graphql } from 'gatsby';
-
 import Header from "../layout/header";
 import Footer from "../layout/footer";
 
 const IndexPage = ({data}) => {
-// console.log(data)
+
   return (
     <div className="homepage">
       <Header />
       <div className="body-homepage">
-
         <div className="title-shop">
           <p>Bienvenue dans ma boutique en ligne</p> 
           <p>Exclusive</p> 

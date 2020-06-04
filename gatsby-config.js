@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-catch-links`,
     `gatsby-remark-source-name`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -68,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-snipcart`,
       options: {
-        apiKey: process.env.SNIPCART_API,
+        apiKey: 'NDc2MzVmZGUtZDI2Zi00NzZlLWExYmUtZDU1MTNmYTY5NmEzNjM3MjYxNTU5MzIxNTgxMTIw',
         autopop: true,
       }
     },

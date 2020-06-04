@@ -1,10 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import {Card, Form} from 'react-bootstrap';
-import {Link} from 'gatsby';
+import { navigate } from 'gatsby';
+
 import imageAvert from '../sass/image/57936514-avertissement.jpg'
 
 const SideBar = () => {
+
+    const [inputForm, setInputForm] = useState({
+        email: ""
+    })
+
+    const handleChange = (e) => {
+        setInputForm({
+            [e.target.name] : e.target.value
+        })
+    }
+
+
+    const submitForm = (e) =>{
+        e.preventDefault();
+        const datas = { email: inputForm.email };
+
+        fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify( datas )
+        })
+        .then(res => {
+            // console.log(res);
+            return navigate('./success');
+        })
+        .catch(err => {
+            alert(err);
+        });
+    }
     return (
         <>
             <div className="newsletter">
@@ -12,13 +45,20 @@ const SideBar = () => {
                     <Card.Body>
                         <p>NEWSLETTER</p>
                             <Card.Text>
-                                <Form className="forme">
-                                    <Form.Control size="lg" type="email" placeholder="email@example.com" />
+                                <Form className="forme" onSubmit={submitForm}>
+                                    <Form.Control size="lg" 
+                                        type="email" 
+                                        value = {inputForm.email} 
+                                        name="email" 
+                                        onChange={handleChange} 
+                                        placeholder="email@example.com" 
+                                    />
+
+                                    <div className="btn-link">
+                                        <button type="submit">Souscrire</button>
+                                    </div>
                                 </Form>
                             </Card.Text>
-                            <div className="btn-link">
-                                <Link to="/">Souscrire</Link>
-                            </div>
                     </Card.Body>
                 </Card>
             </div>
