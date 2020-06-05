@@ -4,8 +4,7 @@ title: "Carte de crédit : description et fonctionnement réels"
 title1: MON AVIS SUR LA DÉCENNIE 2020-2030 À VENIR, EN E-COMMERCE
 image: /assets/woman-holding-card-while-operating-silver-laptop-919436.jpg
 image1: /assets/person-counting-money-with-smartphones-in-front-on-desk-210990.jpg
-path: Top 13 centres commerciaux et outlets où faire votre shopping à Paris et
-  en Ile-de-France
+path: "Carte de crédit : description et fonctionnement réels"
 description: "Apple vient de présenter sa future carte de crédit, sobrement
   dénommé Applecard, réservée pour l’instant au marché américain. L’occasion
   idéale pour faire un point sur ces fameuses cartes de crédit.\r
