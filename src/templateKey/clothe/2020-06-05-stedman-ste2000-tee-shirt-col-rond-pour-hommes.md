@@ -10,7 +10,7 @@ description: "Composition : 100% coton ring-spun; jersey simple \r
   Tailles : S-4XL\r
 
   Température de lavage : lavable à 40°C"
-image: /assets/man-in-black-crew-neck-shirt-and-blue-distressed-jeans-1129019.jpg
+image: /assets/adult-beanie-beautiful-beauty-206434.jpg
 path: Stedman STE2000 - Tee-shirt col rond pour hommes
 size:
   color:
