@@ -10,7 +10,7 @@ description: "\r
   de mieux contrôler l’environnement lumineux. La technologie HNCS exclusive à
   Hasselblad vous permet de capturer des photos aériennes de 20 mégapixels avec
   un niveau de détail extraordinaire."
-image: /assets/white-and-gray-quadcopter-on-ground-997131.jpg
+image: /assets/drone-flying-against-blue-sky-336232.jpg
 path: Drone Mavic 2 Pro de DJI
 color:
   color:
