@@ -3,6 +3,7 @@ templateKey: src/templateKey/blog/index.js
 title: Top 13 centres commerciaux et outlets où faire votre shopping à Paris et
   en Ile-de-France
 title1: Les Centres Commerciaux dans Paris
+auteur: "Joseph "
 image: /assets/adult-beautiful-elegant-eyewear-291762.jpg
 image1: /assets/assorted-gift-boxes-on-brown-wooden-floor-surface-1050244.jpg
 path: Top 13 centres commerciaux et outlets où faire votre shopping à Paris et
