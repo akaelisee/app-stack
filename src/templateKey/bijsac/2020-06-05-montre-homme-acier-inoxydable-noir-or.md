@@ -3,7 +3,7 @@ title: Montre Homme Acier Inoxydable Noir Or
 price: 49,00
 description: Montre Homme Acier Inoxydable Noir Or Montres pour Hommes élégant
   Quartz Analogique Chronographe Étanche Bande en Maille Milanaise
-image: /assets/adult-box-case-collection-380782.jpg
+image: /assets/casio-ground-macro-time-266666.jpg
 path: Montre Homme Acier Inoxydable Noir Or
 size:
   color:
