@@ -3,6 +3,7 @@ templateKey: src/pages/blog/index.js
 title: "On ne pourra pas restructurer tous les centres commerciaux de France :
   les améliorer, si !"
 title1: Visite du Dubaï Mall, le plus grand centre commercial du monde
+auteur: Victoire Kouassi
 image: /assets/aerial-shot-of-stalls-2622170.jpg
 image1: /assets/grayscale-photo-of-people-at-market-945982.jpg
 path: "On ne pourra pas restructurer tous les centres commerciaux de France :
