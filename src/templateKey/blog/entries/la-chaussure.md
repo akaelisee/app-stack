@@ -2,6 +2,7 @@
 templateKey: src/pages/blog/index.js
 title: Trouver le bon accessoire avec ses vêtements ethniques
 title1: Les accessoires de mode
+auteur: Albertine prisca
 image: /assets/close-up-of-shoes-and-bag-336372.jpg
 image1: /assets/classic-clothes-commerce-fashion-298863.jpg
 path: Trouver le bon accessoire avec ses vêtements ethniques
