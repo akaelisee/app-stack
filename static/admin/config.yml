@@ -277,6 +277,10 @@ collections:
         name: title1
         widget: string
       -
+        label: Auteur
+        name: auteur 
+        widget: string
+      -
         label: 'Image'
         name: image
         widget: image
