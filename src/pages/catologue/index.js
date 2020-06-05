@@ -11,85 +11,85 @@ import Header from '../../layout/header';
 import Footer from '../../layout/footer';
 
 
- // 
-//  const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   title: {
-//     flexGrow: 1,
-//     display: 'none',
-//     [theme.breakpoints.up('sm')]: {
-//       display: 'block',
-//     },
-//     color: 'black'
-//   },
-//   search: {
-//     position: 'relative',
-//     borderRadius: theme.shape.borderRadius,
-//     backgroundColor: fade(theme.palette.common.white, 0.15),
-//     '&:hover': {
-//       backgroundColor: fade(theme.palette.common.white, 0.25),
-//     },
-//     marginLeft: 0,
-//     border: '1px solid black',
+ 
+ const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  title: {
+    flexGrow: 1,
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+    color: 'black'
+  },
+  search: {
+    position: 'relative',
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: fade(theme.palette.common.white, 0.15),
+    '&:hover': {
+      backgroundColor: fade(theme.palette.common.white, 0.25),
+    },
+    marginLeft: 0,
+    border: '1px solid black',
 
-//     width: '100%',
-//     [theme.breakpoints.up('sm')]: {
-//       marginLeft: theme.spacing(1),
-//       width: 'auto',
-//     },
-//   },
-//   searchIcon: {
-//     padding: theme.spacing(0, 2),
-//     height: '100%',
-//     position: 'absolute',
-//     pointerEvents: 'none',
-//     display: 'flex',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//     color: 'black',
-//   },
-//   inputRoot: {
-//     color: 'black',
-//   },
-//   inputInput: {
-//     padding: theme.spacing(1, 1, 1, 0),
-//     // vertical padding + font size from searchIcon
-//     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-//     transition: theme.transitions.create('width'),
-//     width: '100%',
-//     [theme.breakpoints.up('sm')]: {
-//       width: '12ch',
-//       '&:focus': {
-//         width: '20ch',
-//       },
-//     },
-//   },
-// }));
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      marginLeft: theme.spacing(1),
+      width: 'auto',
+    },
+  },
+  searchIcon: {
+    padding: theme.spacing(0, 2),
+    height: '100%',
+    position: 'absolute',
+    pointerEvents: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'black',
+  },
+  inputRoot: {
+    color: 'black',
+  },
+  inputInput: {
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
+    transition: theme.transitions.create('width'),
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      width: '12ch',
+      '&:focus': {
+        width: '20ch',
+      },
+    },
+  },
+}));
 
 const Index = ({data}) => {
-  // console.log(data.allMarkdownRemark)
-  // const classes = useStyles();
+  console.log(data.allMarkdownRemark)
+  const classes = useStyles();
 
-  // const [inputForm, setInputForm] = useState({ search: ""});
-  // const [filterProduct, setFilterProduct] = useState([]);
+  const [inputForm, setInputForm] = useState({ search: ""});
+  const [filterProduct, setFilterProduct] = useState([]);
 
-  // const handleChange = (e) => {
-  //   setInputForm({
-  //     search: e.target.value
-  //   })
-  // }
+  const handleChange = (e) => {
+    setInputForm({
+      search: e.target.value
+    })
+  }
 
-  // useEffect(()=> {
-  //     setFilterProduct(
-  //       data.allMarkdownRemark.edges.filter(
-  //         (node) => {
-  //             return node.node.frontmatter.title.toLowerCase().includes( inputForm.search.toLowerCase() )
-  //         }
-  //     )
-  //   )
-  // }, [inputForm.search, data.allMarkdownRemark.edges])
+  useEffect(()=> {
+      setFilterProduct(
+        data.allMarkdownRemark.edges.filter(
+          (node) => {
+              return node.node.frontmatter.title.toLowerCase().includes( inputForm.search.toLowerCase() )
+          }
+      )
+    )
+  }, [inputForm.search, data.allMarkdownRemark.edges])
 
 
     return (
@@ -99,9 +99,9 @@ const Index = ({data}) => {
 
             {/* Header */}
             <Header />
-              bien
+              
             {/* input search */}
-            {/* <div className="content-catalogue">
+            <div className="content-catalogue">
               <div className="catalogue-search">
                 <div className={classes.root}>
                   <AppBar position="static" style={{backgroundColor: "white"}}>
@@ -128,10 +128,10 @@ const Index = ({data}) => {
                     </Toolbar>
                   </AppBar>
                 </div>
-            </div> */}
+            </div>
 
             {/* product-item */}
-            {/* <div className="right-catalogue">
+            <div className="right-catalogue">
                 <div className="produits">
                     <div className="title">
                         <p className="title"> Produit</p>
@@ -151,35 +151,35 @@ const Index = ({data}) => {
                   </div>
                 </div>
             </div>
-          </div> */}
+          </div>
 
             {/* Footer */}
-            {/* <Footer />     */}
+            <Footer />    
         </div>
       </>
     )
 }
 
-// export const query = graphql`
-// query {
-//   allMarkdownRemark (filter: {fields: {sourceName: {ne: "blog"}}}){
-//     edges {
-//       node {
-//         frontmatter {
-//           title
-//           description
-//           image
-//           path
-//           price
-//         }
-//         fields {
-//           sourceName
-//         }
-//         fileAbsolutePath
-//       }
-//     }
-//     totalCount
-//   }
-// }
-// `
+export const query = graphql`
+query {
+  allMarkdownRemark (filter: {fields: {sourceName: {ne: "blog"}}}){
+    edges {
+      node {
+        frontmatter {
+          title
+          description
+          image
+          path
+          price
+        }
+        fields {
+          sourceName
+        }
+        fileAbsolutePath
+      }
+    }
+    totalCount
+  }
+}
+`
 export default Index

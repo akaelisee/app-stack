@@ -13,11 +13,12 @@ const ComProduitTemplate = (props) => {
 
   // Funcion map size
   const funcSize = () => {
-    return (
-          detailSize.map((item, i) => (
-            <option key={i}>{item.name}</option>
-          ))
-        )
+    // return (
+    //       // detailSize.map((item, i) => (
+    //       //   <option key={i}>{item.name}</option>
+    //       // ))
+          
+    //     )
   }
 
   //Fonction Detail size
@@ -28,10 +29,10 @@ const ComProduitTemplate = (props) => {
         <Form>
           <Form.Group controlId="exampleForm">
             <Form.Label>Taille :</Form.Label>
-            <Form.Control as="select" custom>
+            {/* <Form.Control as="select" custom>
               <option selected></option>
               {funcSize()}
-            </Form.Control>
+            </Form.Control> */}
           </Form.Group>
       </Form>
       )
@@ -44,11 +45,11 @@ const ComProduitTemplate = (props) => {
   
   // Funcion map color
   const funcColor = () => {
-    return (
-          detailColor.map((item, i) => (
-            <option key={i}>{item.name}</option>
-          ))
-        )
+    // return (
+    //       detailColor.map((item, i) => (
+    //         <option key={i}>{item.name}</option>
+    //       ))
+    //     )
   }
    
   //Fonction Detail Color
@@ -61,7 +62,7 @@ const ComProduitTemplate = (props) => {
             <Form.Label>Color :</Form.Label>
             <Form.Control as="select" custom>
               <option selected></option>
-              {funcColor()}
+              {/* {funcColor()} */}
             </Form.Control>
           </Form.Group>
       </Form>
