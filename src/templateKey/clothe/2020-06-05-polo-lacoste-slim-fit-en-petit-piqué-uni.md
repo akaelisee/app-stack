@@ -6,7 +6,7 @@ description: Essentiel incontournable du vestiaire de saison, ce polo est
   chino en toile de coton et une paire de sneakers de la collection. Choisissez
   votre taille habituelle, si vous hésitez entre deux tailles, nous vous
   conseillons de prendre la taille au-dessus.
-image: /assets/man-wearing-blue-lacoste-polo-shirt-and-silver-colored-1232459.jpg
+image: /assets/smiling-woman-looking-upright-standing-against-yellow-wall-1536619.jpg
 path: Polo Lacoste slim fit en petit piqué uni
 size:
   color:
