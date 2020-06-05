@@ -2,6 +2,7 @@
 templateKey: src/templateKey/blog/index.js
 title: BIJOUX FÊTE DES MÈRES
 title1: Bijou fantaisie de qualité comment le reconnaître ?
+auteur: Aka Marina
 image: /assets/close-up-photography-of-blue-earrings-1413420.jpg
 image1: /assets/silver-colored-pendant-with-green-gemstone-1458867.jpg
 path: BIJOUX FÊTE DES MÈRES
