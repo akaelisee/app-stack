@@ -3,6 +3,7 @@ templateKey: src/templateKey/blog/index.js
 title: Comment protéger son téléphone des hackers
 title1: "Cloud computing : définition, intérêts et exemples d’applications –
   Geek mais pas que"
+auteur: Julien
 image: /assets/man-wearing-hoodie-forming-chakra-wallpaper-1694348.jpg
 image1: /assets/person-holding-pendant-light-973506.jpg
 path: Comment protéger son téléphone des hackers
