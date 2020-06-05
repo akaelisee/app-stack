@@ -6,11 +6,14 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+
   #Chaussure 
   - name: shoe
     label: Chaussures 
-    folder: Chaussures
+    folder: src/templateKey/shoe
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -20,23 +23,44 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
-          
+          - {
+              label: size, 
+              name: size, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["40", "41", "42", "43", "44"]
+            }
       - label: couleur
         name: color
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
+          - {
+              label: color, 
+              name: color, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["Rouge", "noir", "gris", "blanc", "violet"]
+            }
+      - label: "Created"
+        name: "created"
+        widget: "datetime"
+
 
   # Vêtement
   - name: clothe
     label: Vêtements 
-    folder: Vetements
+    folder: src/templateKey/clothe
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -46,23 +70,44 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
-          
-      - label: couleur
-        name: color
-        widget: list
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-  
+          - {
+              label: size, 
+              name: size, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["S", "M", "X", "xl", "xxl"]
+            }
+          - label: couleur
+            name: color
+            widget: object
+            required: true
+            fields:
+              - {label: Name, name: name, widget: string, required: true}
+              - {
+                  label: color, 
+                  name: color, 
+                  widget: select, 
+                  required: true, 
+                  multiple: true, 
+                  options: ["Rouge", "noir", "gris", "blanc", "violet"]
+                }
+          - label: "Created"
+            name: "created"
+            widget: "datetime"
+
+
 # Phone Tab
   - name: phontab
     label: Téléphone et Tablette 
-    folder: Téléphone et Tablette
+    folder: src/templateKey/phontab
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -70,20 +115,32 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
-
       - label: couleur
         name: color
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
+          - {
+              label: color, 
+              name: color, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["Rouge", "noir", "gris", "blanc", "violet"]
+            }
+      - label: "Created"
+        name: "created"
+        widget: "datetime"
   
   
   # Informatique and High tech
-  - name: infotechs
+  - name: infotech
     label: Informatique et High tech 
-    folder: Informatique et High tech 
+    folder: src/templateKey/infotech
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     create: true
     fields:
       - { name: title, required: true, label: Titre}
@@ -91,18 +148,28 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
-
       - label: couleur
         name: color
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
+          - {
+              label: color, 
+              name: color, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["Rouge", "noir", "gris", "blanc", "violet"]
+            }
+      - label: "Created"
+        name: "created"
+        widget: "datetime"
 
   # tv
   - name: tv
     label: Télevision
-    folder: Télevision
+    folder: src/templateKey/tv
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
@@ -113,22 +180,41 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
+          - {
+              label: size, 
+              name: size, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["45", "80", "100", "150", "180"]
+            }
+          - label: couleur
+            name: color
+            widget: object
+            required: true
+            fields:
+              - {label: Name, name: name, widget: string, required: true}
+              - {
+                  label: color, 
+                  name: color, 
+                  widget: select, 
+                  required: true, 
+                  multiple: true, 
+                  options: ["Rouge", "noir", "gris", "blanc"]
+                }
+          - label: "Created"
+            name: "created"
+            widget: "datetime"
 
-      - label: couleur
-        name: color
-        widget: list
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
   
   # Bijou and sacs
   - name: bijsac
     label: Bijoux et Sacs
-    folder: Bijoux et Sacs
+    folder: src/templateKey/bijsac
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
@@ -139,30 +225,37 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: list
+        widget: object
         required: true
         fields:
           - {label: Name, name: name, widget: string, required: true}
+          - {
+              label: size, 
+              name: size, 
+              widget: select, 
+              required: true, 
+              multiple: true, 
+              options: ["S", "M", "X", "xl", "xxl"]
+            }
+          - label: couleur
+            name: color
+            widget: object
+            required: true
+            fields:
+              - {label: Name, name: name, widget: string, required: true}
+              - {
+                  label: color, 
+                  name: color, 
+                  widget: select, 
+                  required: true, 
+                  multiple: true, 
+                  options: ["Rouge", "noir", "gris", "blanc", "violet", "bleu", "marron"]
+                }
+          - label: "Created"
+            name: "created"
+            widget: "datetime"
 
-      - label: couleur
-        name: color
-        widget: list
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-
-   # Blog
-  # - name: blog
-  #   label: blog
-  #   folder: templateKay/blog
-  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-  #   create: true
-  #   fields:
-  #     # - { name: title, required: true, label: Titre}
-  #     # - { name: date, required: true, label: Date, widget: date, format: 'MMM Do YY', default: ''}
-  #     # - { name: description, required: true, label: Description, widget: markdown}
-  #     # - { name: image, required: true, label: Image, widget: image}
-  #     - { name: path, required: false, label: Path}
+ 
 
   - name: blog
     label: Blog
@@ -180,8 +273,17 @@ collections:
         name: title
         widget: string
       -
+        label: Titre1
+        name: title1
+        widget: string
+      -
         label: 'Image'
         name: image
+        widget: image
+        allow_multiple: false
+      -
+        label: 'Image1'
+        name: image1
         widget: image
         allow_multiple: false
       -
@@ -191,6 +293,10 @@ collections:
       -
         label: Description
         name: description
+        widget: markdown
+      -
+        label: Description1
+        name: description1
         widget: markdown
       -
         label: "Created"

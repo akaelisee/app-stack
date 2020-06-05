@@ -15,42 +15,42 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `shoe`,
-        path: `${__dirname}/Chaussures`,
+        path: `${__dirname}/src/templateKey/shoe`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `clothes`,
-        path: `${__dirname}/Vetements`,
+        path: `${__dirname}/src/templateKey/clothe`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `phontab`,
-        path: `${__dirname}/Téléphone et Tablette`,
+        path: `${__dirname}/src/templateKey/phontab`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `Infotech`,
-        path: `${__dirname}/Informatique et High tech`,
+        path: `${__dirname}/src/templateKey/infotech`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `tv`,
-        path: `${__dirname}/Télevision`,
+        path: `${__dirname}/src/templateKey/tv`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `bijsac`,
-        path: `${__dirname}/Bijoux et Sacs`,
+        path: `${__dirname}/src/templateKey/bijsac`,
       }
     },
     {
