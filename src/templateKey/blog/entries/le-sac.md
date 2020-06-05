@@ -2,6 +2,7 @@
 templateKey: src/pages/blog/index.js
 title: Best Laptops For Bloggers To Buy in 2020
 title1: Best Laptop for Bloggers, Tech and Gaming Reviewers
+auteur: Anoh Génevieve
 image: /assets/apple-technology-ipad-computer-38568.jpg
 image1: /assets/thoughtful-female-freelancer-watching-laptop-in-light-room-4050437.jpg
 path: Best Laptops For Bloggers To Buy in 2020
