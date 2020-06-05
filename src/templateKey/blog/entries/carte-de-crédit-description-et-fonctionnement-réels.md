@@ -2,6 +2,7 @@
 templateKey: src/templateKey/blog/index.js
 title: "Carte de crédit : description et fonctionnement réels"
 title1: MON AVIS SUR LA DÉCENNIE 2020-2030 À VENIR, EN E-COMMERCE
+auteur: Elisee Jean et Pacôme
 image: /assets/woman-holding-card-while-operating-silver-laptop-919436.jpg
 image1: /assets/person-counting-money-with-smartphones-in-front-on-desk-210990.jpg
 path: "Carte de crédit : description et fonctionnement réels"
