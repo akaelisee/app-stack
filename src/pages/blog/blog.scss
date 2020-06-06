@@ -1,80 +1,75 @@
 @import '../../sass/theme/font';
 @import '../../sass/helpers/variables';
 
-.blog{
-    .group-blog{
-        padding: 120px 0;
-        .blog-detail{
-            width: 72em;
-            margin: 0 auto;
-            .title-blog{
-                width: 60%;
-                margin: 5px auto 60px auto;
-                text-align: center;
-                h1{
-                    margin: 0;
-                }
+.container{
+    .blog-detail{
+        .title-blog{
+            width: 60%;
+            margin: 5px auto 60px auto;
+            text-align: center;
+            h1{
+                margin: 0;
             }
-            .detail-article{
-                position: relative;
-                display: grid;
-                grid-template-columns: 46% 46%;
-                row-gap: 40px;
-                column-gap: 30px;
-                .article-item{
-                    .suite{
+        }
+        .detail-article{
+            position: relative;
+            display: grid;
+            grid-template-columns: 46% 46%;
+            row-gap: 40px;
+            column-gap: 30px;
+            .article-item{
+                .suite{
+                    text-decoration: none;
+                    color: $colorEmeraud;
+                    span{
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                }
+                .img-item{
+                    img{
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+                .title-item{
+                    margin: 20px 0 10px 0;
+                    a{
                         text-decoration: none;
-                        color: $colorEmeraud;
-                        span{
-                            font-size: 17px;
-                            font-weight: 600;
-                        }
-                    }
-                    .img-item{
-                        img{
-                            width: 100%;
-                            height: 200px;
-                        }
-                    }
-                    .title-item{
-                        margin: 20px 0 10px 0;
-                        a{
-                            text-decoration: none;
-                            color: $colorBlack;
-                            transition: all 0.4s;
+                        color: $colorBlack;
+                        transition: all 0.4s;
 
-                            span{
-                                margin: 0;
-                                font-size: 18px;
-                                font-family: $fontMontserrat;
-                                font-weight: 700;
-                            }
-
-                            &:hover{
-                                transition: all 0.4s ease-in-out;
-                                color: $colorEmeraud;
-                            }
-                        }
-                    }
-                    .date-item{
-                        margin-bottom: 15px;
                         span{
-                            font-size: 12px;
-                            font-family: $fontPoppins;
+                            margin: 0;
+                            font-size: 18px;
+                            font-family: $fontMontserrat;
+                            font-weight: 700;
+                        }
+
+                        &:hover{
+                            transition: all 0.4s ease-in-out;
+                            color: $colorEmeraud;
                         }
                     }
-                    .desc-item{
-                        display: -webkit-box;
-                        line-height: 25px;
-                        max-height: 80px;
-                        white-space: normal;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        line-clamp: 3;
-                        -webkit-box-orient: vertical;
-                        font-family: $fontMontserrat;
-                        // font-size: 16px;
+                }
+                .date-item{
+                    margin-bottom: 15px;
+                    span{
+                        font-size: 12px;
+                        font-family: $fontPoppins;
                     }
+                }
+                .desc-item{
+                    display: -webkit-box;
+                    line-height: 25px;
+                    max-height: 80px;
+                    white-space: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    font-family: $fontMontserrat;
+                    // font-size: 16px;
                 }
             }
         }

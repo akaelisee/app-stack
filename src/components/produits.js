@@ -12,7 +12,7 @@ const Produits = (props) => {
                     <img src={produit.image} alt="imagea"/>
                     <div className="cards-title">
                         <p>{produit.title}</p>
-                        <span>{produit.price}</span>
+                        <span>{produit.price} € </span>
                     </div>
                 </Link>
             </div>

@@ -6,19 +6,19 @@ import Footer from '../../layout/footer';
 
 const Index = ({data}) => {
     return (
-        <div className='blog'>
+        <>
            <Header/>
-            <div className='group-blog'>
-                <CompBlog  children= {data}/>
-            </div>
+                <div className='container'>
+                    <CompBlog  children= {data}/>
+                </div>
            <Footer />
-        </div>
+        </>
     )
 }
 
 export const query = graphql`
     query {
-        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/entries/"}}, sort: {fields: frontmatter___created, order: ASC}) {
+        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/"}}, sort: {fields: frontmatter___created, order: ASC}) {
         edges {
             node {
             frontmatter {

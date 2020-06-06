@@ -2,76 +2,44 @@
 @import '../theme/font';
 
 .footer-downl{
-    background-color: $colorDarkBlue;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100px;
-    position: relative;
-    z-index: 2;
-    .logo-footer{
-        padding-left: 170px;
-        a{
-            color: $colorEmeraud;
-            font-family: $fontLobster;
-            font-size: 20px;
-            text-decoration: none;
+    // background-color: $colorBlue;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    .footer-logo{
+        p{
+            margin: 0;
+            text-align: center;
+            a{
+                font-size: 30px;
+                font-family: $fontLobster;
+                color: #24929A;
+                text-decoration: none;
+                &:hover{
+                    color: rgb(26, 194, 194);
+                }
+                span{
+                    font-size: 30px;
+                    font-family: $fontMetal;
+                }
+            }
         }
     }
     .copy{
-        text-align: center;
-        p{
-            margin: 0;	
-            color: $colorWhite;	
-            font-family: $fontMontserrat;	
-            font-size: 13px;	
-            letter-spacing: 1.86px;
-        }
-    }
-
-    .social-footer{
-        text-align: end;
-        padding-right: 40px;
+        margin: 1px 0;
         ul{
-            padding: 0;
-            margin: 0;
-
+            display: flex;
+            justify-content: center;
             li{
-                display: inline-block;
                 list-style: none;
-                padding: 10px;
-
-               
-
+                padding: 0px 17px;
+                font-size: 18px;
                 a{
-                    padding: 10px;
-                    border: 2px solid $colorWhite;
-                    border-radius: 50%;
-                    color : $colorWhite
-                }
-                .facebook{
-                    padding: 12px 16px;
-                    
-                    &:hover{
-                        color: $colorFacebook;
-                        border: 2px solid $colorFacebook;
-                    }
-                }
-                .linkedin{
-                    padding: 12px 14px;
-                    &:hover{
-                        color: $colorLinkedin;
-                        border: 2px solid $colorLinkedin;
-
-                    }
-                }
-                .twitter{
-                    padding: 12px 13px;
-                    &:hover{
-                        color: $colorTwitter;
-                        border: 2px solid $colorTwitter;
-
-                    }
+                    color: $colorBlack;
+                    text-decoration: none;
+                    font-weight: 500;
+                    // padding: 10px 17px;
                 }
             }
         }

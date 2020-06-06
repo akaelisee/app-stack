@@ -7,45 +7,50 @@ import "react-netlify-identity-widget/styles.css";
 
 const Header = () => {
 
+    //Variable
+    const identity = useIdentityContext();
+    
+    // Variable UseState
+    const [dialog, setDialog] = useState(false);
+
+   
+        // Responsible NavBar
+        const navBar = () => {
+           let element = document.querySelectorAll(".item");
+           let elementToggle = document.querySelector(".toggle");
+           if(element){
+               let li_array = Array.prototype.slice.call(element);
+               li_array.forEach(element => {
+                   element.classList.toggle("active")
+               });
+               elementToggle.classList.toggle("toggle-tab")
+           } 
+        }
+
+
     // initNetlifyIdentity()
 
-    const identity = useIdentityContext();
-    const [dialog, setDialog] = useState(false);
-    
     const funcIdentity = () =>{
 
         if(identity.user) {
 
             return identity && identity.user ?(
-                <ul>
-                    <li>
-                        <a onClick={() => setDialog(true)}>Bonjour, {identity.user.user_metadata.full_name} !</a>
-                        <ul>
+
+                    <li className="btne item account">
+                         <a onClick={() => setDialog(true)}>Bonjour, {identity.user.user_metadata.full_name} !</a>
+                         <ul className="show" >
                             <li><Link to="/account">Mon Compte</Link></li>
                         </ul>
                     </li>
-                    <li>
-                        <a className="snipcart-checkout">   
-                            <i className="fas fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                </ul>
             ): null
         }else{
             return (
-                <ul>
-                    <li>
-                        <a onClick={() => setDialog(true)}>Connexion</a>
-                        <ul>
-                            <li><a onClick={() => setDialog(true)}>Inscrivez-vous</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a className="snipcart-checkout">   
-                            <i className="fas fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                </ul>
+                <li className="btne item account">
+                    <a onClick={() => setDialog(true)}> Connexion </a>
+                    <ul>
+                        <li><a onClick={() => setDialog(true)}>Inscrivez-vous</a></li>
+                    </ul>
+                </li>
             )
         }
     }
@@ -55,21 +60,18 @@ const Header = () => {
             <header>
                 {/* <NetlifyIdentity /> */}
                 <nav className="nav-bar">
-                    <div className="logo">
-                        <Link to ="">E. SHOP</Link>
-                    </div>
-                    <div className ="nav-item">
-                        <ul>
-                            <li><Link to ="/">Accueil</Link></li>
-                            <li><Link to ="/catologue">Nos produits</Link></li>
-                            <li><Link to ="/blog">Blog</Link></li>
-                            <li><Link to ="/contact">Contact</Link></li>
-                        </ul>
-                    </div>
-                    {/* <Identify /> */}
-                    <div className="nav-achat">
-                        {funcIdentity()}   
-                    </div>
+                    <ul className="menu">
+                        <li className="logo"><Link to ="/">Ak<span>Shop</span> </Link></li>
+                        <li className="item"><Link to ="/" >Accueil</Link></li>
+                        <li className="item"><Link to ="/catologue">Nos produits</Link></li>
+                        <li className="item"><Link to ="/blog">Blog</Link></li>
+                        <li className="item"><Link to ="/contact">Contact</Link></li>
+                            {
+                                funcIdentity()
+                            }
+                        <li className="btne snipcart-checkout item "><a><i className="fas fa-shopping-cart"></i></a></li>
+                        <li className="toggle" onClick={navBar}><i className="fas fa-bars"></i></li>
+                    </ul>
                 </nav>
             </header>
             <IdentityModal showDialog={dialog} onCloseDialog={() => setDialog(false)} />

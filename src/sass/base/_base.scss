@@ -1,8 +1,9 @@
 @import '../helpers/variables';
 
 body{
-    font-size: 16px;
-    margin: 0;
-    background-color: #f1f1f1;
-
+    font-size: 16px !important;
+    margin: 0 !important;
+    background-color: #f1f1f1 !important;
+    min-height: 100vh !important;
+    position: relative !important;
 }

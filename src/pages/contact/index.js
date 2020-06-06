@@ -10,8 +10,9 @@ import {Link} from 'gatsby'
 const Index = () => {
   
     return (
-        <div className="contact">
-            <Header /> 
+        <>
+        <Header /> 
+        <div className="container">
             <div className='group-contact'>
                 <div className="breadcrumbs">
                     <Breadcrumbs aria-label="breadcrumb">
@@ -32,7 +33,7 @@ const Index = () => {
                         <Form action="/success" name="contact" method="POST" data-netlify="true">
                             <Form.Group  controlId="formGridEmail">
                                 <Form.Label>Nom Complét</Form.Label>
-                                <Form.Control type="text" name="firstName" placeholder="Prénom" />
+                                <Form.Control type="text" name="firstName" placeholder="Albert Jean" />
                             </Form.Group>
 
                             <Form.Group controlId="formGridEmail">
@@ -47,15 +48,16 @@ const Index = () => {
 
                             <input type="hidden" name="form-name" value="contact"/>
 
-                            <Button variant="primary" type="submit">
+                            <Button variant="" type="submit" style={{background: "teal", color: "#fff"}} >
                                 Envoyer
                             </Button>
                         </Form>
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
+        <Footer />
+        </>
     )
 }
 

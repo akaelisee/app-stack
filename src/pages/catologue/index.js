@@ -54,7 +54,7 @@ import Footer from '../../layout/footer';
     color: 'black',
   },
   inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
+    padding: theme.spacing(2, 1, 2, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create('width'),
@@ -94,12 +94,9 @@ const Index = ({data}) => {
 
     return (
       <>
+        <Header />
 
-        <div className="catalogue">
-
-            {/* Header */}
-            <Header />
-              
+        <div className="container">  
             {/* input search */}
             <div className="content-catalogue">
               <div className="catalogue-search">
@@ -132,30 +129,30 @@ const Index = ({data}) => {
 
             {/* product-item */}
             <div className="right-catalogue">
-                <div className="produits">
-                    <div className="title">
-                        <p className="title"> Produit</p>
-                        <span> {data.allMarkdownRemark.totalCount} Résultats</span>
-                    </div>
-                    <hr/>
-                </div>
-                <div className="cards">
-                  <div className="produit-item">
-                    {
-                      filterProduct.map(({node}, index) => {
-                        return(
-                          <Produits node={node.frontmatter} key={index}/> 
-                        )
-                      })
-                    }
+              <div className="produits">
+                  <div className="title">
+                      <p className="title"> Produit</p>
+                      <span> {data.allMarkdownRemark.totalCount} Résultats</span>
                   </div>
-                </div>
+                  <hr/>
+              </div>
+            </div>
+            
+            {/*  */}
+            <div className="cards">
+              <div className="produit-item">
+                {
+                  filterProduct.map(({node}, index) => {
+                    return(
+                      <Produits node={node.frontmatter} key={index}/> 
+                    )
+                  })
+                }
+              </div>
             </div>
           </div>
-
-            {/* Footer */}
-            <Footer />    
         </div>
+      <Footer />    
       </>
     )
 }

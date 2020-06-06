@@ -2,99 +2,200 @@
 @import '../theme/font';
 
 header{
-    background-color: $colorDarkBlue;
-    padding: 10px 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
     nav{
+        background: $colorDarkBlue;
+        padding: 0px 20px;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        color: $colorWhite;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .menu{
+
+        .account{
+            position: relative;
+            a{
+                background-color: teal;
+                border-radius: 50em;
+                border: 1px solid #006d6d;
+                color: $colorWhite;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            ul{
+                display: none;
+                position: absolute;
+                left: -40px;
+                transition: all 0.5s ease;
+
+                @media all and (max-width: 615px){
+                    top: 46.5px;
+                    left: 110px;
+                }
+
+                li{
+                    margin: 0 1px;
+                    a{
+                        border-radius: 0 0 5px 5px;
+                        padding: 12px 15px;
+                        margin: 1px 0;
+                        background: $colorDarkBlue;
+                        width: 160px;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                        &:hover{
+                            color: $colorWhite;
+                            transition: all 0.5s ease;
+                            // opacity: 0.9;
+                        }
+                    }
+                }
+            }
+
+            &:hover ul{
+                transition: all 0.5s ease;
+                display: block;
+            }
+        }
+        // Mobile Menu
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            font-size: 30px;
-            font-family: $fontLobster;
-            font-weight: 400;
-            margin-left: 50px;
+
+        li{
+            font-size: 18px;
+            padding: 15px 5px;
             a{
                 color: $colorWhite;
-                text-decoration: none;
-
+                display: block;
                 &:hover{
-                    color: $colorEmeraud;
+                    opacity: 0.6;
                 }
             }
         }
-        .nav-item{
-            ul{
-                list-style: none;
+        .logo {
+            a{
+                font-size: 30px;
+                font-family: $fontLobster;
+
                 
-                li{
-                    display: inline;
-                    padding: 0px 25px;
-                    a{
-                        text-decoration: none;
-                        display: inline-block;
-                        color: $colorWhite;
-                        font-family: $fontMontserrat;
-                        font-weight: 400;
-                        font-size: 16px;
-                        padding-top: 15px;
-                        &:hover{
-                            opacity: 0.7;
-                        }
+                &:hover{
+                    color: rgb(26, 194, 194);
+                }
+
+                span{
+                    font-size: 30px;
+                    font-family: $fontMetal;
+                }
+            }
+        }
+        .toggle{
+            cursor: pointer;
+            font-size: 30px;
+            color: $colorWhite;
+        }
+
+        .item.btne{
+            order: 2;
+            cursor: pointer;
+
+        }
+        
+        .item{
+            width: 100%;
+            text-align: center;
+            order: 3;
+            display: none;
+            transition: all 0.4s;
+
+        }
+        .active{
+            transition: all 0.4s;
+            width: 100%;
+            text-align: center;
+            order: 1;
+            display: block;
+        }
+        // End phone
+
+        // Tablet Menu 
+        @media all and (min-width: 615px) {
+            justify-content: center;
+            .logo{
+                color: $colorWhite;
+                flex: 1;
+                a{
+                    width: 120px;
+                }
+                // color: $colorDarkBlue;
+            }
+            .item.btne{
+                width: auto;
+                order: 1;
+                display: block;
+            }
+            .toggle{
+                order: 2;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+            .toggle-tab{
+                order: 0;
+            }
+            .btne.snipcart-checkout{
+                border: none;
+            }
+            .btne{
+                a{
+                    padding: 7px 15px;
+                    color: $colorWhite;
+                    &:hover{
+                        opacity: 0.6;
                     }
                 }
             }
         }
-        .nav-achat{
-            margin-right: 45px;
-            ul{
-                float: left;
-                li{
-                    float: left;
-                    list-style: none;
-                    position: relative;
-                    a{
-                        display: block;
-                        padding: 10px 20px 0 0;
-                        color: $colorWhite;
-                        text-decoration: none;
-                        cursor: pointer;
-                        font-size: 18px;
-                        &:hover{
-                            opacity: 0.8;
-                        }
-                    }
+        // End Tablet
 
-                    ul{
-                        display: none;
-                        position: absolute;
-                        left: -15px;
-                        padding: 28px 0;
-                        li{
-                            margin: 0 1px;
-                            a{
-                                padding: 12px 15px;
-                                margin: 1px 0;
-                                background: $colorDarkBlue;
-                                width: 160px;
-                                text-decoration: none;
-                                &:hover{
-                                    color: $colorBlack;
-                                    background-color: #ddd;
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover ul{
-                        display: block;
-                    }
-                }
+        // Pc
+        @media all and (min-width: 820px){
+            .item{
+                display: block;
+                width: auto;
+            }
+            .toggle{
+                display: none;
+            }
+            .logo{
+                order: 0;
+            }
+            .item{
+                order: 1;
+            }
+            .btne{
+                order: 2;
+            }
+            .snipcart-checkout{
+                cursor: pointer;
+            }
+            li{
+                padding: 15px 10px;
+            }
+            li.btne{
+                padding-right: 0;
             }
         }
+
+        // End Pc
     }
   
 }

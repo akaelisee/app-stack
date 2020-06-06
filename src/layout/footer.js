@@ -1,21 +1,21 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Footer = () => {
     return (
         <footer className = "footer-downl">
-            <div className="logo-footer">
-                <a href="/"> E. SHOP </a>
+            <div className="footer-logo">
+                <p className="logo"><Link to ="/">Ak<span>Shop</span> </Link></p>
             </div>
             <div className="copy">
-                <p>Copyright 2020</p>
-            </div>
-            <div className = "social-footer">
                 <ul>
-                <li> <a href = "/" className = "facebook"><i className="fab fa-facebook-f"></i></a></li>
-                <li> <a href = "/" className = "twitter"><i className="fab fa-twitter"></i></a></li>
-                <li> <a href = "/" className = "linkedin"> <i className="fab fa-linkedin-in"></i></a></li>
+                    <li className="item"><Link to ="/" >Accueil</Link></li>.
+                    <li className="item"><Link to ="/catologue">Produits</Link></li>.
+                    <li className="item"><Link to ="/blog">Blog</Link></li>.
+                    <li className="item"><Link to ="/contact">Contact</Link></li>
                 </ul>
             </div>
+                
         </footer>
     )
 }

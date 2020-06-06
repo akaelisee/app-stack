@@ -7,13 +7,10 @@ import Footer from "../layout/footer";
 const IndexPage = ({data}) => {
 
   return (
-    <div className="homepage">
+    <>
       <Header />
-      <div className="body-homepage">
-        <div className="title-shop">
-          <p>Bienvenue dans ma boutique en ligne</p> 
-          <p>Exclusive</p> 
-        </div>
+
+      <div className="container">
         <div className="slide">
           <Carousel>
             {
@@ -26,7 +23,7 @@ const IndexPage = ({data}) => {
                   />
                   <Carousel.Caption className="title-slide">
                     <h3>{node.frontmatter.title}</h3>
-                    <p>{node.frontmatter.description}</p>
+                    <p>{node.frontmatter.price} $</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 
@@ -36,24 +33,36 @@ const IndexPage = ({data}) => {
         </div>
         <div className="about">
             <h2>A propos de nous</h2>
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-
+            <div className="flex">
+              <p>
+                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content
+                  and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story
+                  and let your users know a little more about you.
+              </p>
+              <p>
+                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content
+                  and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story
+                  and let your users know a little more about you.
+              </p>
+            </div>
         </div>
       </div>
+
     <Footer />
-  </div>
+  </>
   )
 }
 
 export const query = graphql`
 query {
-  allMarkdownRemark(limit: 10) {
+  allMarkdownRemark(sort: {fields: frontmatter___created, order: DESC}, limit: 10) {
     edges {
       node {
         frontmatter {
           description
           image
           title
+          price
         }
       }
     }
