@@ -35,5 +35,5 @@ description1: "Le plus ? Le Ice Cube Bar (à ne pas confondre avec le Ice Kube
   venant des quatre coins du globe. Autres points forts: la restauration qui,
   peu importe le restaurant dans lequel vous irez, sera de qualité, et la vue
   sur Paris depuis les toits des Galeries."
-created: 2020-06-05T04:25:53.318Z
+created: 2020-06-05 04:25:53
 ---

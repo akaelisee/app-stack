@@ -39,5 +39,5 @@ description1: "L’accessoire de mode, ou comment donner à ses vêtements le d�
   multiplient tout au long des défilés et se collectionnent au fil des saisons.
   Le tout est de savoir les assortir à sa tenue, de ne pas tomber dans la
   surabondance ou le mauvais goût, et de laisser s’exprimer sa créativité."
-created: 2020-06-05T04:48:36.691Z
+created: 2020-06-05 04:48:36
 ---

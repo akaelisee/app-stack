@@ -39,5 +39,5 @@ description1: "Le cloud computing consiste à utiliser un serveur externe pour
   d’avoir par exemple, des ordinateurs sans disque dur, toutes les données
   (fichiers, logiciels, etc…) étant accessibles sur le cloud. Les applications
   de cette technologie sont multiples."
-created: 2020-06-05T04:39:06.795Z
+created: 2020-06-05 04:39:06
 ---

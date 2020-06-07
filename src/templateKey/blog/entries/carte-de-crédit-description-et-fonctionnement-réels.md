@@ -67,5 +67,5 @@ description1: "Pour répondre à cette question sans partir dans des idées
   parlais en amont de cet article : les fondamentaux ne changeront pas : se
   faire livrer vite, par un marchand de confiance et à un prix en dessous du
   marché."
-created: 2020-06-05T04:32:31.194Z
+created: 2020-06-05 04:32:31
 ---

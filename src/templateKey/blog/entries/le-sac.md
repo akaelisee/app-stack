@@ -57,5 +57,5 @@ description1: "A common notion prevails that make people believe that bloggers
   including Ethernet, HDMI, multiple USB ports and headphone jack for your
   gaming/reviewing needs. The heat vents help keep the laptop cool even when
   under pressure."
-created: 2020-06-05T04:56:43.116Z
+created: 2020-06-05 04:56:43
 ---

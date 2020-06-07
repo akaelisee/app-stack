@@ -57,5 +57,5 @@ description1: A Dubaï, le loisir numéro un, c’est le shopping. L’avantage,
   centre commercial… A côté, Châtelet-les-Halles à Paris (deux tapis roulants)
   fait vraiment figure de petite station de campagne. Visite des lieux insolites
   et spectaculaires qu’on peut dénicher à Dubaï Mall.
-created: 2020-06-05T04:53:00.757Z
+created: 2020-06-05 04:53:00
 ---

@@ -60,5 +60,5 @@ description1: "Comment reconnaître un bijou fantaisie en perles de qualité ?\r
   le sentir. En revanche, les fausses perles ont une surface totalement lisse.
   Mais attention, pour assurer la fiabilité de ce test, il est nécessaire
   d’avoir les dents bien propres."
-created: 2020-06-05T04:43:01.739Z
+created: 2020-06-05 04:43:01
 ---
