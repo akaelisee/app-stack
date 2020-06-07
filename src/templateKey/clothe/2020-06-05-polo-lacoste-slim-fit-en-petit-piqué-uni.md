@@ -1,5 +1,5 @@
 ---
-title: Polo Lacoste slim fit en petit piqué uni
+title: Jean Lacoste slim fit en petit piqué uni
 price: "50"
 description: Essentiel incontournable du vestiaire de saison, ce polo est
   confectionné dans l'iconique petit piqué de coton Lacoste. Parfait avec un
@@ -9,14 +9,9 @@ description: Essentiel incontournable du vestiaire de saison, ce polo est
 image: /assets/smiling-woman-looking-upright-standing-against-yellow-wall-1536619.jpg
 path: polo-lacoste-slim-fit-en-petit-piqué-uni
 size:
-  color:
-    color:
-      - gris
-      - blanc
-    name: Couleur
-  created: 2020-06-05T03:31:40.185Z
-  name: Taille
-  size:
-    - S
-    - X
+  - M
+  - xl
+color:
+  - blanc
+created: 2020-06-07T01:12:40.934Z
 ---
