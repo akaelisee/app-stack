@@ -6,13 +6,6 @@ description: 4A 32 pouces Contrôle vocal DVB-T2 / C 1 Go RAM 8 Go ROM 5G WIFI
 image: /assets/boy-standing-in-front-of-flat-screen-tv-1682519.jpg
 path: xiaomi-mi-tv
 size:
-  color:
-    color:
-      - noir
-    name: Couleur
-  created: 2020-06-05T04:03:24.466Z
-  name: Taille
-  size:
-    - "45"
-    - "100"
+  - "45"
+created: 2020-06-07T01:17:30.089Z
 ---
