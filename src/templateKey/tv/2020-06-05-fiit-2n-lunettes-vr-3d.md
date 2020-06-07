@@ -6,12 +6,6 @@ description: Fiit 2N lunettes VR 3D Lunettes Virtual Reality Headset vrbox Head
 image: /assets/kid-using-virtual-reality-headset-3405456.jpg
 path: fiit-2n-lunettes-vr-3d
 size:
-  color:
-    color:
-      - noir
-    name: Couleur
-  created: 2020-06-05T04:08:39.083Z
-  name: Taille
-  size:
-    - "45"
+  - "25"
+created: 2020-06-07T01:17:58.863Z
 ---
