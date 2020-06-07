@@ -6,12 +6,6 @@ description: Cawono tout en un 3D VR Glassess Headset VR boîte avec Wifi
 image: /assets/woman-in-orange-and-pink-long-sleeve-shirt-holding-black-and-3761196.jpg
 path: cawono-tout-en-un-3d-vr
 size:
-  color:
-    color:
-      - noir
-    name: Couleur
-  created: 2020-06-05T04:11:51.311Z
-  name: Taille
-  size:
-    - "45"
+  - "25"
+created: 2020-06-07T01:18:10.368Z
 ---
