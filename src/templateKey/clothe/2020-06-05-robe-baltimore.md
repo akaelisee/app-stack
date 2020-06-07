@@ -21,16 +21,9 @@ description: "Matière et entretien\r
 image: /assets/photo-of-a-woman-wearing-green-dress-985635.jpg
 path: robe-baltimore
 size:
-  color:
-    color:
-      - noir
-      - gris
-    name: Coouleur
-  created: 2020-06-05T03:22:56.648Z
-  size:
-    - xxl
-    - X
-    - M
-    - S
-  name: Taille
+  - M
+color:
+  - gris
+  - blanc
+created: 2020-06-07T01:13:11.109Z
 ---
