@@ -7,18 +7,11 @@ description: La chaussure Nike Court Borough Mid Winter pour homme affiche un
 image: /assets/photo-of-nike-shoes-1598505.jpg
 path: nike-court-borough-mid-winter
 size:
-  size:
-    - "40"
-    - "41"
-    - "42"
-    - "43"
-  name: Taille
+  - "41"
+  - "43"
+  - "44"
 color:
-  color:
-    - Rouge
-    - gris
-    - blanc
-    - noir
-  name: Couleur
+  - gris
+  - noir
 created: 2020-06-05T03:11:11.447Z
 ---
