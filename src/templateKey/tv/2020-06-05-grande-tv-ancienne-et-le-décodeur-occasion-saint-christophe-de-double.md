@@ -9,13 +9,6 @@ description: "TV de marque thomson bon état de fonctionnement, 56 cm de longueu
 image: /assets/black-crt-tv-showing-gray-screen-704555.jpg
 path: grande-tv-ancienne-et-le-décodeur-occasion-saint-christophe-de-double
 size:
-  color:
-    color:
-      - noir
-    name: Couleur
-  created: 2020-06-05T04:05:46.659Z
-  name: Taille
-  size:
-    - "80"
-    - "45"
+  - "35"
+created: 2020-06-07T01:17:46.387Z
 ---
