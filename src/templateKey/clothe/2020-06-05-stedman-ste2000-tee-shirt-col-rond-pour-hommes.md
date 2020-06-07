@@ -13,16 +13,11 @@ description: "Composition : 100% coton ring-spun; jersey simple \r
 image: /assets/adult-beanie-beautiful-beauty-206434.jpg
 path: robe-baltimore
 size:
-  color:
-    color:
-      - Rouge
-      - noir
-      - blanc
-    name: Couleur
-  created: 2020-06-05T03:27:27.231Z
-  name: Taille
-  size:
-    - S
-    - xl
-    - X
+  - M
+  - xl
+  - xxl
+color:
+  - Rouge
+  - noir
+created: 2020-06-07T01:13:30.733Z
 ---
