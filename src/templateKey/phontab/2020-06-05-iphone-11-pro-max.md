@@ -8,7 +8,7 @@ description: Un triple appareil photo visionnaire qui démultiplie vos
   smart­phone peut faire. Les capacités de cet iPhone sont telles qu’il est le
   premier à décrocher l’appellation Pro. Et il la mérite.
 image: /assets/silver-iphone-on-black-textile-4071887.jpg
-path: iPhone 11 Pro Max
+path: iphone-11-pro-max
 color:
   color:
     - blanc

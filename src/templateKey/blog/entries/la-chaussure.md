@@ -5,7 +5,7 @@ title1: Les accessoires de mode
 auteur: Albertine prisca
 image: /assets/close-up-of-shoes-and-bag-336372.jpg
 image1: /assets/classic-clothes-commerce-fashion-298863.jpg
-path: Trouver le bon accessoire avec ses vêtements ethniques
+path: trouver-le-bon-accessoire-avec-ses-vetements-ethniques
 description: "Accessoires de mode : visez toujours l’équilibre avec les
   vêtements\r
 

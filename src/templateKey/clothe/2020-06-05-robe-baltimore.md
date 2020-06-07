@@ -19,6 +19,7 @@ description: "Matière et entretien\r
 
   Informations additionnelles: Doublure\r"
 image: /assets/photo-of-a-woman-wearing-green-dress-985635.jpg
+path: robe-baltimore
 size:
   color:
     color:

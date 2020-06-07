@@ -10,7 +10,7 @@ description: "APPAREIL PHOTO CANON EOS70D\r
 
   avec je donne deux cartes SD et 2 batteries"
 image: /assets/black-dslr-camera-on-white-surface-51383.jpg
-path: APPAREIL PHOTO CANON EOS 70D
+path: photo-canon-eos-70d
 color:
   color:
     - noir

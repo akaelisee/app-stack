@@ -10,7 +10,7 @@ description: "Caméra TrueDepth 7 Mpx, Ouverture ƒ/2,2, Mode Portrait avec effe
   caméra TrueDepth pour la reconnaissance faciale, Appels vidéo FaceTime par
   réseau Wi‑Fi ou cellulaire, FaceTime audio"
 image: /assets/silver-iphone-x-with-airpods-788946.jpg
-path: Apple iPhone XR 64 Go
+path: apple-iphone-xr-64-go
 color:
   color:
     - blanc

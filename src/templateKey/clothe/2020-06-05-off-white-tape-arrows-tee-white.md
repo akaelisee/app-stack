@@ -15,7 +15,7 @@ description: "Model OF-TATB\r
 
   Tape Arrows Slim Fit Tee in White and Beige"
 image: /assets/adult-dark-facial-expression-fashion-428340.jpg
-path: OFF-WHITE TAPE ARROWS TEE WHITE
+path: off-white-tape-arrows-tee-white
 size:
   color:
     color:

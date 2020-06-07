@@ -11,7 +11,7 @@ description: "\r
   Hasselblad vous permet de capturer des photos aériennes de 20 mégapixels avec
   un niveau de détail extraordinaire."
 image: /assets/drone-flying-against-blue-sky-336232.jpg
-path: Drone Mavic 2 Pro de DJI
+path: drone-mavic-pro-de-dji
 color:
   color:
     - blanc

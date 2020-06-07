@@ -7,7 +7,7 @@ description: "TV de marque thomson bon état de fonctionnement, 56 cm de longueu
   vendu avec le décodeur HD de marque CGV, (neuf avec boite et notice), fait
   récepteur et enregistreur avec port USB (valeur 59 euros)."
 image: /assets/black-crt-tv-showing-gray-screen-704555.jpg
-path: grande tv (ancienne) et le décodeur occasion, Saint-Christophe-de-Double
+path: grande-tv-ancienne-et-le-décodeur-occasion-saint-christophe-de-double
 size:
   color:
     color:

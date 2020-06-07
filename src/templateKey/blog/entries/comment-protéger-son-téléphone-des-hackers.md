@@ -6,7 +6,7 @@ title1: "Cloud computing : définition, intérêts et exemples d’applications 
 auteur: Julien
 image: /assets/man-wearing-hoodie-forming-chakra-wallpaper-1694348.jpg
 image1: /assets/person-holding-pendant-light-973506.jpg
-path: Comment protéger son téléphone des hackers
+path: comment-protéger-son-téléphone-des-hackers
 description: Avec le développement du paiement mobile, le piratage des données
   et informations personnelles sur le téléphone augmente. Aujourd’hui, les
   téléphones ont beau être de grande marque, ils gardent une certaine

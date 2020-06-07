@@ -6,8 +6,7 @@ title1: Visite du Dubaï Mall, le plus grand centre commercial du monde
 auteur: Victoire Kouassi
 image: /assets/aerial-shot-of-stalls-2622170.jpg
 image1: /assets/grayscale-photo-of-people-at-market-945982.jpg
-path: "On ne pourra pas restructurer tous les centres commerciaux de France :
-  les améliorer, si !"
+path: on-ne-pourra-pas-restructurer-tous-les-centres-commerciaux-de-france
 description: "Les grands projets commerciaux d’aujourd’hui n’ont rien à voir
   avec ceux d’hier. Oubliée la figure classique du centre commercial compact,
   autonome et fermé, le commerce est désormais une composante parmi d’autres de

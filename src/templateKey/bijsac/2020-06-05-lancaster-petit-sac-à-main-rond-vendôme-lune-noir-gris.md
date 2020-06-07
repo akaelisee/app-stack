@@ -7,7 +7,7 @@ description: "Petit sac trotteur rond Lancaster - ligne Vendôme Lune - fabriqu�
   1 poche intérieure simple - fermeture zippée - dimensions : 20.00 cm (L) x
   20.00 cm (H) x 8.00 cm (l) - noir"
 image: /assets/bag-buckle-fashion-handbag-45981.jpg
-path: " Lancaster Petit sac à main rond Vendôme Lune noir gris"
+path: lancaster-petit-sac-à-main-rond-vendôme-lune-noir-gris
 size:
   color:
     color:

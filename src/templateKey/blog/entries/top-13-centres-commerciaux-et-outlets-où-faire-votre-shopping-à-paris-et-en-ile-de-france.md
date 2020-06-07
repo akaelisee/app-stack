@@ -6,8 +6,7 @@ title1: Les Centres Commerciaux dans Paris
 auteur: "Joseph "
 image: /assets/adult-beautiful-elegant-eyewear-291762.jpg
 image1: /assets/assorted-gift-boxes-on-brown-wooden-floor-surface-1050244.jpg
-path: Top 13 centres commerciaux et outlets où faire votre shopping à Paris et
-  en Ile-de-France
+path: top-centres-commerciaux-et-outlets-où-faire-votre-shopping-à-paris-et-en-ile-de-france
 description: "Paris, capitale de la mode avec New York, Londres et Milan est
   l’endroit parfait pour faire du shopping. Ses nombreux centres commerciaux,
   ses petites boutiques et ses friperies comblent les accros du shopping (au

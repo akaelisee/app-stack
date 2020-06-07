@@ -5,7 +5,7 @@ title1: Bijou fantaisie de qualité comment le reconnaître ?
 auteur: Aka Marina
 image: /assets/close-up-photography-of-blue-earrings-1413420.jpg
 image1: /assets/silver-colored-pendant-with-green-gemstone-1458867.jpg
-path: BIJOUX FÊTE DES MÈRES
+path: bijoux-de-fete-de-mere
 description: "Chaque année, Jollia apporte une touche poétique à cette
   journée.\r
 
@@ -52,11 +52,6 @@ description1: "Comment reconnaître un bijou fantaisie en perles de qualité ?\r
   arnaquer, suivez les recommandations ci-après :\r
 
   \r
-
-  \ \r
-
-  \r
-
   Frottez doucement la perle avec vos dents\r
 
   C’est une astuce qui marche à tous les coups pour savoir si le bijou

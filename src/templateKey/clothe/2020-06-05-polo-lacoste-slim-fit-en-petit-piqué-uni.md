@@ -7,7 +7,7 @@ description: Essentiel incontournable du vestiaire de saison, ce polo est
   votre taille habituelle, si vous hésitez entre deux tailles, nous vous
   conseillons de prendre la taille au-dessus.
 image: /assets/smiling-woman-looking-upright-standing-against-yellow-wall-1536619.jpg
-path: Polo Lacoste slim fit en petit piqué uni
+path: polo-lacoste-slim-fit-en-petit-piqué-uni
 size:
   color:
     color:

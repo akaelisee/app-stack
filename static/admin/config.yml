@@ -23,32 +23,18 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: size, 
-              name: size, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["40", "41", "42", "43", "44"]
-            }
+        widget: select
+        required: true 
+        multiple: true, 
+        options: ["40", "41", "42", "43", "44"]
+            
       - label: couleur
         name: color
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: color, 
-              name: color, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["Rouge", "noir", "gris", "blanc", "violet"]
-            }
+        widget: select
+        required: true      
+        multiple: true, 
+        options: ["Rouge", "noir", "gris", "blanc", "violet"]
+  
       - label: "Created"
         name: "created"
         widget: "datetime"
@@ -70,35 +56,21 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: size, 
-              name: size, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["S", "M", "X", "xl", "xxl"]
-            }
-          - label: couleur
-            name: color
-            widget: object
-            required: true
-            fields:
-              - {label: Name, name: name, widget: string, required: true}
-              - {
-                  label: color, 
-                  name: color, 
-                  widget: select, 
-                  required: true, 
-                  multiple: true, 
-                  options: ["Rouge", "noir", "gris", "blanc", "violet"]
-                }
-          - label: "Created"
-            name: "created"
-            widget: "datetime"
+        widget: select
+        required: true 
+        multiple: true, 
+        options: ["S", "M", "X", "xl", "xxl"]
+            
+      - label: couleur
+        name: color
+        widget: select
+        required: true      
+        multiple: true, 
+        options: ["Rouge", "noir", "gris", "blanc", "violet"]
+
+      - label: "Created"
+        name: "created"
+        widget: "datetime"
 
 
 # Phone Tab
@@ -115,20 +87,14 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
+            
       - label: couleur
         name: color
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: color, 
-              name: color, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["Rouge", "noir", "gris", "blanc", "violet"]
-            }
+        widget: select
+        required: true      
+        multiple: true, 
+        options: ["Rouge", "noir", "gris", "blanc", "violet"]
+
       - label: "Created"
         name: "created"
         widget: "datetime"
@@ -148,20 +114,20 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
+      - label: taille
+        name: size
+        widget: select
+        required: true 
+        multiple: true, 
+        options: ["S", "M", "X", "xl", "xxl"]
+            
       - label: couleur
         name: color
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: color, 
-              name: color, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["Rouge", "noir", "gris", "blanc", "violet"]
-            }
+        widget: select
+        required: true      
+        multiple: true, 
+        options: ["Rouge", "noir", "gris", "blanc", "violet"]
+        
       - label: "Created"
         name: "created"
         widget: "datetime"
@@ -180,35 +146,14 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: size, 
-              name: size, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["45", "80", "100", "150", "180"]
-            }
-          - label: couleur
-            name: color
-            widget: object
-            required: true
-            fields:
-              - {label: Name, name: name, widget: string, required: true}
-              - {
-                  label: color, 
-                  name: color, 
-                  widget: select, 
-                  required: true, 
-                  multiple: true, 
-                  options: ["Rouge", "noir", "gris", "blanc"]
-                }
-          - label: "Created"
-            name: "created"
-            widget: "datetime"
+        widget: select
+        required: true 
+        multiple: true, 
+        options: ["25", "35", "45", "65", "100"]
+  
+      - label: "Created"
+        name: "created"
+        widget: "datetime"
 
   
   # Bijou and sacs
@@ -225,35 +170,21 @@ collections:
       - { name: path, required: false, label: Path}
       - label: taille
         name: size
-        widget: object
-        required: true
-        fields:
-          - {label: Name, name: name, widget: string, required: true}
-          - {
-              label: size, 
-              name: size, 
-              widget: select, 
-              required: true, 
-              multiple: true, 
-              options: ["S", "M", "X", "xl", "xxl"]
-            }
-          - label: couleur
-            name: color
-            widget: object
-            required: true
-            fields:
-              - {label: Name, name: name, widget: string, required: true}
-              - {
-                  label: color, 
-                  name: color, 
-                  widget: select, 
-                  required: true, 
-                  multiple: true, 
-                  options: ["Rouge", "noir", "gris", "blanc", "violet", "bleu", "marron"]
-                }
-          - label: "Created"
-            name: "created"
-            widget: "datetime"
+        widget: select
+        required: true 
+        multiple: true, 
+        options: ["Grand", "Moyen", "petit"]
+            
+      - label: couleur
+        name: color
+        widget: select
+        required: true      
+        multiple: true, 
+        options: ["Rouge", "noir", "gris", "blanc", "violet", "orange"]
+
+      - label: "Created"
+        name: "created"
+        widget: "datetime"
 
  
 

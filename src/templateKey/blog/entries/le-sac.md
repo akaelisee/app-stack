@@ -5,7 +5,7 @@ title1: Best Laptop for Bloggers, Tech and Gaming Reviewers
 auteur: Anoh Génevieve
 image: /assets/apple-technology-ipad-computer-38568.jpg
 image1: /assets/thoughtful-female-freelancer-watching-laptop-in-light-room-4050437.jpg
-path: Best Laptops For Bloggers To Buy in 2020
+path: best-laptops-for-bloggers-to-buy-in
 description: "If you are planning to start your own blog or else you are already
   a blogger and looking for the best weapon for your job then a laptop is must
   have as without it, you can’t even start your work. A computer will always do

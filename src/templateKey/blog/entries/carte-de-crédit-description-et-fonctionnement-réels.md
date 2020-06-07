@@ -5,7 +5,7 @@ title1: MON AVIS SUR LA DÉCENNIE 2020-2030 À VENIR, EN E-COMMERCE
 auteur: Elisee Jean et Pacôme
 image: /assets/woman-holding-card-while-operating-silver-laptop-919436.jpg
 image1: /assets/person-counting-money-with-smartphones-in-front-on-desk-210990.jpg
-path: "Carte de crédit : description et fonctionnement réels"
+path: carte-de-crédit-description-et-fonctionnement-réels
 description: "Apple vient de présenter sa future carte de crédit, sobrement
   dénommé Applecard, réservée pour l’instant au marché américain. L’occasion
   idéale pour faire un point sur ces fameuses cartes de crédit.\r

@@ -11,7 +11,7 @@ description: "Composition : 100% coton ring-spun; jersey simple \r
 
   Température de lavage : lavable à 40°C"
 image: /assets/adult-beanie-beautiful-beauty-206434.jpg
-path: Stedman STE2000 - Tee-shirt col rond pour hommes
+path: robe-baltimore
 size:
   color:
     color:

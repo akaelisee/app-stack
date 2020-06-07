@@ -7,7 +7,7 @@ description: La série X de Fujifilm s’appuie sur une matrice exclusive de
   dédié, des performances exceptionnelles en résolution d'image et contrôle des
   artéfacts colorés.
 image: /assets/black-and-gray-slr-camera-and-black-fujifilm-dslr-camera-3497065.jpg
-path: Appareil photo hybride FUJI X-T3 NOIR
+path: appareil-photo-hybride-fuji-x-t3-noir
 color:
   color:
     - noir
