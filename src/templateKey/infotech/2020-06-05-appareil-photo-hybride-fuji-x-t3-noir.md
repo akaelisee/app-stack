@@ -9,8 +9,7 @@ description: La série X de Fujifilm s’appuie sur une matrice exclusive de
 image: /assets/black-and-gray-slr-camera-and-black-fujifilm-dslr-camera-3497065.jpg
 path: appareil-photo-hybride-fuji-x-t3-noir
 color:
-  color:
-    - noir
-  name: Couleur
+  - noir
+  - blanc
 created: 2020-06-05T03:55:45.822Z
 ---
