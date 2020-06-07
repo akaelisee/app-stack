@@ -12,8 +12,6 @@ description: "APPAREIL PHOTO CANON EOS70D\r
 image: /assets/black-dslr-camera-on-white-surface-51383.jpg
 path: photo-canon-eos-70d
 color:
-  color:
-    - noir
-  name: Couleur
+  - noir
 created: 2020-06-05T03:54:14.269Z
 ---
