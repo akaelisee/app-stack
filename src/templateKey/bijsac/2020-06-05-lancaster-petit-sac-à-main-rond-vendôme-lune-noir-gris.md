@@ -9,15 +9,9 @@ description: "Petit sac trotteur rond Lancaster - ligne Vendôme Lune - fabriqu�
 image: /assets/bag-buckle-fashion-handbag-45981.jpg
 path: lancaster-petit-sac-à-main-rond-vendôme-lune-noir-gris
 size:
-  color:
-    color:
-      - gris
-      - noir
-      - bleu
-    name: Couleur
-  created: 2020-06-05T04:16:01.168Z
-  name: Taille
-  size:
-    - M
-    - S
+  - Grand
+color:
+  - noir
+  - blanc
+created: 2020-06-07T01:19:16.961Z
 ---
