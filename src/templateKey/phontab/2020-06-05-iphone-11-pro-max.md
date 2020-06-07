@@ -10,9 +10,6 @@ description: Un triple appareil photo visionnaire qui démultiplie vos
 image: /assets/silver-iphone-on-black-textile-4071887.jpg
 path: iphone-11-pro-max
 color:
-  color:
-    - blanc
-    - noir
-  name: Couleur
+  - gris
 created: 2020-06-05T03:46:30.580Z
 ---
