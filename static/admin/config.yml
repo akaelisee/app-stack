@@ -114,13 +114,7 @@ collections:
       - { name: description, required: true, label: Description, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
       - { name: path, required: false, label: Path}
-      - label: taille
-        name: size
-        widget: select
-        required: true 
-        multiple: true, 
-        options: ["S", "M", "X", "xl", "xxl"]
-            
+                  
       - label: couleur
         name: color
         widget: select
