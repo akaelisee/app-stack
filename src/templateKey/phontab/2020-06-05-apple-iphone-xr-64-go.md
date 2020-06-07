@@ -12,10 +12,9 @@ description: "Caméra TrueDepth 7 Mpx, Ouverture ƒ/2,2, Mode Portrait avec effe
 image: /assets/silver-iphone-x-with-airpods-788946.jpg
 path: apple-iphone-xr-64-go
 color:
-  color:
-    - blanc
-    - noir
-    - Rouge
-  name: Couleur
+  - Rouge
+  - gris
+  - noir
+  - blanc
 created: 2020-06-05T03:50:25.295Z
 ---
