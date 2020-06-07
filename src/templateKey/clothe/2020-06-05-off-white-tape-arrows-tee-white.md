@@ -17,15 +17,11 @@ description: "Model OF-TATB\r
 image: /assets/adult-dark-facial-expression-fashion-428340.jpg
 path: off-white-tape-arrows-tee-white
 size:
-  color:
-    color:
-      - blanc
-    name: Couleur
-  created: 2020-06-05T03:29:20.119Z
-  name: Taille
-  size:
-    - S
-    - M
-    - xl
-    - X
+  - S
+  - M
+  - xxl
+color:
+  - blanc
+  - noir
+created: 2020-06-07T01:12:21.644Z
 ---
