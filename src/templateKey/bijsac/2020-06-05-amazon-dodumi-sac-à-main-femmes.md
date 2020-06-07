@@ -7,14 +7,10 @@ description: DODUMI Sac à Main Femmes Pas Cher Sac à Main Femmes Sacs à Main
 image: /assets/woman-wearing-brown-leather-tote-bag-1936848.jpg
 path: amazon-dodumi-sac-à-main-femmes
 size:
-  color:
-    color:
-      - bleu
-      - blanc
-      - Rouge
-    name: Couleur
-  created: 2020-06-05T04:14:09.569Z
-  name: Taille
-  size:
-    - X
+  - Moyen
+color:
+  - orange
+  - gris
+  - Rouge
+created: 2020-06-07T01:18:28.066Z
 ---
