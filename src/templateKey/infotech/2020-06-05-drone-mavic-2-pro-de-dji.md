@@ -13,8 +13,6 @@ description: "\r
 image: /assets/drone-flying-against-blue-sky-336232.jpg
 path: drone-mavic-pro-de-dji
 color:
-  color:
-    - blanc
-  name: Couleur
+  - blanc
 created: 2020-06-05T03:56:09.068Z
 ---
