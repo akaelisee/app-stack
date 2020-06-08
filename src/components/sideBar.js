@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import {Card, Form} from 'react-bootstrap';
 import { navigate } from 'gatsby';
+import Headers from '../../functions/signup'
 
 import imageAvert from '../sass/image/57936514-avertissement.jpg'
 
@@ -31,7 +32,7 @@ const SideBar = () => {
             body: JSON.stringify( datas )
         })
         .then(res => {
-            return navigate('./success');
+            alert(res)
         })
         .catch(err => {
             alert(err);
@@ -44,8 +45,8 @@ const SideBar = () => {
                     <Card.Body>
                         <p>NEWSLETTER</p>
                             <Card.Text>
-                                <Form className="forme" onSubmit={submitForm}>
-                                    <Form.Control size="lg" 
+                                <form className="forme" onSubmit={submitForm}>
+                                    <input size="lg" 
                                         type="email" 
                                         value = {inputForm.email} 
                                         name="email" 
@@ -56,7 +57,7 @@ const SideBar = () => {
                                     <div className="btn-link">
                                         <button type="submit">Souscrire</button>
                                     </div>
-                                </Form>
+                                </form>
                             </Card.Text>
                     </Card.Body>
                 </Card>
