@@ -1,6 +1,6 @@
 ---
 title: Drone Mavic 2 Pro de DJI
-price: "1 499,00 "
+price: "1 499 "
 description: "\r
 
   Le drone Mavic 2 Pro de DJI est équipé d’un puissant capteur CMOS de 1
