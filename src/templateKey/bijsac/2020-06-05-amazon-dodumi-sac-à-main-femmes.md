@@ -1,6 +1,6 @@
 ---
 title: DODUMI Sac à Main Femmes
-price: 15,45
+price: "15.45"
 description: DODUMI Sac à Main Femmes Pas Cher Sac à Main Femmes Sacs à Main
   Femme Noir Sac à Bandouliere Femme Sac à Main Pour Femme Sac à Main Pour Femme
   Sac à Main Big Bag Bow Killer Bag
