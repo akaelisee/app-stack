@@ -9,38 +9,39 @@ import SideBar from '../components/sideBar';
 const ArticleTemplate = ({data}) => {
     console.log(data)
     return (
-        <div className="template">
-              <Header />
-              <div className="group-template">
-                <div className="group-template-blog">
-                  <Row>
-                    <Col md="4">
-                      <div style={{width: "100%", height: "100%"}}>
-                          <SideBar />
-                      </div>
-                    </Col>
-                    <Col md="8">
-                        <div className="detail-item">
-                          <div className="title-article">
-                              <p> {data.markdownRemark.frontmatter.title} </p>
-                          </div>
-                          <div className="sous-title">
-                              <span>{data.markdownRemark.frontmatter.created.replace('T', " ")}</span>
-                          </div>
-                          <div className="desc-article">
-                            <p>{data.markdownRemark.frontmatter.description}</p>
-                          </div>
-                          <div className="img-article">
-                            <img src= {data.markdownRemark.frontmatter.image} alt="imahe" />
-                          </div>
-                        </div>
-                    </Col>
-                  </Row>
-                </div>
+      <>
+      <Header />
+        <div className="container">
+          <div className="detail-item">
+              <div className="title-article">
+                  <p> {data.markdownRemark.frontmatter.title} </p>
+              </div>
+              <div className="sous-title">
+                  <span>{data.markdownRemark.frontmatter.created.replace('T', " ")} écrit par {data.markdownRemark.frontmatter.auteur} </span>
+              </div>
+              <div className="desc-article">
+                <p>{data.markdownRemark.frontmatter.description}</p>
+              </div>
+              <div className="img-article">
+                <img src= {data.markdownRemark.frontmatter.image} alt="imahe" />
               </div>
 
-              <Footer />
+              <div className="title-article">
+                  <p> {data.markdownRemark.frontmatter.title1} </p>
+              </div>
+              <div className="desc-article">
+                <p>{data.markdownRemark.frontmatter.description1}</p>
+              </div>
+              <div className="img-article">
+                <img src= {data.markdownRemark.frontmatter.image1} alt="imahe" />
+              </div>
+          </div>
+          <div className="detail-side">
+              <SideBar />
+          </div>
         </div>
+        <Footer />
+      </>
     )
 }
 
@@ -48,10 +49,16 @@ export const query = graphql`
 query ($path: String!) {
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       frontmatter {
-        created
-        description
-        image
         title
+        price
+        image
+        image1
+        title1
+        path
+        description1
+        description
+        auteur
+        created
       }
     }
   }

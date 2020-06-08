@@ -3,6 +3,7 @@ import {Carousel} from "react-bootstrap";
 import { graphql } from 'gatsby';
 import Header from "../layout/header";
 import Footer from "../layout/footer";
+import { Spinner } from 'react-bootstrap';
 
 const IndexPage = ({data}) => {
 
@@ -11,6 +12,9 @@ const IndexPage = ({data}) => {
       <Header />
 
       <div className="container">
+        <div className="loader">
+          <Spinner animation="border" variant="success" />
+        </div>
         <div className="slide">
           <Carousel>
             {

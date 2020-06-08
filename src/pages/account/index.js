@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from '../../layout/header';
 import Footer from '../../layout/footer';
 import { Card } from 'react-bootstrap';
@@ -10,6 +10,12 @@ const Index = () => {
 
     const identity = useIdentityContext();
     const [dialog, setDialog] = useState(false);
+
+    useEffect(() => {
+        if(!identity.user){
+            return navigate("/")
+        }
+    })
 
     const funcAccount = () => {
 
@@ -28,39 +34,36 @@ const Index = () => {
                 </>
             )
         }
-        else{
-            return navigate("/")
-        }
     }
 
     return (
-        <div className="account">
-            <Header/>
-            <div className="group-account">
-                <div className="account-item">
-                    <Card style={{margin: "50px 0 100px 0"}} >
-                        <Card.Header style={{fontSize: "30px"}}>Mon Compte</Card.Header>
-                        <Card.Body>
-                            <div className="content-account">
-                                <Card  className="first-card">
-                                    <Card.Body>
-                                        <Card.Title>INFORMATIONS PERSONNELLES</Card.Title>
-                                        <hr />
-                                        <Card.Text>
-                                            {funcAccount()}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
+        <>
+        <Header/>
+
+        <div className="container">
+            <div className="account-item">
+                <Card>
+                    <Card.Header style={{fontSize: "30px"}}>Mon Compte</Card.Header>
+                    <Card.Body>
+                        <div className="content-account">
+                            <Card  className="first-card">
+                                <Card.Body>
+                                    <Card.Title>INFORMATIONS PERSONNELLES</Card.Title>
+                                    <hr />
+                                    <Card.Text>
+                                        {funcAccount()}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </Card.Body>
+                </Card>
             </div>
-
             <IdentityModal showDialog={dialog} onCloseDialog={() => setDialog(false)} />
-
-            <Footer />
         </div>
+
+        <Footer />
+        </>
     )
 }
 

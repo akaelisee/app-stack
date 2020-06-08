@@ -89,17 +89,16 @@
 
 }
 
-.group-template-blog{
-    width: 69em;
-    margin: 0 auto;
+
+.container{
     .detail-item{
+        width: 80%;
+        margin: 0 auto;
         .title-article{
-            // margin: 0px 0 25px 0;
             p{
                 font-size: 35px;
                 font-weight: 700;
                 font-family: $fontMontserrat;
-                // margin-bottom: 25px;
             }
         }
         .sous-title{
@@ -115,9 +114,66 @@
             margin: 25px 0;
             position: relative;
             width: 100%;
-            background: #000;
+            // background: #000;
             img{
                 width: 100%;
+                height: 600px;
+            }
+        }
+    }
+    .detail-side{
+        width: 80%;
+        margin: 0 auto;
+        .item{
+            display: none;
+        }
+        .newsletter{
+            .card{
+                width: 100% !important;
+                background-color: inherit;
+                border: none;
+                .card-body{
+                    width: 100% !important;
+                    .form-control{
+                        text-align: center;
+                    }
+                }
+            }
+            text-align: center;
+            margin-bottom: 25px;
+            p{
+                font-size: 25px;
+                font-weight: 500;
+            }
+            .forme{
+                padding: 0px 0;
+            }
+            .recent{
+                p{
+                    margin-top: 16px;
+                }
+            }
+            span{
+                margin: 25px 0;
+                background: #000;
+                font-size: 18px;
+            }
+            .btn-link{
+                margin: 20px 0 0 0;
+                text-decoration: none;
+        
+                button{
+                    font-size: 20px;
+                    background-color: $colorEmeraud;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: none;
+                    text-decoration: none;
+                    color: $colorWhite;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
             }
         }
     }

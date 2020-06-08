@@ -50,7 +50,8 @@ const SideBar = () => {
                                         type="email" 
                                         value = {inputForm.email} 
                                         name="email" 
-                                        onChange={handleChange}  
+                                        onChange={handleChange} 
+                                        placeholder="email@example.com" 
                                     />
 
                                     <div className="btn-link">
