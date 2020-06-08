@@ -1,6 +1,6 @@
 ---
-title: grande tv (ancienne) et le décodeur occasion, Saint-Christophe-de-Double
-price: 75,87
+title: Grande tv (ancienne) et le décodeur occasion, Saint-Christophe-de-Double
+price: "75.87"
 description: "TV de marque thomson bon état de fonctionnement, 56 cm de longueur
   et 47 cm de hauteur.\r
 
