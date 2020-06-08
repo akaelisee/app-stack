@@ -1,6 +1,6 @@
 ---
 title: Apple MacBook Pro Touch Bar 16
-price: 2499,99
+price: "2499.99"
 description: Écran rétroéclairé par LED de 16 pouces (diagonale) avec
   technologie IPS ; résolution native de 3 072 x 1 920 pixels à 226 pixels par
   pouce avec prise en charge de millions de couleurs
