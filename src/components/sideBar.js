@@ -31,7 +31,7 @@ const SideBar = () => {
             body: JSON.stringify( datas )
         })
         .then(res => {
-            console.log(res.ok)
+            console.log(res)
             return navigate('../pages/blog/success.js');
         })
         .catch(err => {
