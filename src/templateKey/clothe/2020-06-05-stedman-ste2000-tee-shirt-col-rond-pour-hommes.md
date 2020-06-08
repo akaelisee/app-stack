@@ -11,7 +11,7 @@ description: "Composition : 100% coton ring-spun; jersey simple \r
 
   Température de lavage : lavable à 40°C"
 image: /assets/adult-beanie-beautiful-beauty-206434.jpg
-path: robe-baltimore
+path: " col-rond-pour-hommes"
 size:
   - M
   - xl
