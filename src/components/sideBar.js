@@ -25,14 +25,14 @@ const SideBar = () => {
         fetch('https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup', {
             method: 'POST',
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin' : '*'
             },
             body: JSON.stringify( datas )
         })
         .then(res => {
             console.log(res)
-            return navigate('./success');
+            return navigate('../pages/blog/success.js');
         })
         .catch(err => {
             console.log(err)
