@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby';
-import { Row, Col } from 'react-bootstrap';
 import Header from '../layout/header';
 import Footer from '../layout/footer';
 import SideBar from '../components/sideBar';

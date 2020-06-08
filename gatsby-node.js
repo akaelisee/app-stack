@@ -16,7 +16,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
 
       products.data.allMarkdownRemark.edges.forEach(edge => {
-          console.log(edge)
         const paths = edge.node.frontmatter.path;
         actions.createPage({
             path: paths,

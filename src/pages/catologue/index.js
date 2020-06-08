@@ -41,7 +41,7 @@ import Footer from '../../layout/footer';
     },
   },
   searchIcon: {
-    padding: theme.spacing(0, 2),
+    padding: theme.spacing(0, 1),
     height: '100%',
     position: 'absolute',
     pointerEvents: 'none',
@@ -54,9 +54,9 @@ import Footer from '../../layout/footer';
     color: 'black',
   },
   inputInput: {
-    padding: theme.spacing(2, 1, 2, 0),
+    padding: theme.spacing(2, 0, 2, 0),
     // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
+    paddingLeft: `calc(1em + ${theme.spacing(2)}px)`,
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
@@ -69,7 +69,6 @@ import Footer from '../../layout/footer';
 }));
 
 const Index = ({data}) => {
-  console.log(data.allMarkdownRemark)
   const classes = useStyles();
 
   const [inputForm, setInputForm] = useState({ search: ""});
@@ -91,70 +90,69 @@ const Index = ({data}) => {
     )
   }, [inputForm.search, data.allMarkdownRemark.edges])
 
+  return (
+    <>
+      <Header />
 
-    return (
-      <>
-        <Header />
-
-        <div className="container">  
-            {/* input search */}
-            <div className="content-catalogue">
-              <div className="catalogue-search">
-                <div className={classes.root}>
-                  <AppBar position="static" style={{backgroundColor: "white"}}>
-                    <Toolbar>
-                      <Typography className={classes.title} variant="h6" noWrap>
-                        Récherche un produit
-                      </Typography>
-                      <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                          <SearchIcon />
-                        </div>
-                        <InputBase
-                          placeholder="Search…"
-                          value={inputForm.search}
-                          name="search"
-                          onChange={handleChange}
-                          classes={{
-                            root: classes.inputRoot,
-                            input: classes.inputInput,
-                          }}
-                          inputProps={{ 'aria-label': 'search' }}
-                        />
+      <div className="container">  
+          {/* input search */}
+          <div className="content-catalogue">
+            <div className="catalogue-search">
+              <div className={classes.root}>
+                <AppBar position="static" style={{backgroundColor: "white"}}>
+                  <Toolbar>
+                    <Typography className={classes.title} variant="h6" noWrap>
+                      Récherche un produit
+                    </Typography>
+                    <div className={classes.search}>
+                      <div className={classes.searchIcon}>
+                        <SearchIcon />
                       </div>
-                    </Toolbar>
-                  </AppBar>
-                </div>
-            </div>
+                      <InputBase
+                        placeholder="Search…"
+                        value={inputForm.search}
+                        name="search"
+                        onChange={handleChange}
+                        classes={{
+                          root: classes.inputRoot,
+                          input: classes.inputInput,
+                        }}
+                        inputProps={{ 'aria-label': 'search' }}
+                      />
+                    </div>
+                  </Toolbar>
+                </AppBar>
+              </div>
+          </div>
 
-            {/* product-item */}
-            <div className="right-catalogue">
-              <div className="produits">
-                  <div className="title">
-                      <p className="title"> Produit</p>
-                      <span> {data.allMarkdownRemark.totalCount} Résultats</span>
-                  </div>
-                  <hr/>
-              </div>
+          {/* product-item */}
+          <div className="right-catalogue">
+            <div className="produits">
+                <div className="title">
+                    <p className="title"> Produit</p>
+                    <span> {data.allMarkdownRemark.totalCount} Résultats</span>
+                </div>
+                <hr/>
             </div>
-            
-            {/*  */}
-            <div className="cards">
-              <div className="produit-item">
-                {
-                  filterProduct.map(({node}, index) => {
-                    return(
-                      <Produits node={node.frontmatter} key={index}/> 
-                    )
-                  })
-                }
-              </div>
+          </div>
+          
+          {/*  */}
+          <div className="cards">
+            <div className="produit-item">
+              {
+                filterProduct.map(({node}, index) => {
+                  return(
+                    <Produits node={node.frontmatter} key={index}/> 
+                  )
+                })
+              }
             </div>
           </div>
         </div>
-      <Footer />    
-      </>
-    )
+      </div>
+    <Footer />    
+    </>
+  )
 }
 
 export const query = graphql`

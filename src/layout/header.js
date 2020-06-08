@@ -63,7 +63,7 @@ const Header = () => {
                     <ul className="menu">
                         <li className="logo"><Link to ="/">Ak<span>Shop</span> </Link></li>
                         <li className="item"><Link to ="/" >Accueil</Link></li>
-                        <li className="item"><Link to ="/catologue">Nos produits</Link></li>
+                        <li className="item"><Link to ="/catologue">Produits</Link></li>
                         <li className="item"><Link to ="/blog">Blog</Link></li>
                         <li className="item"><Link to ="/contact">Contact</Link></li>
                             {

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Card, Row, Col} from 'react-bootstrap';
 import SideBar from './sideBar';
 import {Link} from 'gatsby'
 
@@ -55,18 +54,3 @@ const CompBlog = (props) => {
 
 
 export default CompBlog
-
-
-
-{/* <Link to={node.frontmatter.path}>
-                                        <Card style= {{ width: "22rem"}} className="maparticle">
-                                            <Card.Img variant="top" src={node.frontmatter.image} />
-                                            <Card.Body>
-                                                <Card.Title> {node.frontmatter.title} </Card.Title>
-                                                    <Card.Text className="desc-task">
-                                                        {node.frontmatter.description} 
-                                                    </Card.Text>
-                                                <p className="date-article">{node.frontmatter.created}</p>
-                                            </Card.Body>
-                                        </Card>
-                                    </Link> */}

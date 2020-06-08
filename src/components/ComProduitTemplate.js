@@ -1,5 +1,5 @@
-import React from 'react';
-import {Form, Popover, OverlayTrigger} from 'react-bootstrap';
+import React, {useState} from 'react';
+import {Form, Modal} from 'react-bootstrap';
 import { useIdentityContext } from "react-netlify-identity-widget";;
 
 
@@ -20,6 +20,15 @@ const ComProduitTemplate = (props) => {
           
         )
   }
+  // Funcion map color
+  const funcColor = () => {
+    return (
+          detailColor.map((item, i) => (
+            <option key={i}>{item}</option>
+          ))
+        )
+  }
+
 
   //Fonction Detail size
   let detailListSize = () =>{
@@ -41,17 +50,6 @@ const ComProduitTemplate = (props) => {
     }
   }
 
-
-  
-  // Funcion map color
-  const funcColor = () => {
-    return (
-          detailColor.map((item, i) => (
-            <option key={i}>{item}</option>
-          ))
-        )
-  }
-   
   //Fonction Detail Color
   let detailListColor = () =>{
 
@@ -75,15 +73,11 @@ const ComProduitTemplate = (props) => {
   // identity
   const identity = useIdentityContext();
 
-  // Modal
-  const popover = (
-    <Popover id="popover-basic">
-      <Popover.Title as="h3">Connexion</Popover.Title>
-      <Popover.Content>
-        Veuillez créer <strong>un compte</strong> avant la suite du processus &#128515;.
-      </Popover.Content>
-    </Popover>
-  );
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
 
   const Button = () => {
     if(identity.user){
@@ -101,9 +95,7 @@ const ComProduitTemplate = (props) => {
     }
     else{
       return(
-        <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-            <button> Ajouter au panier </button>
-        </OverlayTrigger>
+          <button onClick={handleShow}> Ajouter au panier </button>
       )
     }
   };
@@ -128,11 +120,14 @@ const ComProduitTemplate = (props) => {
                   <div className="button-panier">
                     <Button />
                   </div>
-                  {
-                    console.log(detail.id)
-                  }
                 </div>
             </div>
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Connexion</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>Veuillez créer <strong>un compte</strong> avant la suite du processus &#128515;.</Modal.Body>
+            </Modal>
         </>
     )
 }

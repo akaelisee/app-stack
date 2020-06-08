@@ -1,19 +1,23 @@
-import React from "react"
-import {Carousel} from "react-bootstrap";
+import React , {useEffect} from "react"
+import {Carousel, Spinner} from "react-bootstrap";
 import { graphql } from 'gatsby';
 import Header from "../layout/header";
 import Footer from "../layout/footer";
-import { Spinner } from 'react-bootstrap';
 
 const IndexPage = ({data}) => {
+
+  useEffect(() => {
+      const loader = document.querySelector('.loading');
+      loader.classList.add('hidden');
+  })
 
   return (
     <>
       <Header />
 
       <div className="container">
-        <div className="loader">
-          <Spinner animation="border" variant="success" />
+        <div className="loading">
+          <Spinner animation="border" className="loader" />
         </div>
         <div className="slide">
           <Carousel>
@@ -27,7 +31,6 @@ const IndexPage = ({data}) => {
                   />
                   <Carousel.Caption className="title-slide">
                     <h3>{node.frontmatter.title}</h3>
-                    <p>{node.frontmatter.price} $</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 
@@ -39,14 +42,11 @@ const IndexPage = ({data}) => {
             <h2>A propos de nous</h2>
             <div className="flex">
               <p>
-                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content
-                  and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story
-                  and let your users know a little more about you.
-              </p>
-              <p>
-                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content
-                  and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story
-                  and let your users know a little more about you.
+              APROPOS The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
+              </p><p>
+              APROPOS The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
+              </p><p>
+              APROPOS The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
               </p>
             </div>
         </div>
