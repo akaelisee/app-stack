@@ -1,6 +1,6 @@
 ---
 title: " Lancaster Petit sac à main rond Vendôme Lune noir gris"
-price: 179,00
+price: "179.00"
 description: "Petit sac trotteur rond Lancaster - ligne Vendôme Lune - fabriqué
   en France - cuir lisse, cuir suédé et doublure suédine - bandoulière amovible
   et réglable - anses doubles - porté main ou travers - 1 poche avant simple et
