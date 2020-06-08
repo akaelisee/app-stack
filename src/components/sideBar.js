@@ -28,8 +28,7 @@ const SideBar = () => {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin' : '*',
-                'Access-Control-Allow-Headers': 'origin, x-requested-with, content-type, Authorization',
-                'Access-Control-Allow-Origin:' : 'https://inspiring-visvesvaraya-f559ca.netlify.app/.netlify/functions/signup'
+                'Access-Control-Allow-Headers': 'origin, x-requested-with, content-type, Authorization'
             },
             body: JSON.stringify( datas )
         })
