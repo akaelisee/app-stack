@@ -4,20 +4,26 @@
 .container{
     .blog-detail{
         .title-blog{
-            width: 60%;
-            margin: 5px auto 60px auto;
+            margin: 0px auto 60px auto;
             text-align: center;
             h1{
                 margin: 0;
+                @media all and (max-width: 992px){
+                    font-size: 30px;
+                }
             }
         }
-        .detail-article{
-            position: relative;
-            display: grid;
-            grid-template-columns: 46% 46%;
-            row-gap: 40px;
-            column-gap: 30px;
-            .article-item{
+        .flex-blog{
+            display: flex;
+            justify-content: space-between;
+            @media all and (max-width: 992px){
+                flex-wrap: wrap;
+            }
+            .detail-article{
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
                 .suite{
                     text-decoration: none;
                     color: $colorEmeraud;
@@ -52,6 +58,7 @@
                         }
                     }
                 }
+
                 .date-item{
                     margin-bottom: 15px;
                     span{
@@ -71,78 +78,81 @@
                     font-family: $fontMontserrat;
                     // font-size: 16px;
                 }
+                
+            }
+            .side-blog{
+                margin-left: 45px;
+                @media all and (max-width: 992px){
+                    margin-top: 45px;
+                    margin-left: 0px;
+                    width: 100%;
+                }
+                .item{
+                    @media all and (max-width: 992px){
+                        display: none;
+                    }
+                }
+
+                .newsletter{
+                    @media all and (max-width: 992px){
+                        .card{
+                            width: 100% !important;
+                            background-color: inherit;
+                            border: none;
+                            .card-body{
+                                width: 100% !important;
+                                .form-control{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    text-align: center;
+                    margin-bottom: 25px;
+                    p{
+                        font-size: 25px;
+                        font-weight: 500;
+                    }
+                    .forme{
+                        padding: 0px 0;
+                    }
+                    .recent{
+                        p{
+                            margin-top: 16px;
+                        }
+                    }
+                    span{
+                        margin: 25px 0;
+                        background: #000;
+                        font-size: 18px;
+                    }
+                    .btn-link{
+                        margin: 20px 0 0 0;
+                        text-decoration: none;
+                
+                        button{
+                            font-size: 20px;
+                            background-color: $colorEmeraud;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            border: none;
+                            text-decoration: none;
+                            color: $colorWhite;
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-
-// a{
-//     text-decoration: none;
-//     color: $colorBlack;
-// }
-// margin-bottom: 25px;
-// margin-left: 25px;
-// img{
-//     height: 300px;
-// }
-// .desc-task{
-//     display: -webkit-box;
-//     line-height: 25px;
-//     max-height: 80px;
-//     white-space: normal;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     line-clamp: 3;
-//     -webkit-box-orient: vertical;
-// }
-// .maparticle{
-//     margin-bottom: 30px;
-//     .date-article{
-//         margin: 15px 0 0 0; 
-//     }
-// }
 
 //Newletter
 
-.newsletter{
-    text-align: center;
-    margin-bottom: 25px;
-    p{
-        font-size: 25px;
-        font-weight: 500;
-    }
-    .forme{
-        padding: 0px 0;
-    }
-    .recent{
-        p{
-            margin-top: 16px;
-        }
-    }
-    span{
-        margin: 25px 0;
-        background: #000;
-        font-size: 18px;
-    }
-    .btn-link{
-        margin: 20px 0 0 0;
-        text-decoration: none;
 
-        button{
-            font-size: 20px;
-            background-color: $colorEmeraud;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            text-decoration: none;
-            color: $colorWhite;
-            &:hover{
-                opacity: 0.8;
-            }
-        }
-    }
-}
 
 
 // Success

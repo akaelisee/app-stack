@@ -50,8 +50,7 @@ const SideBar = () => {
                                         type="email" 
                                         value = {inputForm.email} 
                                         name="email" 
-                                        onChange={handleChange} 
-                                        placeholder="email@example.com" 
+                                        onChange={handleChange}  
                                     />
 
                                     <div className="btn-link">
@@ -62,7 +61,7 @@ const SideBar = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="newsletter">
+            <div className="newsletter item">
                 <Card style={{ width: '20rem' }}>
                     <Card.Body>
                         <p>AVERTISSEMENT</p>
@@ -70,7 +69,7 @@ const SideBar = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="newsletter">
+            <div className="newsletter item">
                 <Card style={{ width: '20rem' }}>
                     <StaticQuery query={query} render={(data => (
                         <div className="recent">
@@ -95,7 +94,7 @@ const SideBar = () => {
 
 export const query = graphql`
  query  {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/entries/"}}, sort: {fields: frontmatter___created, order: DESC}, limit: 2) {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/entries/"}}, sort: {fields: frontmatter___created, order: DESC}, limit: 1) {
     edges {
       node {
         id
