@@ -1,6 +1,6 @@
 ---
 title: Robe BALTIMORE
-price: "52.5"
+price: "52"
 description: "Matière et entretien\r
 
   Composition: 100% polyester\r
