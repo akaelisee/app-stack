@@ -1,6 +1,6 @@
 ---
 title: Nike Court Borough Mid Winter
-price: 94,5
+price: "94"
 description: La chaussure Nike Court Borough Mid Winter pour homme affiche un
   look revisité inspiré du basketball. Elle maintient et stabilise votre pied
   pour un confort optimal tout au long de la journée.
