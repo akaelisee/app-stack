@@ -25,26 +25,26 @@ exports.createPages = async ({ graphql, actions }) => {
         })
     });
 
-    // const articles = await graphql(`
-    //   query {
-    //     allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/"}}) {
-    //       edges {
-    //         node {
-    //           frontmatter {
-    //             path
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // `)
+    const articles = await graphql(`
+      query {
+        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/"}}) {
+          edges {
+            node {
+              frontmatter {
+                path
+              }
+            }
+          }
+        }
+      }
+    `)
 
-    // articles.data.allMarkdownRemark.edges.forEach(article => {
-    //   const articlePath = article.node.frontmatter.path;
-    //   actions.createPage({
-    //     path: articlePath,
-    //     component: require.resolve(`./src/template/articleTemplate.js`),
-    //     context: {path: articlePath}
-    //   })
-    // });
+    articles.data.allMarkdownRemark.edges.forEach(article => {
+      const articlePath = article.node.frontmatter.path;
+      actions.createPage({
+        path: articlePath,
+        component: require.resolve(`./src/template/articleTemplate.js`),
+        context: {path: articlePath}
+      })
+    });
 }

@@ -1,15 +1,14 @@
 @import './helpers/reset';
 @import './base/base';
-// @import './helpers/variables';
-// @import './theme/font';
+@import './helpers/variables';
+@import './theme/font';
 @import './layout/header';
 @import '../pages/blog/blog.scss';
-// @import '../pages/panier/panier.scss';
 @import '../pages/contact/contact.scss';
-// @import '../pages/account/account.scss';
+@import '../pages/account/account.scss';
 @import './pages/catalogue';
 @import './pages/homepage';
-// @import '../template/template';
+@import '../template/template';
 @import './layout/footer';
 
 
@@ -19,4 +18,22 @@
             width: 100%;
         }
     }
+}
+
+.recommandation{
+    margin: 25px 0;
+    .title{
+        margin: 25px 0;
+        h1{
+            margin-left: 12px;
+            font-size: 30px;
+        }
+    }
+}
+
+.slick-arrow{
+    background-color: #24929a !important;
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 100px !important;
 }

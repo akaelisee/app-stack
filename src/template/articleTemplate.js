@@ -55,6 +55,5 @@ query ($path: String!) {
       }
     }
   }
-  
 `
 export default ArticleTemplate

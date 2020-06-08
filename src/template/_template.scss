@@ -1,82 +1,92 @@
 @import '../sass/theme/font';
 @import '../sass/helpers/variables';
 
-.group-template{
-    padding: 120px 0;
-}
-.template-detail{
-    width: 68.5em;
-    margin: 0px auto;
-    // padding: 200px;
-    // background-color: #f1f1f1;
-    border-radius: 5px;
-    // box-shadow: 1px 2px 5px $colorWhiteNav;
-    .propos{
-        margin: 25px;
-        // background: #000;
-        color: $colorBlack !important;
-        font-size: 18px;
-        span{
-            list-style-type: none;
-            padding-bottom: 2px;
-            // border-bottom: 2px solid $colorBlue;
-        }
-    }
-    .group-detail{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        .img-detail{
-            margin: 30px;
-            img{
-                width: 500px;
-            }
-        }
-        .text-detail{
-            width:  40%;
-            margin: 25px;
-            padding: 25px;
-            border: 1px solid $colorWhiteNav;
-            border-radius: 3px;
-            align-self: flex-start;
-            p:nth-child(1){
-                // margin-bottom: 25px;
-                font-size: 25px;
-                font-weight: 700;
-                
-            }
-            p{
-                margin-bottom: 25px;
-                font-size: 16px;
-                
-            }
+.container{
+    .template-detail{
+        .propos{
+            color: $colorBlack !important;
+            font-size: 18px;
             span{
-                font-size: 25px;
-                font-weight: 700;
+                list-style-type: none;
+                padding-bottom: 2px;
             }
-            .select-detail{
-                margin: 25px 0;
+        }
+        .group-detail{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            @media all and (max-width: 993px){
+               flex-wrap: wrap;
             }
-            .button-panier{ 
-                margin: 45px 0 25px 0;
-                text-align: center;
-                button{
-                    text-decoration: none;
-                    background-color: $colorGreyAchat;
-                    padding: 14px 0;
+            .img-detail{
+                margin: 30px;
+                @media all and (max-width: 993px){
+                   margin-top: 30px !important;
+                   margin-bottom: 0px !important;
+                   margin-left: 0px !important;
+                   margin-right: 0px !important;
+                }
+                img{
+                    width: 500px;
+                    @media all and (max-width: 1206px){
+                        width: 400px;
+                        @media all and (max-width: 993px){
+                            width: 100%;
+                            height: 80%;
+                        }
+                    }
+                }
+            }
+            .text-detail{
+                width:  45%;
+                margin: 25px;
+                padding: 25px;
+                border: 1px solid $colorWhiteNav;
+                border-radius: 3px;
+                align-self: flex-start;
+                @media all and (max-width: 993px){
                     width: 100%;
-                    // margin: 0 auto;
-                    color: $colorWhite;
-                    border-radius: 5px;
-                    font-size: 20px;
-
-                    &:hover{
-                        background-color: $colorGreyAchatPur;
+                    margin: 0;
+                }
+                p:nth-child(1){
+                    font-size: 25px;
+                    font-weight: 700;
+                    
+                }
+                p{
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                    
+                }
+                span{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                .select-detail{
+                    margin: 25px 0;
+                }
+                .button-panier{ 
+                    margin: 45px 0 25px 0;
+                    text-align: center;
+                    button{
+                        text-decoration: none;
+                        background-color: $colorGreyAchat;
+                        padding: 14px 0;
+                        width: 100%;
+                        // margin: 0 auto;
+                        color: $colorWhite;
+                        border-radius: 5px;
+                        font-size: 20px;
+    
+                        &:hover{
+                            background-color: $colorGreyAchatPur;
+                        }
                     }
                 }
             }
         }
     }
+
 }
 
 .group-template-blog{
