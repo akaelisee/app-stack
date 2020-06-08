@@ -39,7 +39,6 @@ const ComProduitTemplate = (props) => {
           <Form.Group controlId="exampleForm">
             <Form.Label>Taille :</Form.Label>
             <Form.Control as="select" custom>
-              <option selected></option>
               {funcSize()}
             </Form.Control>
           </Form.Group>
@@ -100,7 +99,7 @@ const ComProduitTemplate = (props) => {
     }
   };
 
-
+  console.log(detail.frontmatter.price)
 
     return (
         <>

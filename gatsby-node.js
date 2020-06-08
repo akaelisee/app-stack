@@ -1,16 +1,16 @@
 exports.createPages = async ({ graphql, actions }) => {
     
     const products = await graphql(`
-        query{
-            allMarkdownRemark {
+        query {
+          allMarkdownRemark(filter: {fields: {sourceName: {ne: "blog"}}}) {
             edges {
-                node {
+              node {
                 frontmatter {
-                    path
+                  path
                 }
-                }
+              }
             }
-            }
+          }
         }
       `) 
 
