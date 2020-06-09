@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-snipcartv3`,
       options: {
-        apiKey: 'NDc2MzVmZGUtZDI2Zi00NzZlLWExYmUtZDU1MTNmYTY5NmEzNjM3MjYxNTU5MzIxNTgxMTIw',
+        apiKey: 'MmFkYmI1ZjEtMjhkOC00ZTdiLWE4ZWEtZjY1YzRlNjJkN2FjNjM3MjcyODg0NTA2NTI2Mzc5',
         autopop: true,
       }
     },
