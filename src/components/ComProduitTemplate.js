@@ -84,7 +84,7 @@ const ComProduitTemplate = (props) => {
         <button
           className='snipcart-add-item'
           data-item-id={detail.id}
-          data-item-price={detail.frontmatter.price}
+          data-item-price="41"
           data-item-name={detail.frontmatter.title}
           data-item-description={detail.frontmatter.description}
           data-item-image={detail.frontmatter.image}
