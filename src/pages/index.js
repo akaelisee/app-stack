@@ -43,10 +43,12 @@ const IndexPage = ({data}) => {
             <div className="flex">
               <p>
               APROPOS The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
-              </p><p>
-              APROPOS The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
-              </p><p>
-              APROPOS The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
+              </p>
+              <p>
+                 The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
+              </p>
+              <p>
+              The Concept Store unites phantasy and tradition with beauty and art while creating a unique lifestyle: “It is important to us, to offer you the most luxurious and unique items which will make your life more beautiful.” For 30 years now, the two owners Klaus Ritzenhöfer and Daniel Riedo have been remaining faithful to their original credo. By providing exclusive fashion by international designers as well as beauty and interior products, they constantly prove their extraordinary taste for style and beautiful things.
               </p>
             </div>
         </div>
