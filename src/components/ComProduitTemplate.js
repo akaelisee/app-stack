@@ -90,6 +90,15 @@ const ComProduitTemplate = (props) => {
           data-item-image={detail.frontmatter.image}
           data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
       > Ajouter au panier </button> 
+      <button
+          className='snipcart-add-item'
+          data-item-id={detail.id}
+          data-item-price={detail.frontmatter.price}
+          data-item-name={detail.frontmatter.title}
+          data-item-description={detail.frontmatter.description}
+          data-item-image={detail.frontmatter.image}
+          data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
+      > Ajouter au panier 1 </button> 
       )
     }
     else{
@@ -118,6 +127,15 @@ const ComProduitTemplate = (props) => {
                   </div>
                   <div className="button-panier">
                     <Button />
+                    <button
+                      className='snipcart-add-item'
+                      data-item-id={detail.id}
+                      data-item-price={detail.frontmatter.price}
+                      data-item-name={detail.frontmatter.title}
+                      data-item-description={detail.frontmatter.description}
+                      data-item-image={detail.frontmatter.image}
+                      data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
+                  > Ajouter au panier 2</button> 
                   </div>
                 </div>
             </div>
