@@ -115,6 +115,56 @@ const ComProduitTemplate = (props) => {
                   <div className="select-detail">
                     {detailListSize()}
                     {detailListColor()} 
+                    <button
+                      className='snipcart-add-item'
+                      data-item-id="1"
+                      data-item-price="12"
+                      data-item-name="habille"
+                      data-item-description="le prix unique"
+                      data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/ + detail.frontmatter.path"} 
+                  > Ajouter au panier </button> 
+                  <button
+                    className='snipcart-add-item'
+                    data-item-id={detail.id}
+                    data-item-price="25"
+                    data-item-name="male"
+                    data-item-description="description"
+                    data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
+                > Ajouter au panier </button> 
+                  <button
+                      className='snipcart-add-item'
+                      data-item-id={detail.id}
+                      data-item-price={detail.frontmatter.price}
+                      data-item-name={detail.frontmatter.title}
+                      data-item-description={detail.frontmatter.description}
+                      data-item-image={detail.frontmatter.image}
+                      data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/"} 
+                  > Ajouter au panier </button> 
+      <button
+          className='snipcart-add-item'
+          data-item-id={detail.id}
+          data-item-price="45"
+          data-item-name="name"
+          data-item-description={detail.frontmatter.description}
+          data-item-image={detail.frontmatter.image}
+          data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
+      > Ajouter au panier </button> 
+      <button
+          className='snipcart-add-item'
+          data-item-id="1"
+          data-item-price={detail.frontmatter.price}
+          data-item-name={detail.frontmatter.title}
+          data-item-description={detail.frontmatter.description}
+          data-item-image={detail.frontmatter.image}
+          data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
+      > Ajouter au panier </button> 
+      <button
+          className='snipcart-add-item'
+          data-item-id={detail.id}
+          data-item-price={detail.frontmatter.price}
+          data-item-name={detail.frontmatter.title}
+          data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/"} 
+      > Ajouter au panier </button> 
                   </div>
                   <div className="button-panier">
                     <Button />

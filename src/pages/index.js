@@ -50,14 +50,6 @@ const IndexPage = ({data}) => {
               </p>
             </div>
         </div>
-        <button
-          className='snipcart-add-item'
-          data-item-id="1"
-          data-item-price="12"
-          data-item-name="habille"
-          data-item-description="le prix unique"
-          data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/"} 
-      > Ajouter au panier </button> 
       </div>
 
     <Footer />
