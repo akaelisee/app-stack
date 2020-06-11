@@ -118,7 +118,7 @@ const ComProduitTemplate = (props) => {
                   </div>
                   <div className="button-panier">
                     <Button />
-                    <button
+                    <button hidden
                       className='snipcart-add-item'
                       data-item-id={detail.id}
                       data-item-price={detail.frontmatter.price}
@@ -127,7 +127,7 @@ const ComProduitTemplate = (props) => {
                       data-item-image={detail.frontmatter.image}
                       data-item-url={"https://inspiring-visvesvaraya-f559ca.netlify.app/" + detail.frontmatter.path} 
                   > Ajouter au panier 2</button> 
-                  <button type="hidden"
+                  <button hidden
                       className='snipcart-add-item'
                       data-item-id={detail.id}
                       data-item-price={detail.frontmatter.price}
